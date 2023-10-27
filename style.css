@@ -1,13 +1,82 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap');
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
+
 body{
     margin: 0;
-    padding: 0;
+    font-size: 1.3rem;
+    font-family: 'Oxanium', sans-serif;
 }
+
 header{
+    background-color: green;
+    padding: 1em 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav__list{
     display: flex;
-    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+}
+
+.nav__item{
+    margin-right: 1.5em;
+    font-size: 1.5rem;
+}
+
+.nav__item:hover,
+.nav__item:focus{
+    opacity: .75;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
     justify-content: space-between;
-    padding: 0 2em;
+    margin-top: 3em;
+}
+
+.pkmn__section{
+    width: 55%;
+    border: 3px solid black;
+    background-color: plum;
+}
+
+.info__section{
+    width: 40%;
+    border: 3px solid red;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+}
+
+.row span{
+    padding: .75em;
+    border: 2px solid yellow;
+}
+
+span:first-child{
+    width: 35%;
+    background-color: green;
+}
+
+span:nth-child(2){
+    width: 60%;
+    background-color: limegreen;
 }

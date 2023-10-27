@@ -8,17 +8,45 @@
 </head>
 <body>
     <header>
-        <h1>Fakedex</h1>
-        <h2>Pokemons</h2>
+        <div class="container">
+            <nav>
+                <ul class="nav__list">
+                    <li class="nav__item">Home</li>
+                    <li class="nav__item">Pokemons</li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>      
+    <main class="main container">
+        <section class="pkmn__section">
+            <img src="images/038.png" alt="pokemon image">
         </section>
-        <section>
+        <section class="info__section">
+            <div class="pkmn-id">
+                <div class="row">
+                    <span>No.</span>
+                    <span class="pkmn-num">001</span>
+                </div>
+                <div class="row">
+                    <span>Name</span>
+                    <span class="pkmn-name">Default</span>
+                </div>
+            </div>
+            <div class="pkmn-info">
+                <div class="row">
+                    <span>Type</span>
+                    <span class="pkmn-type">Water</span>
+                </div>
+                <div class="row">
+                    <span>Category</span>
+                    <span class="pkmn-category">Alligator</span>
+                </div>
+                <div class="row">
+                    <span>Ability</span>
+                    <span class="pkmn-ability">Intimitade</span>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>Made by:<a href="https://github.com/cardosojse">cardosojse</a></p>
-    </footer>
 </body>
 </html>
