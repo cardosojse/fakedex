@@ -1,26 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap');
 
-@media (max-width:999px) {
+@media (max-width:1300px) {
     .main{
         flex-direction: column;
     }
-    img{
-        max-width: 100%;
-    }
+    
 }
 
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
     .pkmn__section{
-        width: 55%;
+        width: 52%;
     }
     
     .info__section{
-        width: 44%;
+        width: 46%;
     }
-    img{
-        max-width: 75%;
-    }
-}
+} */
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -31,15 +26,15 @@ body{
     font-size: 1.2rem;
     font-family: 'Oxanium', sans-serif;
     background: #f2f2f2;
-    overflow: hidden;
 }
 
 header{
     padding: 1em 0;
-    background-color: #DC143C;
 }
 
-
+img{
+    max-width: 90%;
+}
 
 .container{
     width: 80%;
@@ -48,10 +43,11 @@ header{
 
 .nav__list{
     display: flex;
+    justify-content: flex-end;
     list-style: none;
     margin: 0;
     padding: 0;
-    color: #FFF;
+    color: #000;
 }
 
 .nav__item{
@@ -61,29 +57,27 @@ header{
 
 .nav__item:hover,
 .nav__item:focus{
-    opacity: .75;
+    opacity: .5;
     cursor: pointer;
 }
 
 .main{
     display: flex;
     justify-content: space-between;
-    margin-top: 3em;
+    border: 1px solid yellow;
 }
 
-.pkmn__section{
-    border: 2px solid yellow;
-}
+/* .pkmn__section{} */
 
 .info__section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid green;
+    width: 100%;
 }
 
 .pkmn-id{
-    background:#262626;
+    background: linear-gradient(110deg,#DC143C 40%, #000 41%);
     padding: .75em;
     color: #FFF;
     display: flex;
