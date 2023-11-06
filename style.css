@@ -1,28 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap');
 
-@media (max-width: 1100px) {
-    .main{
-        flex-direction: column;
-    }
-}
-
-/* @media (min-width: 1000px) {
-    .pkmn__section{
-        width: 52%;
-    }
-    
-    .info__section{
-        width: 46%;
-    }
-} */
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 body{
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    /* use clamp */
     font-family: 'Oxanium', sans-serif;
     background: url(images/LAYOUTPC3.png);
     background-size: cover;
@@ -37,7 +22,6 @@ img{
 }
 
 .container{
-    width: 80%;
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -74,22 +58,28 @@ img{
     padding: 1em;
 }
 
-/* .pkmn__section{} */
+.pkmn-id{
+    display: flex;
+    justify-content: space-around;
+    /* background:linear-gradient(110deg, #689581 60%, #333333 62%); */
+    background-color: #689581;
+    color: #FFF;
+    font-weight: 700;
+    padding: 1em;
+}
 
 .info__section{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* border: 3px solid red; */
 }
 
-.pkmn-id{
-    background: #0d0d0d;
+.category__section{
+    background-color: #d9d9d9;
     padding: .75em;
-    color: #FFF;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0 0 .25em rgba(0, 0, 0, 0.25);
+    text-align: center;
 }
 
 .pkmn-info{
@@ -99,31 +89,47 @@ img{
 .pkmn-info .row{
     display: flex;
     justify-content: space-between;
-    margin-bottom: .25em;
-    box-shadow: 0 0 .25em rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
 
 .pkmn-info span{
-    padding: .5em .25em;
+    padding: .8em .5em;
+    border-radius: 1px;
+    border: 1px solid #ccc;
 }
+
 .pkmn-info span:first-child{
     background-color: #d9d9d9;
-    width: 44%;
+    width: 52%;
     text-align: center;
 }
 
 .pkmn-info span:nth-child(2){
-    background-color: #e9e9e9;
-    width: 54%;
+    background-color: #f2f2f2;
+    width: 47%;
 }
 
 .about{
-    background-color: #d9d9d9;
+    background-color: #f2f2f2;
     padding: .5em;
+}
+
+.about__text{
+    margin: 0;
+}
+
+.box-shadow{
     box-shadow: 0 0 .25em rgba(0, 0, 0, 0.25);
 }
-.about p{
-    margin: 0;
-    
+
+
+@media (max-width: 1100px) {
+    body{
+        font-size: 1rem;
+    }
+    .main{
+        flex-direction: column;
+        margin-top: 0;
+        padding: .45em;
+    }
 }
