@@ -10,6 +10,7 @@ body{
     /* use clamp */
     font-family: 'Oxanium', sans-serif;
     background: url(images/LAYOUTPC3.png);
+    /* change background */
     background-size: cover;
 }
 
