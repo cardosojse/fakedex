@@ -4,8 +4,17 @@
 
 body{
     margin: 0;
+    height: 100dvh;
     font-size: 1.3rem; /* use clamp */
     font-family: 'Oxanium', sans-serif;
+    background: linear-gradient(
+        110deg,
+        #fcf1b4 10%,
+        #689581 11% 25%,
+        #8FBC8F 26% 75%,
+        #689581 76% 90%,
+        #fcf1b4 91%
+    );
 }
 
 header{
@@ -14,11 +23,14 @@ header{
 
 img{
     max-width: 100%;
+    height: auto;
+    font-style: italic;
+    vertical-align: middle;
 }
 
 a{
     text-decoration: none;
-    color: #333333;
+    color: #fff;
 }
 
 .container{
@@ -30,6 +42,7 @@ a{
 .nav__list{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -51,13 +64,19 @@ a{
     cursor: pointer;
 }
 
+#search-input{
+    padding: .75em;
+}
+
 .main{
     display: flex;
     justify-content: space-between;
-    padding: 1em;
-    background: url(images/LAYOUTPC3.png);
-    background-size: cover;
+    /* border: 1px solid red; */
 }
+
+/* .pkmn__section{
+    background: url();
+} */
 
 .info__section{
     width: 100%;
@@ -74,7 +93,12 @@ a{
     color: #FFF;
     font-weight: 700;
     padding: 1em;
-    margin-bottom: .5em;
+    margin-bottom: .25em;
+}
+
+.wrapper{
+    padding: .2em;
+    background: #FFF;
 }
 
 .category-section{
@@ -84,19 +108,16 @@ a{
 }
 
 .pkmn-info{
-    margin: .5em 0;
+    margin: .25em 0;
 }
 
 .pkmn-info .row{
     display: flex;
     justify-content: space-between;
-    z-index: 1;
 }
 
 .pkmn-info span{
     padding: .8em .5em;
-    border-radius: 1px;
-    border: 1px solid #ccc;
 }
 
 .pkmn-info span:first-child{
@@ -110,6 +131,10 @@ a{
     width: 47%;
 }
 
+.pkmn-info .row + .row span{
+    border-top: 1px solid #ccc;
+}
+
 .about{
     background-color: #f2f2f2;
     padding: .5em;
@@ -120,17 +145,15 @@ a{
 }
 
 .box-shadow{
-    box-shadow: 0 0 .25em rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 .4em rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 1100px) {
     body{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
-
     img{
         width: 80%;
-        border: 2px solid red;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -140,6 +163,9 @@ a{
         flex-direction: column;
         margin-top: 0;
         /* padding: .45em; */
+    }
+    .container{
+        width: 100%;
     }
 }
 
