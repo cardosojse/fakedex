@@ -1,29 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap');
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+*, *::before, *::after {box-sizing: border-box;}
 
 body{
     margin: 0;
-    font-size: 1.3rem;
-    /* use clamp */
+    font-size: 1.3rem; /* use clamp */
     font-family: 'Oxanium', sans-serif;
-    /* background: url(images/LAYOUTPC3.png);
-    background-size: cover; */
 }
 
 header{
-    padding: 1em 0;
-    width: 80%;
-    margin: 0 auto;
+    padding: 1.5em 0;
 }
 
 img{
     max-width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: #333333;
+}
+
 .container{
+    width: 90%;
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -34,7 +33,6 @@ img{
     list-style: none;
     margin: 0;
     padding: 0;
-    color: #000;
     text-shadow: 1px 1px 2px gray;
 }
 
@@ -56,10 +54,10 @@ img{
 .main{
     display: flex;
     justify-content: space-between;
-    margin-top: 2em;
+    padding: 1em;
     background: url(images/LAYOUTPC3.png);
     background-size: cover;
-    padding: 1em;
+    border-radius: .5em;
 }
 
 .info__section{
@@ -67,14 +65,12 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 3px solid red; */
 }
 
 .pkmn-id{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background:linear-gradient(110deg, #689581 60%, #333333 62%); */
     background-color: #689581;
     color: #FFF;
     font-weight: 700;
@@ -132,9 +128,24 @@ img{
     body{
         font-size: 1rem;
     }
+
+    img{
+        width: 80%;
+        border: 2px solid red;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     .main{
         flex-direction: column;
         margin-top: 0;
         /* padding: .45em; */
+    }
+}
+
+@media (max-width: 700px){
+    img{
+        width: 100%;
     }
 }
