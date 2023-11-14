@@ -178,7 +178,7 @@ a{
 @media (max-width: 700px){
     body{
         font-size: 1rem;
-        overflow-x: hidden !important;
+        overflow: hidden;
     }
     img{
         width: 100%;
