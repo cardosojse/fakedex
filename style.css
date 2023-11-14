@@ -183,12 +183,11 @@ a{
     img{
         width: 100%;
     }
-    .main{
+    .wrapper{
         overflow-y: scroll;
         min-height: 600px;
     }
     .info__section{
-        z-index: 1;
         overflow: scroll;
     }
     .info__section::-webkit-scrollbar{
