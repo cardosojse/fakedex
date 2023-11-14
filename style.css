@@ -185,6 +185,7 @@ a{
     }
     .info__section{
         overflow-y: scroll;
-        height: 600px;
+        height: auto;
+        justify-content: flex-start;
     }
 }
