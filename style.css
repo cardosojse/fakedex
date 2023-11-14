@@ -184,8 +184,10 @@ a{
         width: 100%;
     }
     .info__section{
-        overflow-y: scroll;
-        height: auto;
         justify-content: flex-start;
+    }
+    .wrapper{
+        overflow-y: scroll;
+        max-height: 600px;
     }
 }
