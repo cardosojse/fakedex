@@ -184,7 +184,6 @@ a{
         width: 100%;
     }
     .info__section{
-        overflow: auto;
-        max-height: 600px;
+        overflow: scroll;
     }
 }
