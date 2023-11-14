@@ -178,14 +178,14 @@ a{
 @media (max-width: 700px){
     body{
         font-size: 1rem;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
     img{
         width: 100%;
     }
     .main{
         overflow-y: scroll;
-        min-height: 600px;
+        height: 600px;
     }
     .info__section{
         overflow: scroll;
