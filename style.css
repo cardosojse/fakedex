@@ -183,14 +183,8 @@ a{
     img{
         width: 100%;
     }
-    .wrapper{
-        overflow-y: scroll;
-        min-height: 600px;
-    }
     .info__section{
-        overflow: scroll;
-    }
-    .info__section::-webkit-scrollbar{
-        display: none;
+        overflow-y: scroll;
+        height: 600px;
     }
 }
