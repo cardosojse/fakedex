@@ -185,9 +185,13 @@ a{
     }
     .main{
         overflow-y: scroll;
-        height: 600px;
+        min-height: 600px;
     }
     .info__section{
+        z-index: 1;
         overflow: scroll;
+    }
+    .info__section::-webkit-scrollbar{
+        display: none;
     }
 }
