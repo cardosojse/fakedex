@@ -188,6 +188,6 @@ a{
     }
     .wrapper{
         overflow-y: scroll;
-        max-height: 600px;
+        height: auto;
     }
 }
