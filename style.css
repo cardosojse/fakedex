@@ -7,18 +7,20 @@ body{
     height: 100dvh;
     font-size: 1.3rem; /* use clamp */
     font-family: 'Oxanium', sans-serif;
-    background: linear-gradient(
+    /* background: linear-gradient(
         110deg,
         #fcf1b4 10%,
         #689581 11% 25%,
         #8FBC8F 26% 75%,
         #689581 76% 90%,
         #fcf1b4 91%
-    );
+    ); */
+    background: #fcf1b4;
 }
 
 header{
     padding: 1em 0;
+    background: #8FBC8F;
 }
 
 img{
@@ -65,8 +67,18 @@ a{
     cursor: pointer;
 }
 
-#search-input{
-    padding: .5em;
+input{
+    padding: .6em .5em;
+    border: 1px solid transparent;
+    border-radius: 4.4px;
+    color: #333333;
+    font-family: 'Oxanium', sans-serif;
+}
+
+input:focus,
+input:active{
+    outline: none;
+    border: 1px solid #e25858;
 }
 
 .main{
@@ -78,7 +90,7 @@ a{
 
 .pkmn__section{
     position: relative;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .info__section{
@@ -86,7 +98,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .background__img{
@@ -157,15 +169,18 @@ a{
     box-shadow: 0 0 .5em rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1000px) {
     body{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     img{
         width: 80%;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+    }
+    header{
+        padding: .75em .5em;
     }
     .main{
         flex-direction: column;
@@ -178,11 +193,25 @@ a{
 
 @media (max-width: 700px){
     body{
-        font-size: 1rem;
+        font-size: 1.125rem;
         overflow-x: hidden !important;
     }
     img{
         width: 100%;
+    }
+    input{
+        width: 40%;
+        padding: 1em .75em;
+    }
+    .nav__list{
+        flex-direction: column;
+    }
+    .nav__item,
+    .nav__item-input{
+        margin: 0;
+        padding: .5em 0;
+        width: 90%;
+        text-align: center;
     }
     .info__section{
         justify-content: flex-start;
