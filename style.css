@@ -170,54 +170,49 @@ input:active{
 }
 
 @media (max-width: 1000px) {
+
     body{
         font-size: 1.3rem;
     }
+
     img{
         width: 80%;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
     }
+
     header{
         padding: .75em .5em;
     }
+
     .main{
         flex-direction: column;
         margin-top: 0;
     }
+
     .container{
         width: 100%;
     }
 }
 
 @media (max-width: 700px){
+
     body{
         font-size: 1.125rem;
-        overflow-x: hidden !important;
+        background: #fff;
     }
+
     img{
         width: 100%;
     }
-    input{
-        width: 40%;
-        padding: 1em .75em;
+
+    .main{
+        background: #fcf1b4;
+        z-index: -1;
     }
-    .nav__list{
-        flex-direction: column;
-    }
-    .nav__item,
-    .nav__item-input{
-        margin: 0;
-        padding: .5em 0;
-        width: 90%;
-        text-align: center;
-    }
-    .info__section{
-        justify-content: flex-start;
-    }
-    .wrapper{
-        overflow-y: scroll;
-        height: auto;
+
+    .container{
+        position: relative;
     }
 }
