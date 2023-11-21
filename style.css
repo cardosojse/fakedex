@@ -44,7 +44,6 @@ a{
 
 .nav__list{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     list-style: none;
     margin: 0;
@@ -85,7 +84,6 @@ input:active{
     display: flex;
     justify-content: space-between;
     margin-top: 3.5em;
-    /* border: 3px solid black; */
 }
 
 .pkmn__section{
@@ -126,7 +124,7 @@ input:active{
     background: #FFF;
 }
 
-.category-section{
+.category__section{
     background-color: #d9d9d9;
     padding: .75em;
     text-align: center;
@@ -160,7 +158,7 @@ input:active{
     border-top: 1px solid #ccc;
 }
 
-.about{
+.about__section{
     background-color: #d9d9d9;
     padding: .5em;
 }
