@@ -2,6 +2,11 @@
 
 *, *::before, *::after {box-sizing: border-box;}
 
+/* colors
+    yellow #fcf1b4
+    green #8FBC8F
+*/
+
 body{
     margin: 0;
     height: 100dvh;
@@ -15,12 +20,16 @@ body{
         #689581 76% 90%,
         #fcf1b4 91%
     ); */
-    background: #fcf1b4;
+    background-image: url(images/LAYOUTPC3.png);
+}
+
+main{
+    padding-top: .5em;
 }
 
 header{
     padding: 1em 0;
-    background: #8FBC8F;
+    background: #000;
 }
 
 img{
@@ -37,7 +46,7 @@ a{
 }
 
 .container{
-    width: 90%;
+    width: 80%;
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -77,18 +86,38 @@ input{
 input:focus,
 input:active{
     outline: none;
-    border: 1px solid #e25858;
+    border: 1px solid #fcf1b4;
 }
 
-.main{
+.main-content{
+    background-color: #FFF;
+    padding: 1em;
+}
+
+.btn__section{
     display: flex;
     justify-content: space-between;
-    margin-top: 3.5em;
+    background-color: #FFF;
+}
+
+.next-btn, .prev-btn{
+    width: 100%;
+    padding: 1.5em;
+    font-weight: 700;
+    font-size: 1.25rem;
+    background-color: #333333;
+    border: none;
+    color: #FFF;
+}
+
+.next-btn:hover, .prev-btn:hover{
+    background-color: #fcf1b4;
 }
 
 .pkmn__section{
-    position: relative;
-    /* border: 2px solid blue; */
+    background-color: #f2f2f2;
+    border-radius: .75em;
+    margin-bottom: .5em;
 }
 
 .info__section{
@@ -96,16 +125,10 @@ input:active{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 2px solid red; */
 }
 
-.background__img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: .15;
-    z-index: -1;
+.pkmn-img{
+    max-width: 100%;
 }
 
 .pkmn-id{
@@ -117,11 +140,13 @@ input:active{
     font-weight: 700;
     padding: 1em;
     margin-bottom: .25em;
+    border-top-right-radius: .5em;
+    border-top-left-radius: .5em;
 }
 
 .wrapper{
-    padding: .2em;
-    background: #FFF;
+    background-color: #f2f2f2;
+    border-radius: 1em;
 }
 
 .category__section{
@@ -161,6 +186,8 @@ input:active{
 .about__section{
     background-color: #d9d9d9;
     padding: .5em;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
 }
 
 .box-shadow{
@@ -206,11 +233,18 @@ input:active{
     }
 
     .main{
-        background: #fcf1b4;
+        /* background: #fcf1b4; */
         z-index: -1;
     }
 
     .container{
         position: relative;
+    }
+}
+
+@media (min-width: 1100px) {
+    .main-content{
+        display: flex;
+        gap: .5em;
     }
 }
