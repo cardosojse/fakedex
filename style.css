@@ -207,6 +207,11 @@ input:active{
     .container{
         position: relative;
     }
+
+    .btn__section{
+        gap: .5em;
+    }
+    
 }
 
 @media (min-width: 1400px) {
