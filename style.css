@@ -2,35 +2,17 @@
 
 *, *::before, *::after {box-sizing: border-box;}
 
-/* colors
-    yellow #fcf1b4
-    green #8FBC8F
-*/
-
 body{
     margin: 0;
     height: 100dvh;
     font-size: 1.3rem; /* use clamp */
     font-family: 'Oxanium', sans-serif;
-    /* background: linear-gradient(
-        110deg,
-        #fcf1b4 10%,
-        #689581 11% 25%,
-        #8FBC8F 26% 75%,
-        #689581 76% 90%,
-        #fcf1b4 91%
-    ); */
-    background-image: url(images/LAYOUTPC3.png);
-    background-size: cover;
-}
-
-main{
-    padding: .5em;
+    background-color: #f2f2f2;
 }
 
 header{
     padding: 1em 0;
-    background: #000;
+    background: #124076;
 }
 
 img{
@@ -87,54 +69,55 @@ input{
 input:focus,
 input:active{
     outline: none;
-    border: 1px solid #fcf1b4;
 }
 
 .main-content{
-    background-color: #FFF;
-    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+    padding: .25em;
+    background-image: url(images/LAYOUTPC3.png);
+    background-size: cover;
+}
+
+.pkmn__section{
+    background-color: #F2EFE5;
     border-radius: .25em;
+    text-align: center;
 }
 
 .btn__section{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    gap: .1em;
-    margin-bottom: .5em;
+    gap: .25em;
+    text-align: center;
+    margin-bottom: .8em;
 }
 
 .next-btn, .prev-btn{
+    color: white;
+    font-weight: 700;
+    background-color: #444;
     width: 100%;
     padding: 1em;
-    font-weight: 700;
-    font-size: 1.25rem;
-    background-color: #333333;
-    border: none;
-    color: #FFF;
-    border-radius: .25em;
+    border: 2px solid black;
+    border-radius: .5em;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;  
 }
 
-.next-btn:hover, .prev-btn:hover{
-    background-color: #8FBC8F;
+.next-btn:active, .prev-btn:active{
+    box-shadow: inset -4px 4px 0 #222;
     cursor: pointer;
 }
 
-.btn-span{
-    margin: .2em;
-}
-
-.pkmn__section{
-    background-color: #f2f2f2;
-    border-radius: .25em;
-    text-align: center;
-}
-
 .info__section{
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #F2EFE5;
+    padding: 1em;
+    border-radius: .25em;
 }
 
 .pkmn-img{
@@ -145,34 +128,26 @@ input:active{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #333333;
-    color: #FFF;
+    background-color: #E3E1D9;
     font-weight: 700;
     padding: 1em;
-    margin-bottom: .25em;
-    border-top-right-radius: .25em;
-    border-top-left-radius: .25em;
-}
-
-.wrapper{
-    background-color: #fff;
-    border-radius: .25em;
-    padding: .5em 0 0;
+    margin-bottom: .1em;
 }
 
 .category__section{
-    background-color: #d9d9d9;
+    background-color: #E3E1D9;
     padding: .75em;
     text-align: center;
 }
 
 .pkmn-info{
-    margin: .25em 0;
+    margin: .1em 0;
 }
 
 .pkmn-info .row{
     display: flex;
     justify-content: space-between;
+    gap: .1em;
 }
 
 .pkmn-info span{
@@ -180,44 +155,37 @@ input:active{
 }
 
 .pkmn-info span:first-child{
-    background-color: #d9d9d9;
-    width: 52%;
+    background-color: #E3E1D9;
+    width: 100%;
     text-align: center;
 }
 
 .pkmn-info span:nth-child(2){
-    background-color: #f2f2f2;
-    width: 47%;
+    background-color: #E3E1D9;
+    width: 100%;
 }
 
 .pkmn-info .row + .row span{
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #fff;
 }
 
 .about__section{
-    background-color: #d9d9d9;
+    background-color: #E3E1D9;
     padding: .5em;
-    border-bottom-left-radius: .25em;
-    border-bottom-right-radius: .25em;
 }
 
-.box-shadow{
+/* .box-shadow{
     box-shadow: 0 0 .5em rgba(0, 0, 0, 0.25);
-}
+} */
 
 @media (max-width: 1000px) {
 
     body{
-        font-size: 1.3rem;
+        font-size: 1.325rem;
     }
 
     header{
         padding: .75em .5em;
-    }
-
-    .main{
-        flex-direction: column;
-        margin-top: 0;
     }
 
     .container{
@@ -239,16 +207,12 @@ input:active{
     .container{
         position: relative;
     }
-
-    .main-content{
-        padding: .5em;
-    }
-
 }
 
 @media (min-width: 1400px) {
     .main-content{
-        display: flex;
-        gap: .5em;
+        flex-direction: row;
+        padding: .8em;
+        gap: .8em;
     }
 }
