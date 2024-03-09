@@ -21,10 +21,11 @@ body{
         #fcf1b4 91%
     ); */
     background-image: url(images/LAYOUTPC3.png);
+    background-size: cover;
 }
 
 main{
-    padding-top: .5em;
+    padding: .5em;
 }
 
 header{
@@ -91,33 +92,42 @@ input:active{
 
 .main-content{
     background-color: #FFF;
-    padding: 1em;
+    padding: .5em;
+    border-radius: .25em;
 }
 
 .btn__section{
     display: flex;
     justify-content: space-between;
-    background-color: #FFF;
+    width: 100%;
+    gap: .1em;
+    margin-bottom: .5em;
 }
 
 .next-btn, .prev-btn{
     width: 100%;
-    padding: 1.5em;
+    padding: 1em;
     font-weight: 700;
     font-size: 1.25rem;
     background-color: #333333;
     border: none;
     color: #FFF;
+    border-radius: .25em;
 }
 
 .next-btn:hover, .prev-btn:hover{
-    background-color: #fcf1b4;
+    background-color: #8FBC8F;
+    cursor: pointer;
+}
+
+.btn-span{
+    margin: .2em;
 }
 
 .pkmn__section{
     background-color: #f2f2f2;
-    border-radius: .75em;
-    margin-bottom: .5em;
+    border-radius: .25em;
+    text-align: center;
 }
 
 .info__section{
@@ -128,7 +138,7 @@ input:active{
 }
 
 .pkmn-img{
-    max-width: 100%;
+    max-width: 680px;
 }
 
 .pkmn-id{
@@ -140,13 +150,14 @@ input:active{
     font-weight: 700;
     padding: 1em;
     margin-bottom: .25em;
-    border-top-right-radius: .5em;
-    border-top-left-radius: .5em;
+    border-top-right-radius: .25em;
+    border-top-left-radius: .25em;
 }
 
 .wrapper{
-    background-color: #f2f2f2;
-    border-radius: 1em;
+    background-color: #fff;
+    border-radius: .25em;
+    padding: .5em 0 0;
 }
 
 .category__section{
@@ -186,8 +197,8 @@ input:active{
 .about__section{
     background-color: #d9d9d9;
     padding: .5em;
-    border-bottom-left-radius: .5em;
-    border-bottom-right-radius: .5em;
+    border-bottom-left-radius: .25em;
+    border-bottom-right-radius: .25em;
 }
 
 .box-shadow{
@@ -198,13 +209,6 @@ input:active{
 
     body{
         font-size: 1.3rem;
-    }
-
-    img{
-        width: 80%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     header{
@@ -225,24 +229,24 @@ input:active{
 
     body{
         font-size: 1.125rem;
-        background: #fff;
+        /* background: #fff; */
     }
 
     img{
         width: 100%;
     }
 
-    .main{
-        /* background: #fcf1b4; */
-        z-index: -1;
-    }
-
     .container{
         position: relative;
     }
+
+    .main-content{
+        padding: .5em;
+    }
+
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1400px) {
     .main-content{
         display: flex;
         gap: .5em;
