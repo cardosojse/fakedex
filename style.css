@@ -7,11 +7,11 @@ body{
     height: 100dvh;
     font-size: 1.3rem; /* use clamp */
     font-family: 'Oxanium', sans-serif;
-    background-color: #f2f2f2;
+    background-image: url(images/LAYOUTPC2.png);
+    background-size: cover;
 }
 
 header{
-    padding: 1em 0;
     background: #124076;
 }
 
@@ -34,31 +34,22 @@ a{
     margin: 0 auto;
 }
 
+.nav-toggle{
+    border: none;
+    background-color: transpSarent;
+}
+
 .nav__list{
-    display: flex;
-    align-items: center;
     list-style: none;
-    margin: 0;
+    text-align: center;
     padding: 0;
-    text-shadow: 1px 1px 2px gray;
 }
 
-.nav__item{
-    margin-right: 1.5em;
-    font-size: 1.25rem;
+.nav__list li{
+    padding: .25em;
 }
 
-.push--right{
-    margin-left: auto;
-}
-
-.nav__item:hover,
-.nav__item:focus{
-    opacity: .5;
-    cursor: pointer;
-}
-
-input{
+.input-search{
     padding: .6em .5em;
     border: 1px solid transparent;
     border-radius: 4.4px;
@@ -76,8 +67,7 @@ input:active{
     flex-direction: column;
     gap: .25em;
     padding: .25em;
-    background-image: url(images/LAYOUTPC3.png);
-    background-size: cover;
+    background-color: #fff;
 }
 
 .pkmn__section{
@@ -178,26 +168,10 @@ input:active{
     box-shadow: 0 0 .5em rgba(0, 0, 0, 0.25);
 } */
 
-@media (max-width: 1000px) {
-
-    body{
-        font-size: 1.325rem;
-    }
-
-    header{
-        padding: .75em .5em;
-    }
-
-    .container{
-        width: 100%;
-    }
-}
-
 @media (max-width: 700px){
 
     body{
         font-size: 1.125rem;
-        /* background: #fff; */
     }
 
     img{
@@ -208,13 +182,27 @@ input:active{
         position: relative;
     }
 
-    .btn__section{
-        gap: .5em;
+    .nav{
+        transform: translate(-100%);
+        position: fixed;
+        left: 0;
+    
+        width: 100%;
+        justify-content: center;
+        background-color: #124076;
     }
     
+    .show-nav{
+        z-index: 1;
+        transform: translate(0);
+    }
+
+    .btn__section{
+        gap: .5em;
+    } 
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1000px) {
     .main-content{
         flex-direction: row;
         padding: .8em;

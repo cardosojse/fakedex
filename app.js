@@ -1,8 +1,13 @@
-const navToggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.nav');
+const toggleBtn = document.querySelector(".nav-toggle");
+const nav = document.querySelector(".nav");
 
-navToggle.addEventListener('click', () => {
-    nav.classList.toggle('nav--visible');
+toggleBtn.addEventListener("click", ()=>{
+    if(nav.classList.contains("show-nav")){
+        nav.classList.remove("show-nav");
+    }
+    else{
+        nav.classList.add("show-nav");
+    }
 })
 
 if (navigator.userAgent.indexOf('iPhone') > -1 ) {
