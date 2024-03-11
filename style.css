@@ -7,8 +7,8 @@ body{
     height: 100dvh;
     font-size: 1.3rem; /* use clamp */
     font-family: 'Oxanium', sans-serif;
-    background-image: url(images/LAYOUTPC2.png);
-    background-size: cover;
+    /* background-image: url(images/LAYOUTPC2.png);
+    background-size: cover; */
 }
 
 header{
@@ -20,7 +20,6 @@ img{
     height: auto;
     font-style: italic;
     vertical-align: middle;
-    /* border: 2px solid red; */
 }
 
 a{
@@ -34,8 +33,10 @@ a{
     margin: 0 auto;
 }
 
-.nav-toggle{
+.nav-toggle, 
+.nav-close{
     border: none;
+    cursor: pointer;
     background-color: transparent;
 }
 
@@ -81,8 +82,8 @@ input:active{
     justify-content: space-between;
     width: 100%;
     gap: .35em;
+    padding: .5em;
     text-align: center;
-    margin-bottom: .8em;
 }
 
 .next-btn, .prev-btn{
@@ -189,11 +190,13 @@ input:active{
     .nav{
         transform: translate(-100%);
         position: fixed;
+        top: 0;
         left: 0;
     
         width: 100%;
         justify-content: center;
         background-color: #124076;
+        padding: .5em 0;
     }
     
     .show-nav{
