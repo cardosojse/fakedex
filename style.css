@@ -185,12 +185,17 @@ a{
     justify-content: center;
     flex-direction: column;
     background-color: #F2EFE5;
+    border: 1px solid #ccc;
+    border-radius: .25em;
+    box-shadow: -1px 1px 5px #ccc, 1px -1px 5px #ccc;
 }
 
 .pkmn-card span{
     text-align: center;
     padding: .5em;
     background-color: #E3E1D9;
+    border-top-left-radius: .25em;
+    border-top-right-radius: .25em;
 }
 
 .pkmn-card-img{
