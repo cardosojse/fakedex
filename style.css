@@ -7,8 +7,6 @@ body{
     height: 100dvh;
     font-size: 1.3rem; /* use clamp */
     font-family: 'Oxanium', sans-serif;
-    background-image: url(images/LAYOUTPC2.png);
-    background-size: cover;
 }
 
 header{
@@ -171,6 +169,34 @@ a{
     padding: .5em;
 }
 
+/* PKMN LIST CSS */
+
+.card__section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 1em 0;
+    background-color: #FBF9F1;
+}
+
+.pkmn-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F2EFE5;
+}
+
+.pkmn-card span{
+    text-align: center;
+    padding: .5em;
+    background-color: #E3E1D9;
+}
+
+.pkmn-card-img{
+    width: clamp(70px, 30vw, 250px);
+}
+
 @media (max-width: 800px){
 
     body{
@@ -230,6 +256,11 @@ a{
     .btn__section{
         gap: .5em;
     } 
+
+    .card__section{
+        gap: .5em;
+        padding: .5em 0;
+    }
 }
 
 @media (min-width: 801px) {
