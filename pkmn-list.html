@@ -9,19 +9,30 @@
 <body>
     <header>
         <div class="container">
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li class="nav__item push--right">
-                        <a href="pkmn-list.html">LIST</a>
-                    </li>
-                    <li class="nav__item-input">
-                        <input id="search-input" class="box-shadow" type="text" placeholder="Search for a pokemon">
-                    </li>
-                </ul>
-            </nav>
+            <div class="nav-bar">
+                <button class="nav-toggle">
+                    <img src="images/menu.png" alt="menu">
+                </button>
+                <nav class="nav">
+                    <button class="nav-close">
+                        <img src="images/close-menu.png" alt="close-button">
+                    </button>
+                    <ul class="nav__list">
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="pkmn-list.html">LIST</a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <input type="search" id="input-search">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <div class="container">

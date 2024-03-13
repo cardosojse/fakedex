@@ -7,6 +7,8 @@ body{
     height: 100dvh;
     font-size: 1.3rem; /* use clamp */
     font-family: 'Oxanium', sans-serif;
+    background-image: url(images/LAYOUTPC2.png);
+    background-size: cover;
 }
 
 header{
@@ -37,11 +39,11 @@ a{
     padding: 0;
 }
 
-.nav__list li{
-    padding: .25em;
+.nav__list-links:hover{
+    opacity: .75;
 }
 
-.input-search{
+#input-search{
     padding: .6em .5em;
     border: 1px solid transparent;
     border-radius: 4.4px;
@@ -49,8 +51,8 @@ a{
     font-family: 'Oxanium', sans-serif;
 }
 
-input:focus,
-input:active{
+#input-search:focus,
+#input-search:active{
     outline: none;
 }
 
@@ -59,8 +61,7 @@ input:active{
     flex-direction: column;
     gap: .25em;
     padding: .25em;
-    background-color: #fff;
-    margin-top: .1em;
+    background-color: #FBF9F1;
 }
 
 .pkmn__section{
@@ -212,6 +213,10 @@ input:active{
         transform: translate(0);
     }
 
+    .nav__list li{
+        padding: .25em;
+    }
+
     .main-content{
         padding: .5em;
         gap: .5em;
@@ -227,27 +232,35 @@ input:active{
     } 
 }
 
-@media (min-width: 844px) {
-    .nav-bar{
-        display: flex;
-    }
+@media (min-width: 801px) {
     .nav-toggle, .nav-close{
         display: none;
     }
+    .nav{
+        display: flex;
+    }
     .nav__list{
+        width: 100%;
         display: flex;
         align-items: center;
     }
+    .nav__list-links{
+        margin-right: 1em;
+    }
+    .push--right{
+        margin-left: auto;
+    }
+    .main-content{
+        padding: .8em;
+    }
 }
 
-
-@media (min-width: 1300px) {
+@media (min-width: 1250px) {
     .container{
-        width: 95%;
+        width: 90%;
     }
     .main-content{
         flex-direction: row;
-        padding: .8em;
         gap: .8em;
     }
     .wrapper{
