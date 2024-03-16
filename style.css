@@ -60,12 +60,15 @@ a{
     gap: .25em;
     padding: .25em;
     background-color: #FBF9F1;
+    border: 1px solid #E3E1D9;
+    border-top: none;
 }
 
 .pkmn__section{
     background-color: #F2EFE5;
     border-radius: .25em;
     text-align: center;
+    border: 1px solid #E3E1D9;
 }
 
 .btn__section{
@@ -101,6 +104,7 @@ a{
     background-color: #F2EFE5;
     padding: 1em;
     border-radius: .25em;
+    border: 1px solid #E3E1D9;
 }
 
 .pkmn-img{
@@ -116,7 +120,7 @@ a{
     margin-bottom: .1em;
 }
 
-.pkmn-id__btn{
+.pkmn-id--btn{
     color: white;
     background-color: #444;
     border: 1px solid black;
@@ -124,11 +128,11 @@ a{
     box-shadow: -1px 2px 0 #222, -1px 2px 0 #000;  
 }
 
-.pkmn-id__btn + .pkmn-id__btn{
+.pkmn-id--btn + .pkmn-id--btn{
     margin-left: .25em;
 }
 
-.pkmn-id__btn:active{
+.pkmn-id--btn:active{
     box-shadow: inset -2px 1px 0 #222;
     cursor: pointer;
 }
@@ -147,6 +151,23 @@ a{
     display: flex;
     justify-content: space-between;
     gap: .1em;
+}
+
+.pkmn-type--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25em;
+}
+
+.pkmn-type{
+    width: 40%;
+}
+
+.align-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pkmn-info span{
@@ -199,7 +220,7 @@ a{
 }
 
 .pkmn-card-img{
-    width: clamp(70px, 30vw, 250px);
+    width: clamp(70px, 30vw, 215px);
 }
 
 @media (max-width: 800px){
@@ -251,6 +272,7 @@ a{
     .main-content{
         padding: .5em;
         gap: .5em;
+        border: none;
     }
 
     .pkmn__section, 
@@ -311,5 +333,8 @@ a{
     }
     .wrapper{
         display: block;
+    }
+    .pkmn-card-img{
+        width: clamp(70px, 30vw, 350px);
     }
 }

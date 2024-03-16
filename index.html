@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png">
     <title>Fakedex</title>
 </head>
 <body>
@@ -38,16 +39,16 @@
     <main>
         <div class="container main-content">
             <section class="pkmn__section">
-                <img src="images/100.png" alt="pokemon image" class="pkmn-img">
+                <img src="images/pkmn-img/039.png" alt="pokemon image" class="pkmn-img">
             </section>
             <div class="wrapper">
                 <section class="container btn__section">
-                    <div class="next-btn">
-                        <span class="btn-span"><</span>
-                        <span class="pkmn-name">DEFAULT</span>
-                    </div>
                     <div class="prev-btn">
-                        <span class="pkmn-name">DEFAULT</span>
+                        <span class="btn-span"><</span>
+                        <!-- <span class="prev--pkmn-name">DEFAULT</span> -->
+                    </div>
+                    <div class="next-btn">
+                        <!-- <span class="next--pkmn-name">DEFAULT</span> -->
                         <span class="btn-span">></span>
                     </div>
                 </section>
@@ -61,9 +62,9 @@
                             <span class="pkmn-name">DEFAULT</span>
                         </div>
                         <div class="row">
-                            <button class="pkmn-id__btn">S</button>
-                            <button class="pkmn-id__btn">F</button>
-                            <button class="pkmn-id__btn">F</button>
+                            <button class="pkmn-id--btn">S</button>
+                            <button class="pkmn-id--btn">F</button>
+                            <button class="pkmn-id--btn">F</button>
                         </div>
                     </div>
                     <div class="category__section">
@@ -71,8 +72,10 @@
                     </div>
                     <div class="pkmn-info">
                         <div class="row">
-                            <span>Type</span>
-                            <span class="pkmn-type">Water</span>
+                            <span class="align-type">Type</span>
+                            <span class="pkmn-type--container">
+                                <!-- <img src="images/pkmn-type/water.png" class="pkmn-type"> -->
+                            </span>
                         </div>
                         <div class="row">
                             <span>Ability</span>
