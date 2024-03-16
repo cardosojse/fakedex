@@ -1,22 +1,22 @@
 const types = {
-    water: 'img/pkmn-type/water.png', 
-    bug: 'img/pkmn-type/bug.png',
-    dark: 'img/pkmn-type/dark.png',
-    dragon: 'img/pkmn-type/dragon.png',
-    electric: 'img/pkmn-type/electric.png',
-    fairy: 'img/pkmn-type/fairy.png',
-    fighting: 'img/pkmn-type/fighting.png',
-    fire: 'img/pkmn-type/fire.png',
-    flying: 'img/pkmn-type/flying.png',
-    ghost: 'img/pkmn-type/ghost.png',
-    grass: 'img/pkmn-type/grass.png',
-    ground: 'img/pkmn-type/ground.png',
-    ice: 'img/pkmn-type/ice.png',
-    normal: 'img/pkmn-type/normal.png',
-    poison: 'img/pkmn-type/poison.png',
-    psychic: 'img/pkmn-type/psychic.png',
-    rock: 'img/pkmn-type/rock.png',
-    steel: 'img/pkmn-type/steel.png',
+    water: 'images/pkmn-type/water.png', 
+    bug: 'images/pkmn-type/bug.png',
+    dark: 'images/pkmn-type/dark.png',
+    dragon: 'images/pkmn-type/dragon.png',
+    electric: 'images/pkmn-type/electric.png',
+    fairy: 'images/pkmn-type/fairy.png',
+    fighting: 'images/pkmn-type/fighting.png',
+    fire: 'images/pkmn-type/fire.png',
+    flying: 'images/pkmn-type/flying.png',
+    ghost: 'images/pkmn-type/ghost.png',
+    grass: 'images/pkmn-type/grass.png',
+    ground: 'images/pkmn-type/ground.png',
+    ice: 'images/pkmn-type/ice.png',
+    normal: 'images/pkmn-type/normal.png',
+    poison: 'images/pkmn-type/poison.png',
+    psychic: 'images/pkmn-type/psychic.png',
+    rock: 'images/pkmn-type/rock.png',
+    steel: 'images/pkmn-type/steel.png',
 };
 
 const pokemons = [
@@ -1121,7 +1121,7 @@ const pkmnCategory = document.querySelector(".pkmn-category");
 const pkmnAbility = document.querySelector(".pkmn-ability");
 const pkmnHeight = document.querySelector(".pkmn-height");
 const pkmnWeight = document.querySelector(".pkmn-weight");
-const pkmnType = document.querySelector(".pkmn-type");
+const pkmnType = document.querySelector(".pkmn-type--container");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 
@@ -1159,7 +1159,7 @@ function showData(pkmn){
     pkmnObj.pokemonTypes.forEach(function (typeUrl) {
         imgChild += `<img src=${typeUrl} class="pkmn-type">`
     })
-    pkmnType.innerHTML += imgChild;
+    pkmnType.innerHTML = imgChild;
 }
 
 prevBtn.addEventListener("click", function(){
