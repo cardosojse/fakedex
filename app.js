@@ -336,7 +336,7 @@ const pokemons = [
     {
         num: '032',
         name: 'COROCHI',
-        images: 'images/pkmn-img/032.png',
+        img: 'images/pkmn-img/032.png',
         category: 'Roach',
         ability: 'Run Away',
         height: 'Default',
@@ -547,7 +547,7 @@ const pokemons = [
     {
         num: '053',
         name: 'CUMBULLUS',
-        img: 'images/pkmn-img/052.png',
+        img: 'images/pkmn-img/053.png',
         category: 'Cloud',
         ability: 'Cloud Nine',
         height: 'Default',
@@ -577,7 +577,7 @@ const pokemons = [
     {
         num: '056',
         name: 'EEVEE',
-        images: 'images/pkmn-img/056.png',
+        img: 'images/pkmn-img/056.png',
         category: 'Evolution',
         ability: 'Run Away/Adaptability',
         height: 'Default',
@@ -903,7 +903,7 @@ const pokemons = [
     {
         num: '089',
         name: 'SKARRANKA',
-        img: 'imagess/pkmn-img/089.png',
+        img: 'images/pkmn-img/089.png',
         category: 'Apparition',
         ability: 'Night Veil',
         height: 'Default',
@@ -923,7 +923,7 @@ const pokemons = [
     {
         num: '091',
         name: 'LARVITAR',
-        img: 'images/pkmn-img/091png',
+        img: 'images/pkmn-img/091.png',
         category: 'Rough Skin',
         ability: 'Rough Skin',
         height: 'Default',
@@ -1125,9 +1125,6 @@ const pkmnType = document.querySelector(".pkmn-type--container");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 
-// const pkmnNameNext = document.querySelector(".next--pkmn-name")
-// const pkmnNamePrev = document.querySelector(".prev--pkmn-name");
-
 let currentPkmn = 0;
 
 window.addEventListener("DOMContentLoaded", ()=>{
@@ -1175,5 +1172,5 @@ nextBtn.addEventListener("click", function(){
     if (currentPkmn > pokemons.length - 1){
         currentPkmn = 0;
     }
-    showData(currentPkmn)
+    showData(currentPkmn);
 })

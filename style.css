@@ -65,10 +65,34 @@ a{
 }
 
 .pkmn__section{
+    position: relative;
     background-color: #F2EFE5;
     border-radius: .25em;
     text-align: center;
     border: 1px solid #E3E1D9;
+}
+
+.group{
+    position: absolute;
+    top: 1%;
+    right: 2%;
+}
+
+.btn-group{
+    color: white;
+    background-color: #444;
+    border: 1px solid black;
+    border-radius: .25em;
+    box-shadow: -1px 2px 0 #222, -1px 2px 0 #000;  
+}
+
+.btn-group + .btn-group{
+    margin-left: .25em;
+}
+
+.btn-group:active{
+    box-shadow: inset -2px 1px 0 #222;
+    cursor: pointer;
 }
 
 .btn__section{
@@ -120,23 +144,6 @@ a{
     margin-bottom: .1em;
 }
 
-.pkmn-id--btn{
-    color: white;
-    background-color: #444;
-    border: 1px solid black;
-    border-radius: .25em;
-    box-shadow: -1px 2px 0 #222, -1px 2px 0 #000;  
-}
-
-.pkmn-id--btn + .pkmn-id--btn{
-    margin-left: .25em;
-}
-
-.pkmn-id--btn:active{
-    box-shadow: inset -2px 1px 0 #222;
-    cursor: pointer;
-}
-
 .category__section{
     background-color: #E3E1D9;
     padding: .75em;
@@ -157,7 +164,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: .25em;
+    gap: .1em;
 }
 
 .pkmn-type{
@@ -278,6 +285,14 @@ a{
     .pkmn__section, 
     .info__section{
         border-radius: .35em;
+    }
+
+    .pkmn-type--container{
+        flex-direction: column;
+    }
+
+    .pkmn-type{
+        width: 75%;
     }
 
     .btn__section{
