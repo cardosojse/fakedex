@@ -230,7 +230,7 @@ a{
     width: clamp(70px, 30vw, 215px);
 }
 
-@media (max-width: 800px){
+@media (max-width: 700px){
 
     body{
         font-size: 1.125rem;
@@ -292,7 +292,7 @@ a{
     }
 
     .pkmn-type{
-        width: 75%;
+        width: 70%;
     }
 
     .btn__section{
@@ -315,7 +315,13 @@ a{
     }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 768px) {
+    body{
+        font-size: 1.5em;
+    }
+    .container{
+        width: 95%;
+    }
     .nav-toggle, .nav-close{
         display: none;
     }
@@ -336,6 +342,12 @@ a{
     .main-content{
         padding: .8em;
     }
+    .pkmn-type--container{
+        flex-direction: row;
+    }
+    .pkmn-type{
+        width: 48%;
+    }
 }
 
 @media (min-width: 1250px) {
@@ -349,7 +361,13 @@ a{
     .wrapper{
         display: block;
     }
+    .btn__section{
+        margin-bottom: 1em;
+    }
     .pkmn-card-img{
         width: clamp(70px, 30vw, 350px);
+    }
+    .pkmn-type{
+        width: 50%;
     }
 }
