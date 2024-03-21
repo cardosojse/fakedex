@@ -1176,7 +1176,7 @@ nextBtn.addEventListener("click", function(){
     showData(currentPkmn);
 })
 
-searchInput.addEventListener("keypress", (event) => {
+searchInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         if (isNaN(searchInput.value)){
             alert("Not a number");
