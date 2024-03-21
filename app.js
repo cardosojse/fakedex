@@ -1124,6 +1124,7 @@ const pkmnWeight = document.querySelector(".pkmn-weight");
 const pkmnType = document.querySelector(".pkmn-type--container");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
+const searchInput = document.querySelector("#input-search");
 
 let currentPkmn = 0;
 
@@ -1174,3 +1175,18 @@ nextBtn.addEventListener("click", function(){
     }
     showData(currentPkmn);
 })
+
+searchInput.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        if (isNaN(searchInput.value)){
+            alert("Not a number");
+        }
+        if (searchInput.value > 107){
+            alert("Not available")
+        }
+        let pkmnId = searchInput.value - 1;
+        currentPkmn = pkmnId;
+        showData(pkmnId);
+        searchInput.value = "";
+    } 
+});

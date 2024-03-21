@@ -205,7 +205,6 @@ a{
     justify-content: center;
     gap: 1.5em;
     padding: 1em 0;
-    background-color: #FBF9F1;
 }
 
 .pkmn-card{
@@ -230,10 +229,11 @@ a{
     width: clamp(70px, 30vw, 215px);
 }
 
-@media (max-width: 700px){
+@media (max-width: 767px){
 
     body{
         font-size: 1.125rem;
+        background-color: #FBF9F1;
     }
 
     header{
@@ -297,6 +297,7 @@ a{
 
     .btn__section{
         gap: .5em;
+        margin-bottom: .75em;
     } 
 
     .card__section{
@@ -364,10 +365,10 @@ a{
     .btn__section{
         margin-bottom: 1em;
     }
-    .pkmn-card-img{
-        width: clamp(70px, 30vw, 350px);
-    }
     .pkmn-type{
         width: 50%;
+    }
+    .pkmn-card-img{
+        width: clamp(70px, 30vw, 270px);
     }
 }
