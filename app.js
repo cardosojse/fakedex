@@ -1187,6 +1187,7 @@ searchInput.addEventListener("keydown", (event) => {
         let pkmnId = searchInput.value - 1;
         currentPkmn = pkmnId;
         showData(pkmnId);
+        nav.classList.remove("show-nav");
         searchInput.value = "";
     } 
 });
