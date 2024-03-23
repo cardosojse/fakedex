@@ -73,8 +73,9 @@ a{
 }
 
 .btn-group{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    gap: .25em;
     position: absolute;
     top: 1%;
     right: 1%;
