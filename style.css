@@ -73,6 +73,8 @@ a{
 }
 
 .btn-group{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 1%;
     right: 1%;
@@ -255,6 +257,10 @@ a{
         padding: .5em 0;
     }
     
+    #input-search{
+        width: 60%;
+    }
+
     .nav-toggle, 
     .nav-close{
         border: none;
