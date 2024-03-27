@@ -106,7 +106,7 @@ a{
 }
 
 .next-btn, .prev-btn{
-    color: white;
+    color: #fff;
     font-weight: 700;
     background-color: #444;
     width: 100%;
@@ -298,7 +298,7 @@ a{
     }
 
     .btn{
-        padding: .3em .8em;
+        padding: .5em 1em;
     }
 
     .btn__section{
