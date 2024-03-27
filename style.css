@@ -298,7 +298,8 @@ a{
     }
 
     .btn{
-        padding: .5em 1em;
+        padding: .2em .6em;
+        font-size: 1rem;
     }
 
     .btn__section{
