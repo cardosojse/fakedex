@@ -73,9 +73,6 @@ a{
 }
 
 .btn-group{
-    /* display: flex;
-    flex-direction: column;
-    gap: .25em; */
     position: absolute;
     top: 1%;
     right: 1%;
@@ -375,8 +372,5 @@ a{
     }
     .pkmn-type{
         width: 50%;
-    }
-    .pkmn-card-img{
-        width: clamp(70px, 30vw, 270px);
     }
 }
