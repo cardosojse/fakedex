@@ -229,6 +229,12 @@ a{
     right: 10px;
     bottom: 10px;
     visibility: hidden;
+    color: white;
+    background-color: #444;
+    border: 1px solid black;
+    border-radius: .25em;
+    box-shadow: -1px 2px 0 #222, -1px 2px 0 #000;
+    padding: .3em .7em;
 }
 
 .btn-fixed.visible{
