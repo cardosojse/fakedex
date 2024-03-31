@@ -224,6 +224,17 @@ a{
     max-width: 100%;
 }
 
+.btn-fixed{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    visibility: hidden;
+}
+
+.btn-fixed.visible{
+    visibility: visible;
+}
+
 @media (max-width: 767px){
 
     body{
@@ -295,8 +306,7 @@ a{
     }
 
     .btn{
-        padding: .3em .6em;
-        font-size: 1.125rem;
+        padding: .5em .9em;
     }
 
     .btn__section{

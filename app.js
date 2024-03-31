@@ -1271,6 +1271,7 @@ const pokemons = [
 const toggleBtn = document.querySelector(".nav-toggle");
 const closeBtn = document.querySelector(".nav-close")
 const nav = document.querySelector(".nav");
+const fixedBtn = document.querySelector(".btn-fixed");
 
 toggleBtn.addEventListener("click", ()=>{
     if(nav.classList.contains("show-nav")){
@@ -1285,9 +1286,16 @@ closeBtn.addEventListener("click", ()=>{
     nav.classList.remove("show-nav");
 });
 
+window.addEventListener("scroll", function(){
+    if (window.scrollY >= 100){
+        fixedBtn.classList.add("visible");
+    } else {
+        fixedBtn.classList.remove("visible");
+    }
+});
+
 if (navigator.userAgent.indexOf('iPhone') > -1 ) {
-    document.querySelector("[name=viewport]")
-     .setAttribute("content","width=device-width, initial-scale=1, maximum-scale=1");
+    document.querySelector("[name=viewport]").setAttribute("content","width=device-width, initial-scale=1, maximum-scale=1");
 }
 
 const pkmnNum = document.querySelector(".pkmn-num");
@@ -1301,7 +1309,7 @@ const pkmnType = document.querySelector(".pkmn-type--container");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const searchInput = document.querySelector("#input-search");
-const shinyBtn = document.querySelector(".btn-shiny")
+const shinyBtn = document.querySelector(".btn-shiny");
 
 let currentPkmn = 0;
 let thisValue = true;
@@ -1345,7 +1353,7 @@ prevBtn.addEventListener("click", function(){
     }
     showData(currentPkmn);
     thisValue = true;
-})
+});
 
 nextBtn.addEventListener("click", function(){
     currentPkmn++;
@@ -1354,9 +1362,9 @@ nextBtn.addEventListener("click", function(){
     }
     showData(currentPkmn);
     thisValue = true;
-})
+});
 
-searchInput.addEventListener("keydown", (event) => {
+searchInput.addEventListener("keydown", function(event){
     if (event.key === "Enter") {
         if (isNaN(searchInput.value)){
             alert("Not a number");
