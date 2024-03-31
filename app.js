@@ -54,7 +54,7 @@ const pokemons = [
         pokemonTypes: [types.grass, types.dark],
     },
     {
-        num: '004', // consertar imagem
+        num: '004',
         name: 'EMBRITO', 
         img: 'images/pkmn-img/004.png',
         shiny: 'images/pkmn-img-shiny/004_s.png',
@@ -131,7 +131,7 @@ const pokemons = [
         pokemonTypes: [types.normal],
     },
     {
-        num: '011', // consertar imagem
+        num: '011', 
         name: 'APEVOLT',
         img: 'images/pkmn-img/011.png',
         shiny: 'images/pkmn-img-shiny/011_s.png',
