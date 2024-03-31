@@ -229,11 +229,6 @@ a{
     right: 10px;
     bottom: 10px;
     visibility: hidden;
-    color: #fff;
-    background-color: #444;
-    border: 1px solid black;
-    border-radius: .25em;
-    padding: .35em .7em;
 }
 
 .btn-fixed.visible{
