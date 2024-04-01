@@ -1214,8 +1214,8 @@ const pokemons = [
     {
         num: '109',
         name: 'TAENTÃ',
-        img: 'images/pkmn-img/placeholder.png',
-        shiny: 'images/pkmn-img-shiny/placeholder.png',
+        img: 'images/pkmn-img/109.png',
+        shiny: 'images/pkmn-img-shiny/109_s.png',
         category: 'Flame Pokemon',
         ability: 'Default',
         height: 'Default',
