@@ -60,7 +60,7 @@ a{
     gap: .25em;
     padding: .25em;
     background-color: #FBF9F1;
-    border: 1px solid #E3E1D9;
+    /* border: 1px solid #E3E1D9; */
     border-top: none;
 }
 
