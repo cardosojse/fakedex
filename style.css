@@ -321,6 +321,9 @@ a{
     body{
         font-size: 1.5em;
     }
+    img{
+        max-height: 678px;
+    }
     .container{
         width: 95%;
     }
