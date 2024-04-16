@@ -291,7 +291,11 @@ a{
     }
 
     .btn{
-        padding: .6em 1em;
+        padding: .3em .6em;
+    }
+
+    .btn-shiny{
+        font-size: 1.125rem;
     }
 
     .btn__section{
