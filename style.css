@@ -177,7 +177,6 @@ a{
     padding: .5em;
 }
 
-/* PKMN LIST CSS */
 .card__section{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -292,7 +291,7 @@ a{
     }
 
     .btn{
-        padding: .5em .9em;
+        padding: .6em 1em;
     }
 
     .btn__section{
