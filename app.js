@@ -211,7 +211,7 @@ const pokemons = [
         num: '018',
         name: 'PIKACHU',
         img: 'images/pkmn-img/018.png',
-        shiny: 'images/pkmn-img-shiny/placeholder.png',
+        shiny: 'images/pkmn-img-shiny/018_s.png',
         category: 'Mouse Pokemon',
         ability: 'Lighting Rod',
         height: '0,4m',
@@ -1387,3 +1387,17 @@ shinyBtn.addEventListener("click", function(){
     pkmnImg.src = pkmnObj.img;
     thisValue = true;
 });
+
+// const cardSection = document.querySelector(".card__section");
+
+// function showFakedex(){
+//     pokemons.forEach((value) =>{
+//         let pkmnCard = document.createElement("div");
+//         pkmnCard.classList.add("pkmn-card");
+//         pkmnCard.innerHTML = `
+//             <span class="pkmn-num">${value.num}</span>
+//             <img src=${value.img} alt="pokemon image" class="pkmn-card-img">
+//         `
+//     });
+//     cardSection.appendChild(pkmnCard);    
+// }
