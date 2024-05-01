@@ -292,7 +292,10 @@ text-decoration: none;
 
     .main-content{padding: .5em 0;}
 
-    .btn__section{padding: .75em .25em;}
+    .btn__section{padding: .75em 0 .25em;}
+
+    .id__section,
+    .btn__section{margin-bottom: .75em;}
 
     .nav-toggle, .nav-close{display: none;}
 
