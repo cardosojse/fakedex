@@ -372,7 +372,7 @@ a{
     }
     .main-content{
         display: grid;
-        grid-template-columns: 50% auto;
+        grid-template-columns: auto auto;
         gap: .5em;    
         padding: .5em 0;
     }
