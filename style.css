@@ -313,8 +313,8 @@ text-decoration: none;
     .pkmn-type{width: 48%;}
 }
 
-@media (min-width: 978px) and (min-height: 766px) {
-    body{font-size: 1.45rem;}
+@media (min-width: 978px) and (min-height:766px){
+    body{font-size: 1.35rem;}
 
     .container{width: 90%;}
 
@@ -326,9 +326,9 @@ text-decoration: none;
     }
   
     .id__section,
-    .btn__section{margin-bottom: 1em;}
+    .btn__section{margin-bottom: .45em;}
 
-    .btn__section{padding: 0;}
+    .btn__section{padding: .25em;}
 
     .wrapper{display: block;}
 
