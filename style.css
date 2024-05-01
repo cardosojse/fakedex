@@ -249,7 +249,8 @@ text-decoration: none;
 
     .btn__section{
         gap: .5em;
-        padding: .5em;
+        padding: .5em 0 .25em;
+        border: 1px solid red;
     }
 
     .pkmn__section, 
