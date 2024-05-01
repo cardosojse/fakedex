@@ -313,7 +313,7 @@ text-decoration: none;
     .pkmn-type{width: 48%;}
 }
 
-@media (min-width: 978px) and (min-height:766px){
+@media (min-width: 978px) and (min-height:678px){
     body{font-size: 1.35rem;}
 
     .container{width: 90%;}
@@ -322,7 +322,7 @@ text-decoration: none;
         display: grid;
         grid-template-columns: 50% auto;
         gap: .5em;    
-        padding: .5em 0;
+        padding: .35em 0;
     }
   
     .id__section,
