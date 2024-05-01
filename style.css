@@ -64,7 +64,6 @@ a{
     border: 1px solid #E3E1D9;
     border-radius: .25em;
     text-align: center;
-    margin-top: .5em;
 }
 
 .btn-group{
@@ -109,12 +108,11 @@ a{
     cursor: pointer;
 }
 
-.info__section,
-.pkmn-info__section{
+.info__section{
     background-color: #F2EFE5;
     border: 1px solid #E3E1D9;
     border-radius: .25em;
-    padding: .5em;
+    padding: 1em;
 }
 
 .pkmn-id{
@@ -372,7 +370,7 @@ a{
     }
     .main-content{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% auto;
         gap: .5em;    
         padding: .5em 0;
     }
