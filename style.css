@@ -19,7 +19,7 @@ img{
 }
 
 a{
-text-decoration: none;
+    text-decoration: none;
     color: #fff;
 }
 
@@ -166,7 +166,7 @@ text-decoration: none;
 
 .card__section{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1em;
     padding: 1em 0;
 }
@@ -213,8 +213,8 @@ text-decoration: none;
     .container{width: 100%;}
 
     .nav{
-        transform: translate(-100%);
-        position: fixed;
+        transform: translateY(-100%);
+        position: absolute;
         top: 0;
         left: 0;
     
@@ -222,6 +222,8 @@ text-decoration: none;
         justify-content: center;
         background-color: #124076;
         padding: .5em 0;
+        transition: 1s;
+        z-index: 1;
     }
     
     #input-search{
@@ -235,10 +237,7 @@ text-decoration: none;
         background-color: transparent;
     }   
 
-    .show-nav{
-        z-index: 1;
-        transform: translate(0);
-    }
+    .show-nav{transform: translate(0);}
 
     .nav__list li{padding: .25em;}
 
@@ -269,7 +268,7 @@ text-decoration: none;
     .card__section{
         gap: .5em;
         padding: .5em;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .pkmn-card{
