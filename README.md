@@ -5,8 +5,7 @@
 ## Sobre o Projeto
 
 Eu decidi refazer o meu [primeiro projeto](https://cardosojse.github.io/old-fakedex) para descobrir o quanto melhorei no que diz respeito à programação. 
-Testei meus conhecimentos em JavaScript e CSS, como também nos conceitos de mobile first, layouts responsivos e no design da página. No momento estou
-trabalhando para adicionar o Bootstrap e criar um banco de dados para alocar os pokemons.
+Testei meus conhecimentos em JavaScript e CSS, como também nos conceitos de mobile first, layouts responsivos e no design da página.
 
 ## Como acessá-lo
 
