@@ -3,37 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="view/css/style.css">
     <link rel="icon" href="images/favicon.png">
     <title>Fakedex</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="nav-bar">
-                <button class="nav-toggle">
-                    <img src="images/menu.png" alt="menu">
+        <div class="nav-bar container">
+            <button class="nav-toggle">
+                menu
+            </button>
+            <nav class="nav">
+                <button class="nav-close">
+                    <img src="images/close-menu.png" alt="close-button">
                 </button>
-                <nav class="nav">
-                    <button class="nav-close">
-                        <img src="images/close-menu.png" alt="close-button">
-                    </button>
-                    <ul class="nav__list">
-                        <li class="nav__list-links">
-                            <a href="index.html">HOME</a>
-                        </li>
-                        <!-- <li class="nav__list-links">
-                            <a href="#" style="opacity: .5;">ABOUT</a>
-                        </li> -->
-                        <li class="nav__list-links">
-                            <a href="fakedex.html">FAKEDEX</a>
-                        </li>
-                        <li  class="push--right">
-                            <input type="search" id="input-search" placeholder="Search by number">
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                <ul class="nav__list">
+                    <li class="nav__list-links">
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li class="nav__list-links">
+                        <a href="fakedex.html">FAKEDEX</a>
+                    </li>
+                    <li  class="push--right">
+                        <input type="search" id="input-search" placeholder="Search by number">
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -45,9 +40,7 @@
                     <!-- <button class="btn btn-female">♀</button> -->
                     <!-- <button class="btn btn-form">F</button> --> 
                 </div>
-            </section>
-            <div class="wrapper">
-                <section class="container btn__section">
+                <section class="btn__section">
                     <div class="prev-btn">
                         <span class="btn-span">←</span>
                         <!-- <span class="prev--pkmn-name">DEFAULT</span> -->
@@ -57,6 +50,9 @@
                         <span class="btn-span">→</span>
                     </div>
                 </section>
+            </section>
+            <div class="wrapper">
+                
                 <section class="id__section">
                     <div class="pkmn-id">
                         <div class="row">
@@ -101,6 +97,6 @@
             </div>
         </div>
     </main>
-    <script src="app.js"></script>
+    <script src="view/js/"></script>
 </body>
 </html>

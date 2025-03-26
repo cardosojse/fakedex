@@ -1,22 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap');
 
-*, *::before, *::after {box-sizing: border-box;}
+*, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0;}
 
 body{
-    margin: 0;
     height: 100dvh;
-    font-size: 1.3rem; /* use clamp */
+    font-size: 1rem;
     font-family: 'Oxanium', sans-serif;
 }
 
-header{background: #124076;}
-
-img{
-    max-width: 100%;
-    height: auto;
-    font-style: italic;
-    vertical-align: middle;
-}
+header{background: #124076; padding: .5em;}
 
 a{
     text-decoration: none;
@@ -32,7 +24,6 @@ a{
 .nav__list{
     list-style: none;
     text-align: center;
-    padding: 0;
 }
 
 .nav__list-links:hover{opacity: .75;}
@@ -41,7 +32,7 @@ a{
     color: #333333;
     font-family: 'Oxanium', sans-serif;
     border: 1px solid transparent;
-    border-radius: .5em;
+    border-radius: .25em;
     padding: .6em .5em;
 }
 
@@ -56,6 +47,13 @@ a{
     border: 1px solid #E3E1D9;
     border-radius: .25em;
     text-align: center;
+    height: 450px;
+}
+
+.pkmn-img{
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
 }
 
 .btn-group{
@@ -65,6 +63,7 @@ a{
 }
 
 .btn{
+    cursor: pointer;
     color: white;
     background-color: #444;
     border: 1px solid black;
@@ -75,7 +74,6 @@ a{
 
 .btn:active{
     box-shadow: inset -2px 1px 0 #222;
-    cursor: pointer;
 }
 
 .btn__section{
@@ -86,6 +84,7 @@ a{
 }
 
 .next-btn, .prev-btn{
+    cursor: pointer;
     color: #fff;
     background-color: #444;
     border: 2px solid black;
@@ -97,7 +96,6 @@ a{
 
 .next-btn:active, .prev-btn:active{
     box-shadow: inset -4px 4px 0 #222;
-    cursor: pointer;
 }
 
 .info__section,
@@ -263,8 +261,6 @@ a{
 
     .btn{padding: .3em .6em;}
 
-    .btn-shiny{font-size: 1.125rem;}
-
     .card__section{
         gap: .5em;
         padding: .5em;
@@ -283,10 +279,6 @@ a{
 }
 
 @media (min-width: 768px){
-    body{font-size: 1.5em;}
-
-    img{max-height: 678px;}
-
     .container{width: 95%;}
 
     .main-content{padding: .5em 0;}
@@ -315,9 +307,7 @@ a{
     .pkmn-type{width: 48%;}
 }
 
-@media (min-width: 978px) and (min-height:678px){
-    body{font-size: 1.35rem;}
-
+@media (min-width: 978px) and (min-height:607px){
     .container{width: 90%;}
 
     .main-content{
