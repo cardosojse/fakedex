@@ -121,7 +121,8 @@ a{
     margin: 1em 0;
 }
 
-.pkmn-id{
+.pkmn-id,
+.pkmn-evo--id{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,7 +157,8 @@ a{
     gap: .5em;
 }
 
-.type__section p{
+.type__section p,
+.evolution__section p{
     font-size: 1.15rem;
     font-weight: 500;
     margin-bottom: .25em;
@@ -175,7 +177,7 @@ a{
 
 .info__section{
     margin: 1em 0;
-    background-color: #eb7024;
+    background-color: #6cba7d;
     border-radius: .25em;
     height: 300px;
 }
@@ -203,6 +205,48 @@ a{
 .info__section .row p{
     color: #fff;
     font-weight: 500;
+}
+
+.evolution__section{
+    margin: 1em 0 0;
+    padding: 1em;
+    height: fit-content;
+    background: url('/images/LAYOUTPC2.png');
+    background-size: cover;
+    border-radius: .5em;
+}
+
+.pkmn-evo--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.pkmn-evo--box{
+    border: 4px solid #fff;
+    border-radius: 50%;
+    max-width: 200px;
+    background-color: #F1CE81;
+    box-shadow: -2px 2px 3px #444;
+    margin-bottom: .5em;
+}
+
+.ph-arrow-down{font-size: 48px;}
+
+.pkmn-evo--id,
+.pkmn-evo--id .row{display: flex; gap: .25em;}
+
+.pkmn-evo--name{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.pkmn-evo--id span,
+.pkmn-evo--num{
+    color: #4B5563;
+    font-weight: 500;
+    font-size: 1rem !important;
 }
 
 .btn{
