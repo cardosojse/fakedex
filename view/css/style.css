@@ -227,12 +227,13 @@ a{
     border: 4px solid #fff;
     border-radius: 50%;
     max-width: 200px;
+    max-height: 200px;
     background-color: #F1CE81;
     box-shadow: -2px 2px 3px #444;
     margin-bottom: .5em;
 }
 
-.ph-arrow-down{font-size: 48px;}
+.ph-arrow-down{font-size: 48px; z-index: 5;}
 
 .pkmn-evo--id,
 .pkmn-evo--id .row{display: flex; gap: .25em;}
