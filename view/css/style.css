@@ -158,6 +158,7 @@ a{
 }
 
 .type__section p,
+.version__section p,
 .evolution__section p{
     font-size: 1.15rem;
     font-weight: 500;
