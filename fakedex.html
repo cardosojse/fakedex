@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/view/css/style.css">
+    <link rel="icon" href="images/favicon.png">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <title>Fakedex</title>
+</head>
+<body onload="showPkmn()">
+    <header>
+        <div class="nav-bar container">
+            <ul class="nav__list">
+                <li class="nav__list-links">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav__list-links">
+                    <a href="fakedex.html">Fakedex</a>
+                </li>
+                <li  class="push--right">
+                    <button class="search-toggle">
+                        <i class="ph ph-magnifying-glass"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="input-container">
+        <input type="input" id="input-search" placeholder="Buscar...">
+        <button class="search-close">
+            <i class="ph ph-magnifying-glass"></i>
+        </button>
+    </div>
+    <div class="container">
+        <section class="card__section">
+        </section>
+        <a href="#">
+            <button class="btn btn-fixed">↑</button>
+        </a>
+    </div>
+    <script src="/view/js/app.js"></script>
+    <script src="/view/js/pkmn.js"></script>
+</body>
+</html>
