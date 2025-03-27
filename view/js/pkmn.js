@@ -1,4 +1,4 @@
-export const types = {
+const types = {
   water: "images/pkmn-type/water.png",
   bug: "images/pkmn-type/bug.png",
   dark: "images/pkmn-type/dark.png",
@@ -19,7 +19,7 @@ export const types = {
   steel: "images/pkmn-type/steel.png",
 };
 
-export const pokemons = [
+const pokemons = [
   {
     num: "001",
     name: "COATTINY",

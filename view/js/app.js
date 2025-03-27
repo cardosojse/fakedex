@@ -1,18 +1,18 @@
-const toggleBtn = document.querySelector(".nav-toggle");
-const closeBtn = document.querySelector(".nav-close");
-const nav = document.querySelector(".nav");
+const toggleBtn = document.querySelector(".search-toggle");
+const closeBtn = document.querySelector(".search-close");
+const showInput = document.querySelector(".input-container");
 const fixedBtn = document.querySelector(".btn-fixed");
 
 toggleBtn.addEventListener("click", () => {
-  if (nav.classList.contains("show-nav")) {
-    nav.classList.remove("show-nav");
+  if (showInput.classList.contains("show-input")) {
+    showInput.classList.remove("show-input");
   } else {
-    nav.classList.add("show-nav");
+    showInput.classList.add("show-input");
   }
 });
 
 closeBtn.addEventListener("click", () => {
-  nav.classList.remove("show-nav");
+  showInput.classList.remove("show-input");
 });
 
 window.addEventListener("scroll", function () {

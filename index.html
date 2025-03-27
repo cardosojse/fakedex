@@ -5,97 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="view/css/style.css">
     <link rel="icon" href="images/favicon.png">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
     <title>Fakedex</title>
 </head>
 <body>
     <header>
         <div class="nav-bar container">
-            <button class="nav-toggle">
-                menu
-            </button>
-            <nav class="nav">
-                <button class="nav-close">
-                    <img src="images/close-menu.png" alt="close-button">
-                </button>
-                <ul class="nav__list">
-                    <li class="nav__list-links">
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li class="nav__list-links">
-                        <a href="fakedex.html">FAKEDEX</a>
-                    </li>
-                    <li  class="push--right">
-                        <input type="search" id="input-search" placeholder="Search by number">
-                    </li>
-                </ul>
-            </nav>
+            <ul class="nav__list">
+                <li class="nav__list-links">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav__list-links">
+                    <a href="fakedex.html">Fakedex</a>
+                </li>
+                <li  class="push--right">
+                    <button class="search-toggle">
+                        <i class="ph ph-magnifying-glass"></i>
+                    </button>
+                </li>
+            </ul>
         </div>
     </header>
+    <div class="input-container">
+        <input type="input" id="input-search" placeholder="Buscar...">
+        <button class="search-close">
+            <i class="ph ph-magnifying-glass"></i>
+        </button>
+    </div>
     <main>
-        <div class="container main-content">
-            <section class="pkmn__section">
-                <img src="images/pkmn-img/039.png" alt="pokemon image" class="pkmn-img">
-                <div class="btn-group">
-                    <button class="btn btn-shiny">✦</button>
-                    <!-- <button class="btn btn-female">♀</button> -->
-                    <!-- <button class="btn btn-form">F</button> --> 
-                </div>
-                <section class="btn__section">
-                    <div class="prev-btn">
-                        <span class="btn-span">←</span>
-                        <!-- <span class="prev--pkmn-name">DEFAULT</span> -->
-                    </div>
-                    <div class="next-btn">
-                        <!-- <span class="next--pkmn-name">DEFAULT</span> -->
-                        <span class="btn-span">→</span>
-                    </div>
-                </section>
-            </section>
-            <div class="wrapper">
-                
-                <section class="id__section">
-                    <div class="pkmn-id">
-                        <div class="row">
-                            <span>No.</span>
-                            <span class="pkmn-num">001</span>
-                        </div>
-                        <div class="row">
-                            <span class="pkmn-name">DEFAULT</span>
-                        </div>
-                    </div>
-                    <div class="category__section">
-                        <span class="pkmn-category">Alligator Pokemon</span>
-                    </div>
-                </section>
-                <section class="info__section">
-                    <div class="pkmn-info">
-                        <div class="row">
-                            <span class="align-type">Type</span>
-                            <span class="pkmn-type--container">
-                                <!-- <img src="images/pkmn-type/water.png" class="pkmn-type"> -->
-                            </span>
-                        </div>
-                        <div class="row">
-                            <span>Ability</span>
-                            <span class="pkmn-ability">Intimitade</span>
-                        </div>
-                        <div class="row">
-                            <span>Height</span>
-                            <span class="pkmn-height">150cm</span>
-                        </div>
-                        <div class="row">
-                            <span>Weight</span>
-                            <span class="pkmn-weight">96kg</span>
-                        </div>
-                    </div>
-                    <div class="about__section">
-                        <span class="pkmn-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.</span>
-                    </div>
-                </section>
+        <section class="pkmn__section">
+            <img src="images/pkmn-img/039.png" alt="pokemon image" class="pkmn-img">
+            <div class="btn-group">
+                <button class="btn btn-shiny">✦</button>
+                <!-- <button class="btn btn-female">♀</button> -->
+                <!-- <button class="btn btn-form">F</button> --> 
             </div>
-        </div>
+        </section>
+        <section class="btn__section">
+            <div class="prev-btn">
+                <span class="btn-span">←</span>
+                <!-- <span class="prev--pkmn-name">DEFAULT</span> -->
+            </div>
+            <div class="next-btn">
+                <!-- <span class="next--pkmn-name">DEFAULT</span> -->
+                <span class="btn-span">→</span>
+            </div>
+        </section>
+        <!-- <div class="wrapper">
+            
+            <section class="id__section">
+                <div class="pkmn-id">
+                    <div class="row">
+                        <span>No.</span>
+                        <span class="pkmn-num">001</span>
+                    </div>
+                    <div class="row">
+                        <span class="pkmn-name">DEFAULT</span>
+                    </div>
+                </div>
+                <div class="category__section">
+                    <span class="pkmn-category">Alligator Pokemon</span>
+                </div>
+            </section>
+            <section class="info__section">
+                <div class="pkmn-info">
+                    <div class="row">
+                        <span class="align-type">Type</span>
+                        <span class="pkmn-type--container">
+                            <img src="images/pkmn-type/water.png" class="pkmn-type">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <span>Ability</span>
+                        <span class="pkmn-ability">Intimitade</span>
+                    </div>
+                    <div class="row">
+                        <span>Height</span>
+                        <span class="pkmn-height">150cm</span>
+                    </div>
+                    <div class="row">
+                        <span>Weight</span>
+                        <span class="pkmn-weight">96kg</span>
+                    </div>
+                </div>
+                <div class="about__section">
+                    <span class="pkmn-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.</span>
+                </div>
+            </section>
+        </div> -->
     </main>
     <script src="view/js/app.js"></script>
     <script src="view/js/pkmn.js"></script>
