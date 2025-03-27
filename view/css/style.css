@@ -8,12 +8,12 @@ body{
     font-family: "Inter", sans-serif;
 }
 
-header{background: #eb7024; padding: 1em; z-index: 1}
+header{padding: 1em; z-index: 1}
 main{padding: 0 1em 1em; background-color: #fff;}
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #030712;
 }
 
 .container{width: 100%;}
@@ -25,17 +25,23 @@ a{
 }
 
 .push--right{margin-left: auto;}
+
+.ph-sparkle,
+.ph-gender-male, 
 .ph-magnifying-glass{font-size: 18px;}
 
 .ph-arrow-circle-left,
 .ph-arrow-circle-right{font-size: 24px;}
 
+.ph-sparkle,
+.ph-gender-male{color: #eb7024;}
+
 .input-container{
-    transform: translateY(-50%);
+    transform: translateY(-150%);
     position: absolute;
     top: 0;
     z-index: -10;
-    margin: 1em;
+    margin: 0 1em;
     display: flex;
 }
 
@@ -45,14 +51,14 @@ a{
     transition-duration: 2ms;
     z-index: 10;
     position: relative;
-    margin: 1em;
+    margin: 0 1em;
 }
 
 #input-search{
     color: #030712;
     font-family: 'Oxanium', sans-serif;
     background-color: #FAFAFA;
-    border: 1px solid #F2EFE5;    
+    border: 1px solid #030712;    
     border-radius: .25em;
     padding: 1em;
     min-width: 100%;
@@ -61,7 +67,7 @@ a{
 .search-toggle{
     background-color: transparent;
     border: none;
-    color: #fff;
+    color: #030712;
 }
 
 .search-close{
@@ -123,10 +129,16 @@ a{
     font-weight: 300;
 }
 
+.version__section{
+    display: inline-flex;
+    align-items: center;
+    gap: .5em;
+}
+
 .type__section p{
     font-size: 1.15rem;
     font-weight: 500;
-    margin: 1em 0 .25em;
+    margin-bottom: .25em;
 }
 
 .pkmn-type--container{
@@ -141,9 +153,10 @@ a{
 }
 
 .info__section{
+    margin: 1em 0;
     background-color: #eb7024;
     border-radius: .25em;
-    height: 250px;
+    height: 300px;
 }
 
 .info__section{
@@ -171,18 +184,10 @@ a{
     font-weight: 500;
 }
 
-.btn-group{
-    position: absolute;
-    top: 2%;
-    right: 2%;
-}
-
 .btn{
     cursor: pointer;
-    color: #030712;
-    background-color: #FAFAFA;
-    border: 1px solid #D1D5DB;
-    box-shadow: -1px 2px 0 #F2EFE5, -1px 2px 0 #F2EFE5;
+    background-color: transparent;
+    border: 1px solid #F2EFE5;
     border-radius: .25em;
     padding: .35em .5em;
     text-align: center;

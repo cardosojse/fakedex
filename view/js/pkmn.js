@@ -1334,15 +1334,17 @@ nextBtn.addEventListener("click", function () {
 searchInput.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     if (isNaN(searchInput.value)) {
-      alert("Not a number");
+      alert("Type a number");
     }
-    if (searchInput.value > 113) {
+
+    if (searchInput.value > 113 || searchInput.value <= 0) {
       alert("Not available");
+    } else {
+      let pkmnId = searchInput.value - 1;
+      currentPkmn = pkmnId;
+      showData(pkmnId);
     }
-    let pkmnId = searchInput.value - 1;
-    currentPkmn = pkmnId;
-    showData(pkmnId);
-    nav.classList.remove("show-nav");
+
     searchInput.value = "";
   }
 });
