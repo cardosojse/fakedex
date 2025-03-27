@@ -1275,8 +1275,9 @@ const pkmnWeight = document.querySelector(".pkmn-weight");
 const pkmnType = document.querySelector(".pkmn-type--container");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
-const searchInput = document.querySelector("#input-search");
+const searchInput = document.querySelector("#search-input");
 const shinyBtn = document.querySelector(".btn-shiny");
+const errorMsg = document.querySelector(".error-msg");
 
 let currentPkmn = 0;
 let thisValue = true;
@@ -1313,6 +1314,20 @@ function showData(pkmn) {
   pkmnType.innerHTML = imgChild;
 }
 
+function catchErrors(input) {
+  if (isNaN(input.value)) {
+    input.classList.add("error-input");
+    errorMsg.textContent = "Please, type a number!";
+    removeError();
+  }
+
+  if (input.value > 113 || input.value <= 0) {
+    input.classList.add("error-input");
+    errorMsg.textContent = "Please, type a number between 1 and 113!";
+    removeError();
+  }
+}
+
 prevBtn.addEventListener("click", function () {
   currentPkmn--;
   if (currentPkmn < 0) {
@@ -1333,18 +1348,11 @@ nextBtn.addEventListener("click", function () {
 
 searchInput.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
-    if (isNaN(searchInput.value)) {
-      alert("Type a number");
-    }
+    catchErrors(searchInput);
 
-    if (searchInput.value > 113 || searchInput.value <= 0) {
-      alert("Not available");
-    } else {
-      let pkmnId = searchInput.value - 1;
-      currentPkmn = pkmnId;
-      showData(pkmnId);
-    }
-
+    let pkmnId = searchInput.value - 1;
+    currentPkmn = pkmnId;
+    showData(pkmnId);
     searchInput.value = "";
   }
 });
@@ -1368,4 +1376,11 @@ function showPkmn() {
         <img src=${pkmn.img} alt="pokemon image" class="pkmn-card-img">
     </div>`;
   });
+}
+
+function removeError() {
+  setTimeout(function () {
+    searchInput.classList.remove("error-input");
+    errorMsg.textContent = "";
+  }, 3000);
 }
