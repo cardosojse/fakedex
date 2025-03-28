@@ -36,7 +36,8 @@ a{
 
 .ph-x,
 .ph-sparkle,
-.ph-gender-female, 
+.ph-gender-female,
+.ph-caret-left,
 .ph-magnifying-glass{font-size: 18px;}
 
 .ph-arrow-circle-left,
@@ -130,7 +131,8 @@ a{
 
 .about__section{margin: 1em 0;}
 
-.pkmn-img{
+.pkmn-img,
+.pkmn-evo--img{
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;

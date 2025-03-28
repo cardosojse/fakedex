@@ -29,6 +29,25 @@ const pokemons = [
     ability: "Overgrow",
     height: "Default",
     weight: "Default",
+    evolution: [
+      {
+        stageOne: {
+          num: "001",
+          name: "COATTINY",
+          img: "images/pkmn-img/001.png",
+        },
+        stageTwo: {
+          num: "002",
+          name: "COATTHIEF",
+          img: "images/pkmn-img/002.png",
+        },
+        stageThree: {
+          num: "003",
+          name: "SAQUACYN",
+          img: "images/pkmn-img/003.png",
+        },
+      },
+    ],
     pokemonTypes: [types.grass],
   },
   {
@@ -40,6 +59,25 @@ const pokemons = [
     ability: "Overgrow",
     height: "Default",
     weight: "Default",
+    evolution: [
+      {
+        stageOne: {
+          num: "001",
+          name: "COATTINY",
+          img: "images/pkmn-img/001.png",
+        },
+        stageTwo: {
+          num: "002",
+          name: "COATTHIEF",
+          img: "images/pkmn-img/002.png",
+        },
+        stageThree: {
+          num: "003",
+          name: "SAQUACYN",
+          img: "images/pkmn-img/003.png",
+        },
+      },
+    ],
     pokemonTypes: [types.grass, types.dark],
   },
   {
@@ -51,6 +89,25 @@ const pokemons = [
     ability: "Overgrow",
     height: "Default",
     weight: "Default",
+    evolution: [
+      {
+        stageOne: {
+          num: "001",
+          name: "COATTINY",
+          img: "images/pkmn-img/001.png",
+        },
+        stageTwo: {
+          num: "002",
+          name: "COATTHIEF",
+          img: "images/pkmn-img/002.png",
+        },
+        stageThree: {
+          num: "003",
+          name: "SAQUACYN",
+          img: "images/pkmn-img/003.png",
+        },
+      },
+    ],
     pokemonTypes: [types.grass, types.dark],
   },
   {
