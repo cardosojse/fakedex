@@ -1045,7 +1045,7 @@ const pokemons = [
   },
   {
     num: "094",
-    name: "Reg Evo",
+    name: "REG EVO",
     img: "images/pkmn-img/placeholder.png",
     shiny: "images/pkmn-img-shiny/placeholder.png",
     category: "Hog Pokemon",
@@ -1266,7 +1266,7 @@ const pokemons = [
   {
     num: "114",
     name: "PHANTERRION",
-    img: "images/pkmn-img/106.png",
+    img: "images/pkmn-img/114.png",
     shiny: "images/pkmn-img-shiny/placeholder.png",
     category: "Drought Pokemon",
     ability: "Desolation",
