@@ -29,6 +29,7 @@ const pokemons = [
     ability: "Overgrow",
     height: "Default",
     weight: "Default",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
   {
@@ -40,6 +41,7 @@ const pokemons = [
     ability: "Overgrow",
     height: "Default",
     weight: "Default",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.dark],
   },
   {
@@ -51,6 +53,7 @@ const pokemons = [
     ability: "Overgrow",
     height: "Default",
     weight: "Default",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.dark],
   },
   {
@@ -62,6 +65,7 @@ const pokemons = [
     ability: "Blaze",
     height: "Default",
     weight: "Default",
+    cardColor: "#ff9d55",
     pokemonTypes: [types.fire],
   },
   {
@@ -73,6 +77,7 @@ const pokemons = [
     ability: "Blaze",
     height: "Default",
     weight: "Default",
+    cardColor: "#ff9d55",
     pokemonTypes: [types.fire],
   },
   {
@@ -84,6 +89,7 @@ const pokemons = [
     ability: "Blaze",
     height: "Default",
     weight: "Default",
+    cardColor: "#ff9d55",
     pokemonTypes: [types.fire, types.steel],
   },
   {
@@ -95,6 +101,7 @@ const pokemons = [
     ability: "Torrent",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -106,6 +113,7 @@ const pokemons = [
     ability: "Torrent",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -117,6 +125,7 @@ const pokemons = [
     ability: "Torrent",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.ground],
   },
   {
@@ -128,6 +137,7 @@ const pokemons = [
     ability: "Pickup",
     height: "0,6m",
     weight: "12kg",
+    cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
   {
@@ -139,6 +149,7 @@ const pokemons = [
     ability: "Volt Absorb",
     height: "1,2m",
     weight: "24kg",
+    cardColor: "#f4d23c",
     pokemonTypes: [types.electric],
   },
   {
@@ -150,6 +161,7 @@ const pokemons = [
     ability: "Big Pecks",
     height: "0,3m",
     weight: "2kg",
+    cardColor: "",
     pokemonTypes: [types.flying, types.normal],
   },
   {
@@ -161,6 +173,7 @@ const pokemons = [
     ability: "Big Pecks",
     height: "0,7m",
     weight: "20kg",
+    cardColor: "",
     pokemonTypes: [types.flying, types.fighting],
   },
   {
@@ -172,6 +185,7 @@ const pokemons = [
     ability: "Big Pecks",
     height: "1,4m",
     weight: "35,8kg",
+    cardColor: "",
     pokemonTypes: [types.flying, types.fighting],
   },
   {
@@ -183,6 +197,7 @@ const pokemons = [
     ability: "Reckless",
     height: "Default",
     weight: "Default",
+    cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.dark],
   },
   {
@@ -194,6 +209,7 @@ const pokemons = [
     ability: "Reckless",
     height: "Default",
     weight: "Default",
+    cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.dark],
   },
   {
@@ -205,6 +221,7 @@ const pokemons = [
     ability: "Lighting Rod",
     height: "0,3m",
     weight: "2kg",
+    cardColor: "#f4d23c",
     pokemonTypes: [types.electric, types.normal],
   },
   {
@@ -216,6 +233,7 @@ const pokemons = [
     ability: "Lighting Rod",
     height: "0,4m",
     weight: "6kg",
+    cardColor: "#f4d23c",
     pokemonTypes: [types.electric, types.normal],
   },
   {
@@ -227,6 +245,7 @@ const pokemons = [
     ability: "Lighting Rod",
     height: "1,3m",
     weight: "55kg",
+    cardColor: "#f4d23c",
     pokemonTypes: [types.electric, types.fighting],
   },
   {
@@ -238,6 +257,7 @@ const pokemons = [
     ability: "Harvest",
     height: "Default",
     weight: "Default",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
   {
@@ -249,6 +269,7 @@ const pokemons = [
     ability: "Harvest",
     height: "Default",
     weight: "Default",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.flying],
   },
   {
@@ -260,6 +281,7 @@ const pokemons = [
     ability: "Chlorophyll",
     height: "0,7m",
     weight: "4kg",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.poison],
   },
   {
@@ -271,6 +293,7 @@ const pokemons = [
     ability: "Chlorophyll",
     height: "1m",
     weight: "6,4kg",
+    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.grass],
   },
   {
@@ -282,6 +305,7 @@ const pokemons = [
     ability: "Chlorophyll",
     height: "1,62m",
     weight: "35,5kg",
+    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.grass],
   },
   {
@@ -293,6 +317,7 @@ const pokemons = [
     ability: "Run Away",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.flying],
   },
   {
@@ -304,6 +329,7 @@ const pokemons = [
     ability: "Intimidate",
     height: "Default",
     weight: "Default",
+    cardColor: "#5b5464",
     pokemonTypes: [types.dark, types.flying],
   },
   {
@@ -315,6 +341,7 @@ const pokemons = [
     ability: "Tangled Feet",
     height: "Default",
     weight: "Default",
+    cardColor: "#8fa9de",
     pokemonTypes: [types.flying],
   },
   {
@@ -326,6 +353,7 @@ const pokemons = [
     ability: "Big Pecks",
     height: "Default",
     weight: "Default",
+    cardColor: "#8fa9de",
     pokemonTypes: [types.flying],
   },
   {
@@ -337,6 +365,7 @@ const pokemons = [
     ability: "Poison Point",
     height: "0,1m",
     weight: "0,6kg",
+    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison],
   },
   {
@@ -348,6 +377,7 @@ const pokemons = [
     ability: "Merciless",
     height: "1,3m",
     weight: "47,5kg",
+    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.psychic],
   },
   {
@@ -359,6 +389,7 @@ const pokemons = [
     ability: "Merciless",
     height: "1,5m",
     weight: "42,5kg",
+    cardColor: "",
     pokemonTypes: [types.poison, types.fighting],
   },
   {
@@ -370,6 +401,7 @@ const pokemons = [
     ability: "Run Away",
     height: "0,2m",
     weight: "1kg",
+    cardColor: "#91c12d",
     pokemonTypes: [types.bug, types.normal],
   },
   {
@@ -381,6 +413,7 @@ const pokemons = [
     ability: "Toxic Boost",
     height: "1,5m",
     weight: "65kg",
+    cardColor: "#91c12d",
     pokemonTypes: [types.bug, types.ground],
   },
   {
@@ -392,6 +425,7 @@ const pokemons = [
     ability: "Leaf Guard",
     height: "Default",
     weight: "Default",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
   {
@@ -403,6 +437,7 @@ const pokemons = [
     ability: "Green Thumb",
     height: "Default",
     weight: "Default",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
   {
@@ -414,6 +449,7 @@ const pokemons = [
     ability: "Run Away",
     height: "Default",
     weight: "Default",
+    cardColor: "#ff9d55",
     pokemonTypes: [types.fire],
   },
   {
@@ -425,6 +461,7 @@ const pokemons = [
     ability: "Sap Sipper",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -436,6 +473,7 @@ const pokemons = [
     ability: "Sap Sipper",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.ice],
   },
   {
@@ -447,6 +485,7 @@ const pokemons = [
     ability: "Intimidate",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.dark],
   },
   {
@@ -458,6 +497,7 @@ const pokemons = [
     ability: "Hustle/Sniper",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -469,6 +509,7 @@ const pokemons = [
     ability: "Suction Cups/Sniper",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -480,6 +521,7 @@ const pokemons = [
     ability: "Swift Swim",
     height: "1m",
     weight: "65kg",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -491,6 +533,7 @@ const pokemons = [
     ability: "Swift Swim",
     height: "2,1m",
     weight: "220kg",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.flying],
   },
   {
@@ -502,6 +545,7 @@ const pokemons = [
     ability: "Swift Swim",
     height: "5m",
     weight: "850kg",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.flying],
   },
   {
@@ -513,6 +557,7 @@ const pokemons = [
     ability: "Weak Armor",
     height: "0,3m",
     weight: "5kg",
+    cardColor: "#d97845",
     pokemonTypes: [types.ground, types.water],
   },
   {
@@ -524,6 +569,7 @@ const pokemons = [
     ability: "Shell Armor",
     height: "1,5m",
     weight: "50,3kg",
+    cardColor: "#5090d6",
     pokemonTypes: [types.dragon, types.water],
   },
   {
@@ -535,6 +581,7 @@ const pokemons = [
     ability: "Swift Swim",
     height: "0,4m",
     weight: "8kg",
+    cardColor: "#5090d6",
     pokemonTypes: [types.dragon, types.water],
   },
   {
@@ -546,6 +593,7 @@ const pokemons = [
     ability: "Swift Swim",
     height: "1,2m",
     weight: "25kg",
+    cardColor: "#5090d6",
     pokemonTypes: [types.dragon, types.water],
   },
   {
@@ -557,6 +605,7 @@ const pokemons = [
     ability: "Swift Swim",
     height: "2,3m",
     weight: "180kg",
+    cardColor: "#5090d6",
     pokemonTypes: [types.dragon, types.dark],
   },
   {
@@ -568,6 +617,7 @@ const pokemons = [
     ability: "Sturdy",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -579,6 +629,7 @@ const pokemons = [
     ability: "Sturdy",
     height: "Default",
     weight: "Default",
+    cardColor: "#5a8ea2",
     pokemonTypes: [types.steel, types.water],
   },
   {
@@ -590,6 +641,7 @@ const pokemons = [
     ability: "Poison Point",
     height: "Default",
     weight: "Default",
+    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.electric],
   },
   {
@@ -601,6 +653,7 @@ const pokemons = [
     ability: "Poison Point",
     height: "Default",
     weight: "Default",
+    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.electric],
   },
   {
@@ -612,6 +665,7 @@ const pokemons = [
     ability: "Strong Jaw",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.steel],
   },
   {
@@ -623,6 +677,7 @@ const pokemons = [
     ability: "Cloud Nine",
     height: "Default",
     weight: "Default",
+    cardColor: "#ec8fe6",
     pokemonTypes: [types.fairy],
   },
   {
@@ -634,6 +689,7 @@ const pokemons = [
     ability: "Wind Power",
     height: "Default",
     weight: "Default",
+    cardColor: "#ec8fe6",
     pokemonTypes: [types.fairy, types.electric],
   },
   {
@@ -645,6 +701,7 @@ const pokemons = [
     ability: "Wind Power",
     height: "Default",
     weight: "Default",
+    cardColor: "#ec8fe6",
     pokemonTypes: [types.fairy, types.fire],
   },
   {
@@ -656,6 +713,7 @@ const pokemons = [
     ability: "Run Away",
     height: "0,4m",
     weight: "6,5kg",
+    cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
   {
@@ -667,6 +725,7 @@ const pokemons = [
     ability: "Battle Armor",
     height: "Default",
     weight: "Default",
+    cardColor: "#5a8ea2",
     pokemonTypes: [types.steel],
   },
   {
@@ -678,6 +737,7 @@ const pokemons = [
     ability: "Insomnia",
     height: "Default",
     weight: "Default",
+    cardColor: "#5269ad",
     pokemonTypes: [types.ghost],
   },
   {
@@ -689,6 +749,7 @@ const pokemons = [
     ability: "Shed Skin",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.dragon],
   },
   {
@@ -700,6 +761,7 @@ const pokemons = [
     ability: "Adaptability",
     height: "Default",
     weight: "Default",
+    cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
   {
@@ -711,6 +773,7 @@ const pokemons = [
     ability: "Water Veil",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -722,6 +785,7 @@ const pokemons = [
     ability: "Water Absorb",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -733,6 +797,7 @@ const pokemons = [
     ability: "Thick Fat",
     height: "0,2m",
     weight: "2kg",
+    cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.fairy],
   },
   {
@@ -744,6 +809,7 @@ const pokemons = [
     ability: "Iron Fist",
     height: "0,6m",
     weight: "10kg",
+    cardColor: "#ce416b",
     pokemonTypes: [types.fighting, types.fairy],
   },
   {
@@ -755,6 +821,7 @@ const pokemons = [
     ability: "Iron Fist",
     height: "1m",
     weight: "35kg",
+    cardColor: "#ce416b",
     pokemonTypes: [types.fighting, types.fairy],
   },
   {
@@ -766,6 +833,7 @@ const pokemons = [
     ability: "Sturdy",
     height: "0,3m",
     weight: "3kg",
+    cardColor: "#c5b78c",
     pokemonTypes: [types.rock],
   },
   {
@@ -777,6 +845,7 @@ const pokemons = [
     ability: "Sturdy",
     height: "0,6m",
     weight: "7kg",
+    cardColor: "#c5b78c",
     pokemonTypes: [types.rock],
   },
   {
@@ -788,6 +857,7 @@ const pokemons = [
     ability: "Sturdy",
     height: "1,3m",
     weight: "65kg",
+    cardColor: "#c5b78c",
     pokemonTypes: [types.rock, types.poison],
   },
   {
@@ -799,6 +869,7 @@ const pokemons = [
     ability: "Flare Boost",
     height: "Default",
     weight: "Default",
+    cardColor: "#5269ad",
     pokemonTypes: [types.ghost, types.fire],
   },
   {
@@ -810,6 +881,7 @@ const pokemons = [
     ability: "Flare Boost",
     height: "Default",
     weight: "Default",
+    cardColor: "#5269ad",
     pokemonTypes: [types.ghost, types.fire],
   },
   {
@@ -821,6 +893,7 @@ const pokemons = [
     ability: "Anticipation",
     height: "0,3m",
     weight: "2kg",
+    cardColor: "#fa7179",
     pokemonTypes: [types.psychic],
   },
   {
@@ -832,6 +905,7 @@ const pokemons = [
     ability: "Anticipation",
     height: "0,7m",
     weight: "10kg",
+    cardColor: "#fa7179",
     pokemonTypes: [types.psychic],
   },
   {
@@ -843,6 +917,7 @@ const pokemons = [
     ability: "Justified",
     height: "1,5m",
     weight: "65kg",
+    cardColor: "#fa7179",
     pokemonTypes: [types.psychic, types.fighting],
   },
   {
@@ -854,6 +929,7 @@ const pokemons = [
     ability: "Shed Skin",
     height: "Default",
     weight: "Default",
+    cardColor: "#91c12d",
     pokemonTypes: [types.bug],
   },
   {
@@ -865,6 +941,7 @@ const pokemons = [
     ability: "Shed Skin",
     height: "Default",
     weight: "Default",
+    cardColor: "#91c12d",
     pokemonTypes: [types.bug],
   },
   {
@@ -876,6 +953,7 @@ const pokemons = [
     ability: "Dazzling",
     height: "Default",
     weight: "Default",
+    cardColor: "#91c12d",
     pokemonTypes: [types.bug, types.psychic],
   },
   {
@@ -887,6 +965,7 @@ const pokemons = [
     ability: "Cute Charm",
     height: "Default",
     weight: "Default",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
   {
@@ -898,6 +977,7 @@ const pokemons = [
     ability: "Flower Veil",
     height: "Default",
     weight: "Default",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.fairy],
   },
   {
@@ -909,6 +989,7 @@ const pokemons = [
     ability: "Iron Barbs",
     height: "0,3m",
     weight: "1,5kg",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
   {
@@ -920,6 +1001,7 @@ const pokemons = [
     ability: "Iron Barbs",
     height: "0,6m",
     weight: "15kg",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.psychic],
   },
   {
@@ -931,6 +1013,7 @@ const pokemons = [
     ability: "Wind Rider",
     height: "Default",
     weight: "Default",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.ghost],
   },
   {
@@ -942,6 +1025,7 @@ const pokemons = [
     ability: "Wind Rider",
     height: "Default",
     weight: "Default",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.ghost],
   },
   {
@@ -953,6 +1037,7 @@ const pokemons = [
     ability: "Battle Armor",
     height: "1,5m",
     weight: "56kg",
+    cardColor: "#91c12d",
     pokemonTypes: [types.bug, types.dragon],
   },
   {
@@ -964,6 +1049,7 @@ const pokemons = [
     ability: "Battle Armor",
     height: "1,75m",
     weight: "87,5kg",
+    cardColor: "#91c12d",
     pokemonTypes: [types.bug, types.dragon],
   },
   {
@@ -975,6 +1061,7 @@ const pokemons = [
     ability: "Gluttony",
     height: "Default",
     weight: "Default",
+    cardColor: "#ce416b",
     pokemonTypes: [types.fighting],
   },
   {
@@ -986,6 +1073,7 @@ const pokemons = [
     ability: "Gluttony",
     height: "Default",
     weight: "Default",
+    cardColor: "#ce416b",
     pokemonTypes: [types.fighting, types.ground],
   },
   {
@@ -997,6 +1085,7 @@ const pokemons = [
     ability: "Thick Fat",
     height: "Default",
     weight: "Default",
+    cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
   {
@@ -1008,6 +1097,7 @@ const pokemons = [
     ability: "Thick Fat",
     height: "Default",
     weight: "Default",
+    cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.ground],
   },
   {
@@ -1019,6 +1109,7 @@ const pokemons = [
     ability: "Cud Chew/Moxie",
     height: "Default",
     weight: "Default",
+    cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.ground],
   },
   {
@@ -1030,6 +1121,7 @@ const pokemons = [
     ability: "Cud Chew/Moxie",
     height: "Default",
     weight: "Default",
+    cardColor: "#ce416b",
     pokemonTypes: [types.fighting, types.ground],
   },
   {
@@ -1041,6 +1133,7 @@ const pokemons = [
     ability: "Aroma Veil/Gluttony",
     height: "0,5m",
     weight: "10,2kg",
+    cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
   {
@@ -1052,6 +1145,7 @@ const pokemons = [
     ability: "Solid Rock",
     height: "1m",
     weight: "300kg",
+    cardColor: "#c5b78c",
     pokemonTypes: [types.rock],
   },
   {
@@ -1063,6 +1157,7 @@ const pokemons = [
     ability: "Night Veil",
     height: "Default",
     weight: "Default",
+    cardColor: "#5269ad",
     pokemonTypes: [types.ghost, types.water],
   },
   {
@@ -1074,6 +1169,7 @@ const pokemons = [
     ability: "Night Veil",
     height: "Default",
     weight: "Default",
+    cardColor: "#5269ad",
     pokemonTypes: [types.ghost, types.flying],
   },
   {
@@ -1085,6 +1181,7 @@ const pokemons = [
     ability: "Night Veil",
     height: "Default",
     weight: "Default",
+    cardColor: "#5269ad",
     pokemonTypes: [types.ghost, types.dark],
   },
   {
@@ -1096,6 +1193,7 @@ const pokemons = [
     ability: "Default",
     height: "Default",
     weight: "Default",
+    cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
   {
@@ -1107,6 +1205,7 @@ const pokemons = [
     ability: "Rough Skin",
     height: "0,7m",
     weight: "72kg",
+    cardColor: "#5b5464",
     pokemonTypes: [types.dark, types.ground],
   },
   {
@@ -1118,6 +1217,7 @@ const pokemons = [
     ability: "Rough Skin",
     height: "Default",
     weight: "Default",
+    cardColor: "#5b5464",
     pokemonTypes: [types.dark, types.ground],
   },
   {
@@ -1129,6 +1229,7 @@ const pokemons = [
     ability: "Rough Skin",
     height: "Default",
     weight: "Default",
+    cardColor: "#5b5464",
     pokemonTypes: [types.dark, types.poison],
   },
   {
@@ -1140,6 +1241,7 @@ const pokemons = [
     ability: "Intimidate",
     height: "0,6m",
     weight: "8kg",
+    cardColor: "#5090d6",
     pokemonTypes: [types.dragon],
   },
   {
@@ -1151,6 +1253,7 @@ const pokemons = [
     ability: "Intimidate",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.dragon],
   },
   {
@@ -1162,6 +1265,7 @@ const pokemons = [
     ability: "Intimidate",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.dragon],
   },
   {
@@ -1173,6 +1277,7 @@ const pokemons = [
     ability: "Ice Body",
     height: "0,35m",
     weight: "2,5kg",
+    cardColor: "#73cec0",
     pokemonTypes: [types.ice],
   },
   {
@@ -1184,6 +1289,7 @@ const pokemons = [
     ability: "Ice Body",
     height: "0,6m",
     weight: "12kg",
+    cardColor: "#73cec0",
     pokemonTypes: [types.ice],
   },
   {
@@ -1195,6 +1301,7 @@ const pokemons = [
     ability: "Ice Body",
     height: "1,5m",
     weight: "62kg",
+    cardColor: "#73cec0",
     pokemonTypes: [types.ice],
   },
   {
@@ -1206,6 +1313,7 @@ const pokemons = [
     ability: "Snow Cloak",
     height: "Default",
     weight: "Default",
+    cardColor: "#73cec0",
     pokemonTypes: [types.ice],
   },
   {
@@ -1217,6 +1325,7 @@ const pokemons = [
     ability: "Snow Cloak",
     height: "Default",
     weight: "Default",
+    cardColor: "#73cec0",
     pokemonTypes: [types.ice, types.ghost],
   },
   {
@@ -1228,6 +1337,7 @@ const pokemons = [
     ability: "Multiscale",
     height: "1,53",
     weight: "20,4kg",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.fighting],
   },
   {
@@ -1239,6 +1349,7 @@ const pokemons = [
     ability: "Eternal Soul",
     height: "0,8m",
     weight: "35kg",
+    cardColor: "#5b5464",
     pokemonTypes: [types.dark],
   },
   {
@@ -1250,6 +1361,7 @@ const pokemons = [
     ability: "Eternal Soul",
     height: "0,5m",
     weight: "45kg",
+    cardColor: "#fa7179",
     pokemonTypes: [types.psychic],
   },
   {
@@ -1261,6 +1373,7 @@ const pokemons = [
     ability: "Evergreen",
     height: "3m",
     weight: "200kg",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.water],
   },
   {
@@ -1272,6 +1385,7 @@ const pokemons = [
     ability: "Desolation",
     height: "3,3m",
     weight: "275kg",
+    cardColor: "#ff9d55",
     pokemonTypes: [types.fire, types.ground],
   },
   {
@@ -1283,6 +1397,7 @@ const pokemons = [
     ability: "Lighting Rod",
     height: "Default",
     weight: "Default",
+    cardColor: "#f4d23c",
     pokemonTypes: [types.electric],
   },
   {
@@ -1294,6 +1409,7 @@ const pokemons = [
     ability: "Flash Fire",
     height: "Default",
     weight: "Default",
+    cardColor: "#ff9d55",
     pokemonTypes: [types.fire],
   },
   {
@@ -1305,6 +1421,7 @@ const pokemons = [
     ability: "Storm Drain",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -1316,6 +1433,7 @@ const pokemons = [
     ability: "Planetary Body",
     height: "Default",
     weight: "Default",
+    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.psychic],
   },
   {
@@ -1327,6 +1445,7 @@ const pokemons = [
     ability: "Planetary Body",
     height: "Default",
     weight: "Default",
+    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.psychic],
   },
   {
@@ -1338,6 +1457,7 @@ const pokemons = [
     ability: "Planetary Body",
     height: "Default",
     weight: "Default",
+    cardColor: "#d97845",
     pokemonTypes: [types.ground, types.psychic],
   },
   {
@@ -1349,6 +1469,7 @@ const pokemons = [
     ability: "Speed Boost",
     height: "Default",
     weight: "Default",
+    cardColor: "#ff9d55",
     pokemonTypes: [types.fire, types.psychic],
   },
   {
@@ -1360,6 +1481,7 @@ const pokemons = [
     ability: "Default",
     height: "Default",
     weight: "Default",
+    cardColor: "#8fa9de",
     pokemonTypes: [types.flying],
   },
   {
@@ -1371,6 +1493,7 @@ const pokemons = [
     ability: "Soul Fuel",
     height: "0,4m",
     weight: "0,1kg",
+    cardColor: "#ff9d55",
     pokemonTypes: [types.fire, types.fairy],
   },
 ];
@@ -1383,6 +1506,7 @@ const pkmnAbility = document.querySelector(".pkmn-ability");
 const pkmnHeight = document.querySelector(".pkmn-height");
 const pkmnWeight = document.querySelector(".pkmn-weight");
 const pkmnType = document.querySelector(".pkmn-type--container");
+const cardColor = document.querySelector(".info__section");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const searchInput = document.querySelector("#search-input");
@@ -1400,6 +1524,7 @@ function getData(pkmn) {
   pkmnAbility.textContent = pkmn.ability;
   pkmnHeight.textContent = pkmn.height;
   pkmnWeight.textContent = pkmn.weight;
+  cardColor.style.backgroundColor = pkmn.cardColor;
 }
 
 window.addEventListener("DOMContentLoaded", () => {
