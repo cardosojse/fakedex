@@ -15,14 +15,6 @@ closeBtn.addEventListener("click", () => {
   showInput.classList.remove("show-input");
 });
 
-window.addEventListener("scroll", function () {
-  if (window.scrollY >= 100) {
-    fixedBtn.classList.add("visible");
-  } else {
-    fixedBtn.classList.remove("visible");
-  }
-});
-
 if (navigator.userAgent.indexOf("iPhone") > -1) {
   document
     .querySelector("[name=viewport]")

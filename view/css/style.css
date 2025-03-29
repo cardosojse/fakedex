@@ -282,15 +282,6 @@ a{
     box-shadow: inset -4px 4px 0 #F2EFE5;
 }
 
-.btn-fixed{
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
-    visibility: hidden;
-}
-
-.btn-fixed.visible{visibility: visible;}
-
 .card__section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
