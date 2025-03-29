@@ -1343,8 +1343,8 @@ const pokemons = [
   {
     num: "121",
     name: "DEFAULT",
-    img: "images/pkmn-img/placeholder.png",
-    shiny: "images/pkmn-img-shiny/placeholder.png",
+    img: "images/pkmn-img/121.png",
+    shiny: "images/pkmn-img-shiny/121_s.png",
     category: "Ancestor Pokemon",
     ability: "Speed Boost",
     height: "Default",
