@@ -161,7 +161,7 @@ const pokemons = [
     ability: "Big Pecks",
     height: "0,3m",
     weight: "2kg",
-    cardColor: "",
+    cardColor: "#8fa9de",
     pokemonTypes: [types.flying, types.normal],
   },
   {
@@ -173,7 +173,7 @@ const pokemons = [
     ability: "Big Pecks",
     height: "0,7m",
     weight: "20kg",
-    cardColor: "",
+    cardColor: "#8fa9de",
     pokemonTypes: [types.flying, types.fighting],
   },
   {
@@ -185,7 +185,7 @@ const pokemons = [
     ability: "Big Pecks",
     height: "1,4m",
     weight: "35,8kg",
-    cardColor: "",
+    cardColor: "#8fa9de",
     pokemonTypes: [types.flying, types.fighting],
   },
   {
