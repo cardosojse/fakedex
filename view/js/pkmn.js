@@ -1390,7 +1390,7 @@ const shinyBtn = document.querySelector(".btn-shiny");
 const errorMsg = document.querySelector(".error-msg");
 
 let currentPkmn = 0;
-let thisValue = true;
+let notShiny = true;
 
 function getData(pkmn) {
   pkmnImg.src = pkmn.img;
@@ -1400,28 +1400,30 @@ function getData(pkmn) {
   pkmnAbility.textContent = pkmn.ability;
   pkmnHeight.textContent = pkmn.height;
   pkmnWeight.textContent = pkmn.weight;
-
-  pkmn.pokemonTypes.forEach(function (typeUrl) {
-    imgChild += `<img src=${typeUrl} class="pkmn-type">`;
-  });
 }
 
 window.addEventListener("DOMContentLoaded", () => {
   const pkmnObj = pokemons[currentPkmn];
-  let imgChild = "";
 
   getData(pkmnObj);
 
-  pkmnType.innerHTML += imgChild;
+  let type = "";
+  pkmnObj.pokemonTypes.forEach(function (typeImg) {
+    type += `<img src=${typeImg} class="pkmn-type">`;
+  });
+  pkmnType.innerHTML += type;
 });
 
 function showData(pkmn) {
   const pkmnObj = pokemons[pkmn];
-  let imgChild = "";
 
   getData(pkmnObj);
 
-  pkmnType.innerHTML = imgChild;
+  let type = "";
+  pkmnObj.pokemonTypes.forEach(function (typeImg) {
+    type += `<img src=${typeImg} class="pkmn-type">`;
+  });
+  pkmnType.innerHTML = type;
 }
 
 function catchErrors(input) {
@@ -1438,48 +1440,9 @@ function catchErrors(input) {
   }
 }
 
-prevBtn.addEventListener("click", function () {
-  currentPkmn--;
-  if (currentPkmn < 0) {
-    currentPkmn = pokemons.length - 1;
-  }
-  showData(currentPkmn);
-  thisValue = true;
-});
-
-nextBtn.addEventListener("click", function () {
-  currentPkmn++;
-  if (currentPkmn > pokemons.length - 1) {
-    currentPkmn = 0;
-  }
-  showData(currentPkmn);
-  thisValue = true;
-});
-
-searchInput.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    catchErrors(searchInput);
-
-    let pkmnId = searchInput.value - 1;
-    currentPkmn = pkmnId;
-    showData(pkmnId);
-    searchInput.value = "";
-  }
-});
-
-shinyBtn.addEventListener("click", function () {
-  const pkmnObj = pokemons[currentPkmn];
-  if (thisValue) {
-    pkmnImg.src = pkmnObj.shiny;
-    thisValue = false;
-    return;
-  }
-  pkmnImg.src = pkmnObj.img;
-  thisValue = true;
-});
-
 function showPkmn() {
   const cardSection = document.querySelector(".card__section");
+
   pokemons.map((pkmn) => {
     cardSection.innerHTML += `<div  class="pkmn-card">
         <span class="pkmn-num">${pkmn.num}</span>
@@ -1494,3 +1457,46 @@ function removeError() {
     errorMsg.textContent = "";
   }, 3000);
 }
+
+prevBtn.addEventListener("click", function () {
+  currentPkmn--;
+  if (currentPkmn < 0) {
+    currentPkmn = pokemons.length - 1;
+  }
+  showData(currentPkmn);
+  notShiny = true;
+});
+
+nextBtn.addEventListener("click", function () {
+  currentPkmn++;
+  if (currentPkmn > pokemons.length - 1) {
+    currentPkmn = 0;
+  }
+  showData(currentPkmn);
+  notShiny = true;
+});
+
+searchInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    catchErrors(searchInput);
+
+    let pkmnId = searchInput.value - 1;
+    currentPkmn = pkmnId;
+    showData(pkmnId);
+    searchInput.value = "";
+  }
+});
+
+shinyBtn.addEventListener("click", function () {
+  const { img, shiny } = pokemons[currentPkmn];
+
+  if (notShiny) {
+    pkmnImg.src = shiny;
+    notShiny = false;
+
+    return;
+  }
+
+  pkmnImg.src = img;
+  notShiny = true;
+});
