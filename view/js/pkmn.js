@@ -29,6 +29,23 @@ const pokemons = [
     ability: "Overgrow",
     height: "Default",
     weight: "Default",
+    evolution: {
+      stageOne: {
+        num: "001",
+        name: "COATTINNY",
+        img: "images/pkmn-img/001.png",
+      },
+      stageTwo: {
+        num: "002",
+        name: "COATTHIEF",
+        img: "images/pkmn-img/002.png",
+      },
+      stageThree: {
+        num: "003",
+        name: "SAQUACYN",
+        img: "images/pkmn-img/003.png",
+      },
+    },
     cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
@@ -41,6 +58,23 @@ const pokemons = [
     ability: "Overgrow",
     height: "Default",
     weight: "Default",
+    evolution: {
+      stageOne: {
+        num: "001",
+        name: "COATTINNY",
+        img: "images/pkmn-img/001.png",
+      },
+      stageTwo: {
+        num: "002",
+        name: "COATTHIEF",
+        img: "images/pkmn-img/002.png",
+      },
+      stageThree: {
+        num: "003",
+        name: "SAQUACYN",
+        img: "images/pkmn-img/003.png",
+      },
+    },
     cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.dark],
   },
@@ -53,6 +87,23 @@ const pokemons = [
     ability: "Overgrow",
     height: "Default",
     weight: "Default",
+    evolution: {
+      stageOne: {
+        num: "001",
+        name: "COATTINNY",
+        img: "images/pkmn-img/001.png",
+      },
+      stageTwo: {
+        num: "002",
+        name: "COATTHIEF",
+        img: "images/pkmn-img/002.png",
+      },
+      stageThree: {
+        num: "003",
+        name: "SAQUACYN",
+        img: "images/pkmn-img/003.png",
+      },
+    },
     cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.dark],
   },
@@ -65,6 +116,23 @@ const pokemons = [
     ability: "Blaze",
     height: "Default",
     weight: "Default",
+    evolution: {
+      stageOne: {
+        num: "004",
+        name: "EMBRITO",
+        img: "images/pkmn-img/004.png",
+      },
+      stageTwo: {
+        num: "005",
+        name: "FLAMPIPE",
+        img: "images/pkmn-img/005.png",
+      },
+      stageThree: {
+        num: "006",
+        name: "MOTORAAM",
+        img: "images/pkmn-img/006.png",
+      },
+    },
     cardColor: "#ff9d55",
     pokemonTypes: [types.fire],
   },
@@ -77,6 +145,23 @@ const pokemons = [
     ability: "Blaze",
     height: "Default",
     weight: "Default",
+    evolution: {
+      stageOne: {
+        num: "004",
+        name: "EMBRITO",
+        img: "images/pkmn-img/004.png",
+      },
+      stageTwo: {
+        num: "005",
+        name: "FLAMPIPE",
+        img: "images/pkmn-img/005.png",
+      },
+      stageThree: {
+        num: "006",
+        name: "MOTORAAM",
+        img: "images/pkmn-img/006.png",
+      },
+    },
     cardColor: "#ff9d55",
     pokemonTypes: [types.fire],
   },
@@ -89,6 +174,23 @@ const pokemons = [
     ability: "Blaze",
     height: "Default",
     weight: "Default",
+    evolution: {
+      stageOne: {
+        num: "004",
+        name: "EMBRITO",
+        img: "images/pkmn-img/004.png",
+      },
+      stageTwo: {
+        num: "005",
+        name: "FLAMPIPE",
+        img: "images/pkmn-img/005.png",
+      },
+      stageThree: {
+        num: "006",
+        name: "MOTORAAM",
+        img: "images/pkmn-img/006.png",
+      },
+    },
     cardColor: "#ff9d55",
     pokemonTypes: [types.fire, types.steel],
   },
@@ -101,6 +203,23 @@ const pokemons = [
     ability: "Torrent",
     height: "Default",
     weight: "Default",
+    evolution: {
+      stageOne: {
+        num: "007",
+        name: "GUAMIRIN",
+        img: "images/pkmn-img/007.png",
+      },
+      stageTwo: {
+        num: "008",
+        name: "GUAIAMURI",
+        img: "images/pkmn-img/008.png",
+      },
+      stageThree: {
+        num: "009",
+        name: "PATAIAMUM",
+        img: "images/pkmn-img/009.png",
+      },
+    },
     cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
@@ -113,6 +232,23 @@ const pokemons = [
     ability: "Torrent",
     height: "Default",
     weight: "Default",
+    evolution: {
+      stageOne: {
+        num: "007",
+        name: "GUAMIRIN",
+        img: "images/pkmn-img/007.png",
+      },
+      stageTwo: {
+        num: "008",
+        name: "GUAIAMURI",
+        img: "images/pkmn-img/008.png",
+      },
+      stageThree: {
+        num: "009",
+        name: "PATAIAMUM",
+        img: "images/pkmn-img/009.png",
+      },
+    },
     cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
@@ -125,6 +261,23 @@ const pokemons = [
     ability: "Torrent",
     height: "Default",
     weight: "Default",
+    evolution: {
+      stageOne: {
+        num: "007",
+        name: "GUAMIRIN",
+        img: "images/pkmn-img/007.png",
+      },
+      stageTwo: {
+        num: "008",
+        name: "GUAIAMURI",
+        img: "images/pkmn-img/008.png",
+      },
+      stageThree: {
+        num: "009",
+        name: "PATAIAMUM",
+        img: "images/pkmn-img/009.png",
+      },
+    },
     cardColor: "#5090d6",
     pokemonTypes: [types.water, types.ground],
   },
@@ -137,6 +290,18 @@ const pokemons = [
     ability: "Pickup",
     height: "0,6m",
     weight: "12kg",
+    evolution: {
+      stageOne: {
+        num: "010",
+        name: "APEGUI",
+        img: "images/pkmn-img/010.png",
+      },
+      stageTwo: {
+        num: "011",
+        name: "APEVOLT",
+        img: "images/pkmn-img/011.png",
+      },
+    },
     cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
@@ -149,6 +314,18 @@ const pokemons = [
     ability: "Volt Absorb",
     height: "1,2m",
     weight: "24kg",
+    evolution: {
+      stageOne: {
+        num: "010",
+        name: "APEGUI",
+        img: "images/pkmn-img/010.png",
+      },
+      stageTwo: {
+        num: "011",
+        name: "APEVOLT",
+        img: "images/pkmn-img/011.png",
+      },
+    },
     cardColor: "#f4d23c",
     pokemonTypes: [types.electric],
   },
@@ -161,6 +338,23 @@ const pokemons = [
     ability: "Big Pecks",
     height: "0,3m",
     weight: "2kg",
+    evolution: {
+      stageOne: {
+        num: "012",
+        name: "VEEKRESS",
+        img: "images/pkmn-img/012.png",
+      },
+      stageTwo: {
+        num: "013",
+        name: "GAVKRESS",
+        img: "images/pkmn-img/013.png",
+      },
+      stageThree: {
+        num: "014",
+        name: "HAWKRESS",
+        img: "images/pkmn-img/014.png",
+      },
+    },
     cardColor: "#8fa9de",
     pokemonTypes: [types.flying, types.normal],
   },
@@ -173,6 +367,23 @@ const pokemons = [
     ability: "Big Pecks",
     height: "0,7m",
     weight: "20kg",
+    evolution: {
+      stageOne: {
+        num: "012",
+        name: "VEEKRESS",
+        img: "images/pkmn-img/012.png",
+      },
+      stageTwo: {
+        num: "013",
+        name: "GAVKRESS",
+        img: "images/pkmn-img/013.png",
+      },
+      stageThree: {
+        num: "014",
+        name: "HAWKRESS",
+        img: "images/pkmn-img/014.png",
+      },
+    },
     cardColor: "#8fa9de",
     pokemonTypes: [types.flying, types.fighting],
   },
@@ -185,6 +396,23 @@ const pokemons = [
     ability: "Big Pecks",
     height: "1,4m",
     weight: "35,8kg",
+    evolution: {
+      stageOne: {
+        num: "012",
+        name: "VEEKRESS",
+        img: "images/pkmn-img/012.png",
+      },
+      stageTwo: {
+        num: "013",
+        name: "GAVKRESS",
+        img: "images/pkmn-img/013.png",
+      },
+      stageThree: {
+        num: "014",
+        name: "HAWKRESS",
+        img: "images/pkmn-img/014.png",
+      },
+    },
     cardColor: "#8fa9de",
     pokemonTypes: [types.flying, types.fighting],
   },
@@ -197,6 +425,18 @@ const pokemons = [
     ability: "Reckless",
     height: "Default",
     weight: "Default",
+    evolution: {
+      stageOne: {
+        num: "015",
+        name: "SARUREK",
+        img: "images/pkmn-img/015.png",
+      },
+      stageTwo: {
+        num: "016",
+        name: "SAREGURO",
+        img: "images/pkmn-img/016.png",
+      },
+    },
     cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.dark],
   },
@@ -209,6 +449,18 @@ const pokemons = [
     ability: "Reckless",
     height: "Default",
     weight: "Default",
+    evolution: {
+      stageOne: {
+        num: "015",
+        name: "SARUREK",
+        img: "images/pkmn-img/015.png",
+      },
+      stageTwo: {
+        num: "016",
+        name: "SAREGURO",
+        img: "images/pkmn-img/016.png",
+      },
+    },
     cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.dark],
   },
@@ -221,6 +473,23 @@ const pokemons = [
     ability: "Lighting Rod",
     height: "0,3m",
     weight: "2kg",
+    evolution: {
+      stageOne: {
+        num: "017",
+        name: "PICHU",
+        img: "images/pkmn-img/017.png",
+      },
+      stageTwo: {
+        num: "018",
+        name: "PIKACHU",
+        img: "images/pkmn-img/018.png",
+      },
+      stageThree: {
+        num: "019",
+        name: "KAICHU",
+        img: "images/pkmn-img/019.png",
+      },
+    },
     cardColor: "#f4d23c",
     pokemonTypes: [types.electric, types.normal],
   },
@@ -233,6 +502,23 @@ const pokemons = [
     ability: "Lighting Rod",
     height: "0,4m",
     weight: "6kg",
+    evolution: {
+      stageOne: {
+        num: "017",
+        name: "PICHU",
+        img: "images/pkmn-img/017.png",
+      },
+      stageTwo: {
+        num: "018",
+        name: "PIKACHU",
+        img: "images/pkmn-img/018.png",
+      },
+      stageThree: {
+        num: "019",
+        name: "KAICHU",
+        img: "images/pkmn-img/019.png",
+      },
+    },
     cardColor: "#f4d23c",
     pokemonTypes: [types.electric, types.normal],
   },
@@ -245,6 +531,23 @@ const pokemons = [
     ability: "Lighting Rod",
     height: "1,3m",
     weight: "55kg",
+    evolution: {
+      stageOne: {
+        num: "017",
+        name: "PICHU",
+        img: "images/pkmn-img/017.png",
+      },
+      stageTwo: {
+        num: "018",
+        name: "PIKACHU",
+        img: "images/pkmn-img/018.png",
+      },
+      stageThree: {
+        num: "019",
+        name: "KAICHU",
+        img: "images/pkmn-img/019.png",
+      },
+    },
     cardColor: "#f4d23c",
     pokemonTypes: [types.electric, types.fighting],
   },
@@ -1525,6 +1828,8 @@ function getData(pkmn) {
   pkmnHeight.textContent = pkmn.height;
   pkmnWeight.textContent = pkmn.weight;
   cardColor.style.backgroundColor = pkmn.cardColor;
+
+  handleEvolutionData(pkmn);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -1549,6 +1854,37 @@ function showData(pkmn) {
     type += `<img src=${typeImg} class="pkmn-type">`;
   });
   pkmnType.innerHTML = type;
+}
+
+function handleEvolutionData(pkmn) {
+  const stageOneImg = document.querySelector(".stageone-img");
+  const stageOneName = document.querySelector(".stageone-name");
+  const stageOneNum = document.querySelector(".stageone-num");
+  const stageTwoImg = document.querySelector(".stagetwo-img");
+  const stageTwoName = document.querySelector(".stagetwo-name");
+  const stageTwoNum = document.querySelector(".stagetwo-num");
+  const stageThreeImg = document.querySelector(".stagethree-img");
+  const stageThreeName = document.querySelector(".stagethree-name");
+  const stageThreeNum = document.querySelector(".stagethree-num");
+  const box = document.querySelector(".evo-stage3");
+
+  if (pkmn.evolution) {
+    stageOneImg.src = pkmn.evolution.stageOne.img;
+    stageOneName.textContent = pkmn.evolution.stageOne.name;
+    stageOneNum.textContent = pkmn.evolution.stageOne.num;
+
+    stageTwoImg.src = pkmn.evolution.stageTwo.img;
+    stageTwoName.textContent = pkmn.evolution.stageTwo.name;
+    stageTwoNum.textContent = pkmn.evolution.stageTwo.num;
+
+    if (pkmn.evolution.stageThree) {
+      stageThreeImg.src = pkmn.evolution.stageThree.img;
+      stageThreeName.textContent = pkmn.evolution.stageThree.name;
+      stageThreeNum.textContent = pkmn.evolution.stageThree.num;
+    } else {
+      box.style.display = "none";
+    }
+  }
 }
 
 function catchErrors(input) {
