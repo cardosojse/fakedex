@@ -46,7 +46,7 @@ const pokemons = [
     num: "003",
     name: "SAQUACYN",
     img: "images/pkmn-img/003.png",
-    shiny: "images/pkmn-img-shiny/placeholder.png",
+    shiny: "images/pkmn-img-shiny/003_s.png",
     category: "Hunter Pokemon",
     ability: "Overgrow",
     height: "Default",
@@ -1392,35 +1392,35 @@ const errorMsg = document.querySelector(".error-msg");
 let currentPkmn = 0;
 let thisValue = true;
 
-window.addEventListener("DOMContentLoaded", () => {
-  const pkmnObj = pokemons[currentPkmn];
-  pkmnImg.src = pkmnObj.img;
-  pkmnNum.textContent = pkmnObj.num;
-  pkmnName.textContent = pkmnObj.name;
-  pkmnCategory.textContent = pkmnObj.category;
-  pkmnAbility.textContent = pkmnObj.ability;
-  pkmnHeight.textContent = pkmnObj.height;
-  pkmnWeight.textContent = pkmnObj.weight;
-  let imgChild = "";
-  pkmnObj.pokemonTypes.forEach(function (typeUrl) {
+function getData(pkmn) {
+  pkmnImg.src = pkmn.img;
+  pkmnNum.textContent = pkmn.num;
+  pkmnName.textContent = pkmn.name;
+  pkmnCategory.textContent = pkmn.category;
+  pkmnAbility.textContent = pkmn.ability;
+  pkmnHeight.textContent = pkmn.height;
+  pkmnWeight.textContent = pkmn.weight;
+
+  pkmn.pokemonTypes.forEach(function (typeUrl) {
     imgChild += `<img src=${typeUrl} class="pkmn-type">`;
   });
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  const pkmnObj = pokemons[currentPkmn];
+  let imgChild = "";
+
+  getData(pkmnObj);
+
   pkmnType.innerHTML += imgChild;
 });
 
 function showData(pkmn) {
   const pkmnObj = pokemons[pkmn];
-  pkmnImg.src = pkmnObj.img;
-  pkmnNum.textContent = pkmnObj.num;
-  pkmnName.textContent = pkmnObj.name;
-  pkmnCategory.textContent = pkmnObj.category;
-  pkmnAbility.textContent = pkmnObj.ability;
-  pkmnHeight.textContent = pkmnObj.height;
-  pkmnWeight.textContent = pkmnObj.weight;
   let imgChild = "";
-  pkmnObj.pokemonTypes.forEach(function (typeUrl) {
-    imgChild += `<img src=${typeUrl} class="pkmn-type">`;
-  });
+
+  getData(pkmnObj);
+
   pkmnType.innerHTML = imgChild;
 }
 
