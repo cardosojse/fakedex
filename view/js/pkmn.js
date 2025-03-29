@@ -1878,6 +1878,7 @@ function handleEvolutionData(pkmn) {
     stageTwoNum.textContent = pkmn.evolution.stageTwo.num;
 
     if (pkmn.evolution.stageThree) {
+      box.style.display = "block";
       stageThreeImg.src = pkmn.evolution.stageThree.img;
       stageThreeName.textContent = pkmn.evolution.stageThree.name;
       stageThreeNum.textContent = pkmn.evolution.stageThree.num;
