@@ -1,12 +1,12 @@
 # Fakedex
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM-DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=DEVELOPMENT&color=GREEN&style=for-the-badge)
 
-## Sobre o Projeto
+## About
 
-Eu decidi refazer o meu [primeiro projeto](https://cardosojse.github.io/old-fakedex) para descobrir o quanto melhorei no que diz respeito à programação. 
-Testei meus conhecimentos em JavaScript e CSS, como também nos conceitos de mobile first, layouts responsivos e no design da página.
+I've decided to remake my first [project](https://cardosojse.github.io/old-fakedex) to discover how much I got better at coding.
+The area that I most learned and made progress was on how manipulate data structure. And the design got a lot better too!
 
-## Como acessá-lo
+## How to access
 
-Você pode [acessar o meu projeto](https://cardosojse.github.io/fakedex) ou [baixá-lo](https://github.com/cardosojse/fakedex) através do GitHub.
+You can [access my project](https://cardosojse.github.io/fakedex) or [clone](https://github.com/cardosojse/fakedex) thru GitHub.
