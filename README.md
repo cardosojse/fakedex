@@ -5,7 +5,7 @@
 ## About
 
 I've decided to remake my first [project](https://cardosojse.github.io/old-fakedex) to discover how much I got better at coding.
-The subject that I most learned and made progress was on how manipulate data structure. And the design got a lot better too!
+The subject that I most learned and made progress was on how to manipulate data structure. And the design got a lot better too!
 
 ## How to access
 
