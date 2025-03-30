@@ -1819,6 +1819,27 @@ const errorMsg = document.querySelector(".error-msg");
 let currentPkmn = 0;
 let notShiny = true;
 
+function handleEvolutionData(pkmn) {
+  const pkmnStages = ["stageOne", "stageTwo", "stageThree"];
+
+  pkmnStages.forEach((pkmnStage, idx) => {
+    const pkmnImg = document.querySelector(`.stage${idx + 1}-img`);
+    const pkmnName = document.querySelector(`.stage${idx + 1}-name`);
+    const pkmnNum = document.querySelector(`.stage${idx + 1}-num`);
+
+    if (pkmn.evolution[pkmnStage]) {
+      pkmnImg.src = pkmn.evolution[pkmnStage].img;
+      pkmnName.textContent = pkmn.evolution[pkmnStage].name;
+      pkmnNum.textContent = pkmn.evolution[pkmnStage].num;
+
+      if (idx == 2) {
+        const box = document.querySelector(".evo-stage3");
+        box.style.display = pkmn.evolution.stageThree ? "block" : "none";
+      }
+    }
+  });
+}
+
 function getData(pkmn) {
   pkmnImg.src = pkmn.img;
   pkmnNum.textContent = pkmn.num;
@@ -1854,38 +1875,6 @@ function showData(pkmn) {
     type += `<img src=${typeImg} class="pkmn-type">`;
   });
   pkmnType.innerHTML = type;
-}
-
-function handleEvolutionData(pkmn) {
-  const stageOneImg = document.querySelector(".stageone-img");
-  const stageOneName = document.querySelector(".stageone-name");
-  const stageOneNum = document.querySelector(".stageone-num");
-  const stageTwoImg = document.querySelector(".stagetwo-img");
-  const stageTwoName = document.querySelector(".stagetwo-name");
-  const stageTwoNum = document.querySelector(".stagetwo-num");
-  const stageThreeImg = document.querySelector(".stagethree-img");
-  const stageThreeName = document.querySelector(".stagethree-name");
-  const stageThreeNum = document.querySelector(".stagethree-num");
-  const box = document.querySelector(".evo-stage3");
-
-  if (pkmn.evolution) {
-    stageOneImg.src = pkmn.evolution.stageOne.img;
-    stageOneName.textContent = pkmn.evolution.stageOne.name;
-    stageOneNum.textContent = pkmn.evolution.stageOne.num;
-
-    stageTwoImg.src = pkmn.evolution.stageTwo.img;
-    stageTwoName.textContent = pkmn.evolution.stageTwo.name;
-    stageTwoNum.textContent = pkmn.evolution.stageTwo.num;
-
-    if (pkmn.evolution.stageThree) {
-      box.style.display = "block";
-      stageThreeImg.src = pkmn.evolution.stageThree.img;
-      stageThreeName.textContent = pkmn.evolution.stageThree.name;
-      stageThreeNum.textContent = pkmn.evolution.stageThree.num;
-    } else {
-      box.style.display = "none";
-    }
-  }
 }
 
 function catchErrors(input) {

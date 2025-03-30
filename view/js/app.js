@@ -1,7 +1,6 @@
 const toggleBtn = document.querySelector(".search-toggle");
 const closeBtn = document.querySelector(".search-close");
 const showInput = document.querySelector(".input-container");
-const fixedBtn = document.querySelector(".btn-fixed");
 
 toggleBtn.addEventListener("click", () => {
   if (showInput.classList.contains("show-input")) {
