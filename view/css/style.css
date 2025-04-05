@@ -20,7 +20,6 @@ a{
 
 .nav-bar {
     position: relative;
-    background-color: #fff;
     padding: 1em;
     margin-bottom: 1em;
     box-shadow: 2px 0 3px #9CA3AF;
@@ -282,11 +281,17 @@ a{
     box-shadow: inset -4px 4px 0 #F2EFE5;
 }
 
+.fakedex-header {
+    position: relative;
+    padding: 1em;
+    box-shadow: 2px 0 3px #9CA3AF;
+}
+
 .card__section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: .5em;
-    margin: 1em;
+    margin: .5em;
 }
 
 .pkmn-card{
