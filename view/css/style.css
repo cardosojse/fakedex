@@ -8,7 +8,13 @@ body{
     font-family: "Inter", sans-serif;
 }
 
-header{position: sticky; top: 0; z-index: 1}
+header{
+    position: sticky;
+    top: 0; 
+    z-index: 1; 
+    background-color: #fff;
+}
+
 main{padding: 0 1em 1em; background-color: #fff;}
 
 a{
@@ -281,17 +287,11 @@ a{
     box-shadow: inset -4px 4px 0 #F2EFE5;
 }
 
-.fakedex-header {
-    position: relative;
-    padding: 1em;
-    box-shadow: 2px 0 3px #9CA3AF;
-}
-
 .card__section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: .5em;
-    margin: .5em;
+    gap: 1em;
+    margin: 1em;
 }
 
 .pkmn-card{
