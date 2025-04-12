@@ -1126,7 +1126,18 @@ const pokemons = [
     ability: "Sturdy",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "050",
+        name: "TAMARTLE",
+        img: "images/pkmn-img/050.png",
+      },
+      {
+        num: "051",
+        name: "COURAPAGOS",
+        img: "images/pkmn-img/051.png",
+      },
+    ],
     cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
@@ -1139,7 +1150,18 @@ const pokemons = [
     ability: "Sturdy",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "050",
+        name: "TAMARTLE",
+        img: "images/pkmn-img/050.png",
+      },
+      {
+        num: "051",
+        name: "COURAPAGOS",
+        img: "images/pkmn-img/051.png",
+      },
+    ],
     cardColor: "#5a8ea2",
     pokemonTypes: [types.steel, types.water],
   },
@@ -1152,7 +1174,18 @@ const pokemons = [
     ability: "Poison Point",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "052",
+        name: "TENTACOOL",
+        img: "images/pkmn-img/052.png",
+      },
+      {
+        num: "053",
+        name: "TENTAWARU",
+        img: "images/pkmn-img/053.png",
+      },
+    ],
     cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.electric],
   },
@@ -1165,7 +1198,18 @@ const pokemons = [
     ability: "Poison Point",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "052",
+        name: "TENTACOOL",
+        img: "images/pkmn-img/052.png",
+      },
+      {
+        num: "053",
+        name: "TENTAWARU",
+        img: "images/pkmn-img/053.png",
+      },
+    ],
     cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.electric],
   },
@@ -1204,7 +1248,18 @@ const pokemons = [
     ability: "Wind Power",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "055",
+        name: "CUMBULLUS",
+        img: "images/pkmn-img/055.png",
+      },
+      {
+        num: "056",
+        name: "NUVECIAN",
+        img: "images/pkmn-img/056.png",
+      },
+    ],
     cardColor: "#ec8fe6",
     pokemonTypes: [types.fairy, types.electric],
   },
@@ -1217,7 +1272,18 @@ const pokemons = [
     ability: "Wind Power",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "055",
+        name: "CUMBULLUS",
+        img: "images/pkmn-img/055.png",
+      },
+      {
+        num: "057",
+        name: "STRATERIM",
+        img: "images/pkmn-img/057.png",
+      },
+    ],
     cardColor: "#ec8fe6",
     pokemonTypes: [types.fairy, types.fire],
   },
@@ -1243,7 +1309,18 @@ const pokemons = [
     ability: "Battle Armor",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "058",
+        name: "EEVEE",
+        img: "images/pkmn-img/058.png",
+      },
+      {
+        num: "059",
+        name: "ACEREON",
+        img: "images/pkmn-img/059.png",
+      },
+    ],
     cardColor: "#5a8ea2",
     pokemonTypes: [types.steel],
   },
@@ -1256,7 +1333,18 @@ const pokemons = [
     ability: "Insomnia",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "058",
+        name: "EEVEE",
+        img: "images/pkmn-img/058.png",
+      },
+      {
+        num: "060",
+        name: "SPECTREON",
+        img: "images/pkmn-img/060.png",
+      },
+    ],
     cardColor: "#5269ad",
     pokemonTypes: [types.ghost],
   },
@@ -1269,7 +1357,18 @@ const pokemons = [
     ability: "Shed Skin",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "058",
+        name: "EEVEE",
+        img: "images/pkmn-img/058.png",
+      },
+      {
+        num: "061",
+        name: "DRACAREON",
+        img: "images/pkmn-img/061.png",
+      },
+    ],
     cardColor: "#5090d6",
     pokemonTypes: [types.dragon],
   },
@@ -1282,7 +1381,18 @@ const pokemons = [
     ability: "Adaptability",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "058",
+        name: "EEVEE",
+        img: "images/pkmn-img/058.png",
+      },
+      {
+        num: "062",
+        name: "OMYNEON",
+        img: "images/pkmn-img/062.png",
+      },
+    ],
     cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
@@ -1295,7 +1405,18 @@ const pokemons = [
     ability: "Water Veil",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "063",
+        name: "MURIMIZU",
+        img: "images/pkmn-img/063.png",
+      },
+      {
+        num: "064",
+        name: "MIZUCLAY",
+        img: "images/pkmn-img/064.png",
+      },
+    ],
     cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
@@ -1308,7 +1429,18 @@ const pokemons = [
     ability: "Water Absorb",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "063",
+        name: "MURIMIZU",
+        img: "images/pkmn-img/063.png",
+      },
+      {
+        num: "064",
+        name: "MIZUCLAY",
+        img: "images/pkmn-img/064.png",
+      },
+    ],
     cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
@@ -1321,7 +1453,23 @@ const pokemons = [
     ability: "Thick Fat",
     height: "0,2m",
     weight: "2kg",
-    evolution: [],
+    evolution: [
+      {
+        num: "065",
+        name: "AZURILL",
+        img: "images/pkmn-img/065.png",
+      },
+      {
+        num: "066",
+        name: "MARILL",
+        img: "images/pkmn-img/066.png",
+      },
+      {
+        num: "067",
+        name: "PINKURILL",
+        img: "images/pkmn-img/067.png",
+      },
+    ],
     cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.fairy],
   },
@@ -1334,7 +1482,23 @@ const pokemons = [
     ability: "Iron Fist",
     height: "0,6m",
     weight: "10kg",
-    evolution: [],
+    evolution: [
+      {
+        num: "065",
+        name: "AZURILL",
+        img: "images/pkmn-img/065.png",
+      },
+      {
+        num: "066",
+        name: "MARILL",
+        img: "images/pkmn-img/066.png",
+      },
+      {
+        num: "067",
+        name: "PINKURILL",
+        img: "images/pkmn-img/067.png",
+      },
+    ],
     cardColor: "#ce416b",
     pokemonTypes: [types.fighting, types.fairy],
   },
@@ -1347,7 +1511,23 @@ const pokemons = [
     ability: "Iron Fist",
     height: "1m",
     weight: "35kg",
-    evolution: [],
+    evolution: [
+      {
+        num: "065",
+        name: "AZURILL",
+        img: "images/pkmn-img/065.png",
+      },
+      {
+        num: "066",
+        name: "MARILL",
+        img: "images/pkmn-img/066.png",
+      },
+      {
+        num: "067",
+        name: "PINKURILL",
+        img: "images/pkmn-img/067.png",
+      },
+    ],
     cardColor: "#ce416b",
     pokemonTypes: [types.fighting, types.fairy],
   },
@@ -1360,7 +1540,23 @@ const pokemons = [
     ability: "Sturdy",
     height: "0,3m",
     weight: "3kg",
-    evolution: [],
+    evolution: [
+      {
+        num: "068",
+        name: "BRIEBBLE",
+        img: "images/pkmn-img/068.png",
+      },
+      {
+        num: "069",
+        name: "ITABRITTA",
+        img: "images/pkmn-img/069.png",
+      },
+      {
+        num: "070",
+        name: "PAVEGMENT",
+        img: "images/pkmn-img/070.png",
+      },
+    ],
     cardColor: "#c5b78c",
     pokemonTypes: [types.rock],
   },
@@ -1373,7 +1569,23 @@ const pokemons = [
     ability: "Sturdy",
     height: "0,6m",
     weight: "7kg",
-    evolution: [],
+    evolution: [
+      {
+        num: "068",
+        name: "BRIEBBLE",
+        img: "images/pkmn-img/068.png",
+      },
+      {
+        num: "069",
+        name: "ITABRITTA",
+        img: "images/pkmn-img/069.png",
+      },
+      {
+        num: "070",
+        name: "PAVEGMENT",
+        img: "images/pkmn-img/070.png",
+      },
+    ],
     cardColor: "#c5b78c",
     pokemonTypes: [types.rock],
   },
@@ -1386,7 +1598,23 @@ const pokemons = [
     ability: "Sturdy",
     height: "1,3m",
     weight: "65kg",
-    evolution: [],
+    evolution: [
+      {
+        num: "068",
+        name: "BRIEBBLE",
+        img: "images/pkmn-img/068.png",
+      },
+      {
+        num: "069",
+        name: "ITABRITTA",
+        img: "images/pkmn-img/069.png",
+      },
+      {
+        num: "070",
+        name: "PAVEGMENT",
+        img: "images/pkmn-img/070.png",
+      },
+    ],
     cardColor: "#c5b78c",
     pokemonTypes: [types.rock, types.poison],
   },
@@ -1399,7 +1627,18 @@ const pokemons = [
     ability: "Flare Boost",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "071",
+        name: "DRIFLOON",
+        img: "images/pkmn-img/071.png",
+      },
+      {
+        num: "072",
+        name: "DRIFBLIM",
+        img: "images/pkmn-img/072.png",
+      },
+    ],
     cardColor: "#5269ad",
     pokemonTypes: [types.ghost, types.fire],
   },
@@ -1412,7 +1651,18 @@ const pokemons = [
     ability: "Flare Boost",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "071",
+        name: "DRIFLOON",
+        img: "images/pkmn-img/071.png",
+      },
+      {
+        num: "072",
+        name: "DRIFBLIM",
+        img: "images/pkmn-img/072.png",
+      },
+    ],
     cardColor: "#5269ad",
     pokemonTypes: [types.ghost, types.fire],
   },
@@ -1607,7 +1857,18 @@ const pokemons = [
     ability: "Gluttony",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "087",
+        name: "MIRINDUÁ",
+        img: "images/pkmn-img/087.png",
+      },
+      {
+        num: "088",
+        name: "TAMADUNYA",
+        img: "images/pkmn-img/088.png",
+      },
+    ],
     cardColor: "#ce416b",
     pokemonTypes: [types.fighting],
   },
@@ -1620,7 +1881,18 @@ const pokemons = [
     ability: "Gluttony",
     height: "Default",
     weight: "Default",
-    evolution: [],
+    evolution: [
+      {
+        num: "087",
+        name: "MIRINDUÁ",
+        img: "images/pkmn-img/087.png",
+      },
+      {
+        num: "088",
+        name: "TAMADUNYA",
+        img: "images/pkmn-img/088.png",
+      },
+    ],
     cardColor: "#ce416b",
     pokemonTypes: [types.fighting, types.ground],
   },
@@ -2091,6 +2363,7 @@ const pkmnWeight = document.querySelector(".pkmn-weight");
 const pkmnType = document.querySelector(".pkmn-type--container");
 const pkmnEvo = document.querySelector(".pkmn-evo--container");
 const evoSection = document.querySelector(".evolution__section");
+const cardSection = document.querySelector(".card__section");
 const cardColor = document.querySelector(".info__section");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
@@ -2172,10 +2445,9 @@ function catchErrors(input) {
 }
 
 function showPkmn() {
-  const cardSection = document.querySelector(".card__section");
-
   pokemons.map((pkmn) => {
-    cardSection.innerHTML += `<div  class="pkmn-card">
+    cardSection.innerHTML += `
+    <div class="pkmn-card">
         <span class="pkmn-num">${pkmn.num}</span>
         <img src=${pkmn.img} alt="pokemon image" class="pkmn-card-img">
     </div>`;
