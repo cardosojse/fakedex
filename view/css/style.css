@@ -290,8 +290,8 @@ a{
 .card__section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
-    margin: 1em;
+    gap: .5em;
+    margin: 0 .5em;
 }
 
 .pkmn-card{

@@ -1820,6 +1820,34 @@ const errorMsg = document.querySelector(".error-msg");
 let currentPkmn = 0;
 let notShiny = true;
 
+function updateTypes(types) {
+  pkmnType.innerHTML = types
+    .map((type) => `<img src=${type} class="pkmn-type">`)
+    .join("");
+}
+
+function updateEvolutions(evolution) {
+  pkmnEvo.innerHTML = evolution
+    .map(
+      (pkmnStage, idx) =>
+        ` <i class="ph ph-arrow-down arrow-${idx}"></i>
+        <div>
+          <div class="pkmn-evo--box">
+              <img src=${pkmnStage.img} alt="pkmn image" class="pkmn-evo--img">
+          </div>
+          <div class="pkmn-evo--id">
+              <div class="pkmn-evo--name">${pkmnStage.name}</div>
+              <div class="row">
+                  <span>No.</span>
+                  <p class="pkmn-evo--num">${pkmnStage.num}</p>
+              </div>
+          </div>
+        </div>
+      `
+    )
+    .join("");
+}
+
 function getData(pkmn) {
   pkmnImg.src = pkmn.img;
   pkmnNum.textContent = pkmn.num;
@@ -1829,86 +1857,31 @@ function getData(pkmn) {
   pkmnHeight.textContent = pkmn.height;
   pkmnWeight.textContent = pkmn.weight;
   cardColor.style.backgroundColor = pkmn.cardColor;
+
+  updateTypes(pkmn.pokemonTypes);
+  updateEvolutions(pkmn.evolution);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const pkmnObj = pokemons[currentPkmn];
-
-  getData(pkmnObj);
-
-  let type = "";
-  let evoData = "";
-
-  pkmnObj.pokemonTypes.forEach((pkmnType) => {
-    type += `<img src=${pkmnType} class="pkmn-type">`;
-  });
-
-  pkmnObj.evolution.forEach((pkmnStage, idx) => {
-    evoData += `
-      <i class="ph ph-arrow-down arrow-${idx}"></i>
-      <div>
-        <div class="pkmn-evo--box">
-            <img src=${pkmnStage.img} alt="pkmn image" class="pkmn-evo--img">
-        </div>
-        <div class="pkmn-evo--id">
-            <div class="pkmn-evo--name">${pkmnStage.name}</div>
-            <div class="row">
-                <span>No.</span>
-                <p class="pkmn-evo--num">${pkmnStage.num}</p>
-            </div>
-        </div>
-      </div>
-    `;
-  });
-
-  pkmnType.innerHTML += type;
-  pkmnEvo.innerHTML += evoData;
+  getData(pokemons[currentPkmn]);
 });
 
 function showData(pkmn) {
-  const pkmnObj = pokemons[pkmn];
-
-  getData(pkmnObj);
-
-  let type = "";
-  let evoData = "";
-
-  pkmnObj.pokemonTypes.forEach((pkmnType) => {
-    type += `<img src=${pkmnType} class="pkmn-type">`;
-  });
-
-  pkmnObj.evolution.forEach((pkmnStage, idx) => {
-    evoData += `
-      <i class="ph ph-arrow-down arrow-${idx}"></i>
-      <div>
-        <div class="pkmn-evo--box">
-            <img src=${pkmnStage.img} alt="pkmn image" class="pkmn-evo--img">
-        </div>
-        <div class="pkmn-evo--id">
-            <div class="pkmn-evo--name">${pkmnStage.name}</div>
-            <div class="row">
-                <span>No.</span>
-                <p class="pkmn-evo--num">${pkmnStage.num}</p>
-            </div>
-        </div>
-      </div>
-    `;
-  });
-
-  pkmnType.innerHTML = type;
-  pkmnEvo.innerHTML = evoData;
+  getData(pokemons[pkmn]);
 }
 
 function catchErrors(input) {
   if (isNaN(input.value)) {
     input.classList.add("error-input");
     errorMsg.textContent = "Please, type a number!";
+
     removeError();
   }
 
-  if (input.value > 123 || input.value <= 0) {
+  if (input.value <= 0 || input.value > 123) {
     input.classList.add("error-input");
     errorMsg.textContent = "Please, type a number between 1 and 113!";
+
     removeError();
   }
 }
