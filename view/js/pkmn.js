@@ -2140,8 +2140,13 @@ function getData(pkmn) {
 
   updateTypes(pkmn.pokemonTypes);
 
-  if (pkmn.evolution != [0]) {
+  const evoSection = document.querySelector(".evolution__section"); // or whatever your div ID is
+
+  if (pkmn.evolution && pkmn.evolution.length > 0) {
+    evoSection.style.display = "block";
     updateEvolutions(pkmn.evolution);
+  } else {
+    evoSection.style.display = "none";
   }
 }
 
