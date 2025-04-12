@@ -8,23 +8,23 @@
         "ability": "Overgrow",
         "height": "Default",
         "weight": "Default",
-        "evolution": {
-            "stageOne": {
-              "num": "001",
-              "name": "COATTINNY",
-              "img": "images/pkmn-img/001.png"
+        "evolution": [
+            {
+                "num": "001",
+                "name": "COATTINNY",
+                "img": "images/pkmn-img/001.png"
             },
-            "stageTwo": {
-              "num": "002",
-              "name": "COATTHIEF",
-              "img": "images/pkmn-img/002.png"
+            {
+                "num": "002",
+                "name": "COATTHIEF",
+                "img": "images/pkmn-img/002.png"
             },
-            "stageThree": {
-              "num": "003",
-              "name": "SAQUACYN",
-              "img": "images/pkmn-img/003.png"
+            {
+                "num": "003",
+                "name": "SAQUACYN",
+                "img": "images/pkmn-img/003.png"
             }
-          },
+        ],  
         "pokemonTypes": "[types.grass]"
     },
     {
