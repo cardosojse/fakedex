@@ -816,7 +816,7 @@ const pokemons = [
     height: "1,5m",
     weight: "42,5kg",
     evolution: [],
-    cardColor: "",
+    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.fighting],
   },
   {
