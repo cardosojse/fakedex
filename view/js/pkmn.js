@@ -2090,6 +2090,7 @@ const pkmnHeight = document.querySelector(".pkmn-height");
 const pkmnWeight = document.querySelector(".pkmn-weight");
 const pkmnType = document.querySelector(".pkmn-type--container");
 const pkmnEvo = document.querySelector(".pkmn-evo--container");
+const evoSection = document.querySelector(".evolution__section");
 const cardColor = document.querySelector(".info__section");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
@@ -2139,8 +2140,6 @@ function getData(pkmn) {
   cardColor.style.backgroundColor = pkmn.cardColor;
 
   updateTypes(pkmn.pokemonTypes);
-
-  const evoSection = document.querySelector(".evolution__section"); // or whatever your div ID is
 
   if (pkmn.evolution && pkmn.evolution.length > 0) {
     evoSection.style.display = "block";
