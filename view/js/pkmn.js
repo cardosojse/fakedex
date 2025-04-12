@@ -2161,16 +2161,14 @@ function catchErrors(input) {
   if (isNaN(input.value)) {
     input.classList.add("error-input");
     errorMsg.textContent = "Please, type a number!";
-
-    removeError();
   }
 
   if (input.value <= 0 || input.value > 123) {
     input.classList.add("error-input");
     errorMsg.textContent = "Please, type a number between 1 and 113!";
-
-    removeError();
   }
+
+  removeError();
 }
 
 function showPkmn() {
@@ -2184,6 +2182,24 @@ function showPkmn() {
   });
 }
 
+function prevPkmn() {
+  currentPkmn--;
+  if (currentPkmn < 0) {
+    currentPkmn = pokemons.length - 1;
+  }
+  showData(currentPkmn);
+  notShiny = true;
+}
+
+function nextPkmn() {
+  currentPkmn++;
+  if (currentPkmn > pokemons.length - 1) {
+    currentPkmn = 0;
+  }
+  showData(currentPkmn);
+  notShiny = true;
+}
+
 function removeError() {
   setTimeout(function () {
     searchInput.classList.remove("error-input");
@@ -2191,25 +2207,25 @@ function removeError() {
   }, 3000);
 }
 
-prevBtn.addEventListener("click", function () {
-  currentPkmn--;
-  if (currentPkmn < 0) {
-    currentPkmn = pokemons.length - 1;
-  }
-  showData(currentPkmn);
-  notShiny = true;
+prevBtn.addEventListener("click", () => {
+  prevPkmn();
 });
 
-nextBtn.addEventListener("click", function () {
-  currentPkmn++;
-  if (currentPkmn > pokemons.length - 1) {
-    currentPkmn = 0;
-  }
-  showData(currentPkmn);
-  notShiny = true;
+nextBtn.addEventListener("click", () => {
+  nextPkmn();
 });
 
-searchInput.addEventListener("keydown", function (event) {
+document.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowLeft") {
+    prevPkmn();
+  }
+
+  if (event.key === "ArrowRight") {
+    nextPkmn();
+  }
+});
+
+searchInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     catchErrors(searchInput);
 
@@ -2220,7 +2236,7 @@ searchInput.addEventListener("keydown", function (event) {
   }
 });
 
-shinyBtn.addEventListener("click", function () {
+shinyBtn.addEventListener("click", () => {
   const { img, shiny } = pokemons[currentPkmn];
 
   if (notShiny) {
