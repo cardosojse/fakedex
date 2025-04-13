@@ -43,8 +43,6 @@ a{
 .ph:hover {opacity: 1; transition: 500ms;}
 
 .ph-x,
-.ph-sparkle,
-.ph-gender-female,
 .ph-caret-left,
 .ph-magnifying-glass{font-size: 18px;}
 
@@ -52,7 +50,7 @@ a{
 .ph-arrow-circle-right{font-size: 24px;}
 
 .ph-sparkle,
-.ph-gender-female{color: #eb7024;}
+.ph-arrows-counter-clockwise{color: #eb7024; font-size: 20px;}
 
 .input-container{
     transform: translateY(-150%);

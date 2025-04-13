@@ -2187,6 +2187,7 @@ const pokemons = [
     name: "DEFAULT",
     img: "images/pkmn-img/111.png",
     shiny: "images/pkmn-img-shiny/111_s.png",
+    form: "images/pkmn-img/111_e.png",
     category: "Stray Dog Pokemon",
     ability: "Eternal Soul",
     height: "0,8m",
@@ -2200,6 +2201,7 @@ const pokemons = [
     name: "DEFAULT",
     img: "images/pkmn-img/112.png",
     shiny: "images/pkmn-img-shiny/112_s.png",
+    form: "images/pkmn-img/112_e.png",
     category: "Stray Cat Pokemon",
     ability: "Eternal Soul",
     height: "0,5m",
@@ -2369,12 +2371,15 @@ const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const searchInput = document.querySelector("#search-input");
 const shinyBtn = document.querySelector(".btn-shiny");
+const formBtn = document.querySelector(".btn-form");
 const errorMsg = document.querySelector(".error-msg");
 
-const MIN_POKEMON_ID = 1;
-const MAX_POKEMON_ID = 123;
+const MIN_PKMN_ID = 1;
+const MAX_PKMN_ID = 123;
 let currentPkmn = 0;
 let notShiny = true;
+
+// let mainForm = true;
 
 function updateTypes(types) {
   pkmnType.innerHTML = types
@@ -2434,9 +2439,9 @@ function showPkmn(pkmn) {
 function catchErrors(input) {
   const value = Number(input.value);
 
-  if (isNaN(value) || value < MIN_POKEMON_ID || value > MAX_POKEMON_ID) {
+  if (isNaN(value) || value < MIN_PKMN_ID || value > MAX_PKMN_ID) {
     input.classList.add("error-input");
-    errorMsg.textContent = `Please, type a number between ${MIN_POKEMON_ID} and ${MAX_POKEMON_ID}!`;
+    errorMsg.textContent = `Please, type a number between ${MIN_PKMN_ID} and ${MAX_PKMN_ID}!`;
     removeError();
 
     return false;
@@ -2480,13 +2485,8 @@ function removeError() {
   }, 3000);
 }
 
-prevBtn.addEventListener("click", () => {
-  prevPkmn();
-});
-
-nextBtn.addEventListener("click", () => {
-  nextPkmn();
-});
+prevBtn.addEventListener("click", prevPkmn);
+nextBtn.addEventListener("click", nextPkmn);
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "ArrowLeft") {
@@ -2523,3 +2523,19 @@ shinyBtn.addEventListener("click", () => {
   pkmnImg.src = img;
   notShiny = true;
 });
+
+// formBtn.addEventListener("click", () => {
+//   const { img, form } = pokemons[currentPkmn];
+
+//   if (!form) return;
+
+//   if (mainForm) {
+//     pkmnImg.src = form;
+//     mainForm = false;
+
+//     return;
+//   }
+
+//   pkmnImg.src = img;
+//   mainForm = true;
+// });
