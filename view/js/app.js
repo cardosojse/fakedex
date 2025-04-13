@@ -1,17 +1,21 @@
-const toggleBtn = document.querySelector(".search-toggle");
+const searchButton = document.querySelector(".search-toggle");
 const closeBtn = document.querySelector(".search-close");
-const showInput = document.querySelector(".input-container");
+const searchBox = document.querySelector(".input-container");
 
-toggleBtn.addEventListener("click", () => {
-  if (showInput.classList.contains("show-input")) {
-    showInput.classList.remove("show-input");
+function openInput() {
+  if (searchBox.classList.contains("show-input")) {
+    searchBox.classList.remove("show-input");
   } else {
-    showInput.classList.add("show-input");
+    searchBox.classList.add("show-input");
   }
+}
+
+searchButton.addEventListener("click", () => {
+  openInput();
 });
 
 closeBtn.addEventListener("click", () => {
-  showInput.classList.remove("show-input");
+  searchBox.classList.remove("show-input");
 });
 
 if (navigator.userAgent.indexOf("iPhone") > -1) {

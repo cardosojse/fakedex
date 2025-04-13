@@ -2506,7 +2506,7 @@ searchInput.addEventListener("keydown", (event) => {
     currentPkmn = pkmnId;
     showPkmn(pkmnId);
 
-    showInput.classList.remove("show-input");
+    searchBox.classList.remove("show-input");
   }
 });
 

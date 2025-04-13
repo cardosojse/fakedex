@@ -39,6 +39,9 @@ a{
 
 .push--right{margin-left: auto;}
 
+.ph{opacity: .8;}
+.ph:hover {opacity: 1; transition: 500ms;}
+
 .ph-x,
 .ph-sparkle,
 .ph-gender-female,
@@ -58,7 +61,6 @@ a{
     z-index: -10;
     margin: 0 1em;
     display: flex;
-    /* flex-direction: column; */
 }
 
 .show-input{
@@ -98,6 +100,7 @@ a{
     background-color: transparent;
     border: none;
     color: #030712;
+    cursor: pointer;
 }
 
 .search-close{
