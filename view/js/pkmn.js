@@ -2402,7 +2402,7 @@ function updateEvolutions(evolution) {
     .join("");
 }
 
-function getData(pkmn) {
+function getPkmn(pkmn) {
   pkmnImg.src = pkmn.img;
   pkmnNum.textContent = pkmn.num;
   pkmnName.textContent = pkmn.name;
@@ -2415,7 +2415,6 @@ function getData(pkmn) {
   updateTypes(pkmn.pokemonTypes);
 
   if (pkmn.evolution && pkmn.evolution.length > 0) {
-    evoSection.style.display = "block";
     updateEvolutions(pkmn.evolution);
   } else {
     evoSection.style.display = "none";
@@ -2423,28 +2422,22 @@ function getData(pkmn) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  getData(pokemons[currentPkmn]);
+  getPkmn(pokemons[currentPkmn]);
 });
 
-function showData(pkmn) {
-  getData(pokemons[pkmn]);
+function showPkmn(pkmn) {
+  getPkmn(pokemons[pkmn]);
 }
 
 function catchErrors(input) {
-  if (isNaN(input.value)) {
-    input.classList.add("error-input");
-    errorMsg.textContent = "Please, type a number!";
-  }
-
-  if (input.value <= 0 || input.value > 123) {
+  if (isNaN(input.value) || input.value <= 0 || input.value > 123) {
     input.classList.add("error-input");
     errorMsg.textContent = "Please, type a number between 1 and 113!";
+    removeError();
   }
-
-  removeError();
 }
 
-function showPkmn() {
+function showFakedex() {
   pokemons.map((pkmn) => {
     cardSection.innerHTML += `
     <div class="pkmn-card">
@@ -2459,7 +2452,7 @@ function prevPkmn() {
   if (currentPkmn < 0) {
     currentPkmn = pokemons.length - 1;
   }
-  showData(currentPkmn);
+  showPkmn(currentPkmn);
   notShiny = true;
 }
 
@@ -2468,7 +2461,7 @@ function nextPkmn() {
   if (currentPkmn > pokemons.length - 1) {
     currentPkmn = 0;
   }
-  showData(currentPkmn);
+  showPkmn(currentPkmn);
   notShiny = true;
 }
 
@@ -2503,7 +2496,7 @@ searchInput.addEventListener("keydown", (event) => {
 
     let pkmnId = searchInput.value - 1;
     currentPkmn = pkmnId;
-    showData(pkmnId);
+    showPkmn(pkmnId);
     searchInput.value = "";
   }
 });
