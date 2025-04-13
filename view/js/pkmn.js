@@ -2371,6 +2371,8 @@ const searchInput = document.querySelector("#search-input");
 const shinyBtn = document.querySelector(".btn-shiny");
 const errorMsg = document.querySelector(".error-msg");
 
+const MIN_POKEMON_ID = 1;
+const MAX_POKEMON_ID = 123;
 let currentPkmn = 0;
 let notShiny = true;
 
@@ -2430,11 +2432,17 @@ function showPkmn(pkmn) {
 }
 
 function catchErrors(input) {
-  if (isNaN(input.value) || input.value <= 0 || input.value > 123) {
+  const value = Number(input.value);
+
+  if (isNaN(value) || value < MIN_POKEMON_ID || value > MAX_POKEMON_ID) {
     input.classList.add("error-input");
-    errorMsg.textContent = "Please, type a number between 1 and 113!";
+    errorMsg.textContent = `Please, type a number between ${MIN_POKEMON_ID} and ${MAX_POKEMON_ID}!`;
     removeError();
+
+    return false;
   }
+
+  return true;
 }
 
 function showFakedex() {
@@ -2492,12 +2500,13 @@ document.addEventListener("keydown", (event) => {
 
 searchInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
-    catchErrors(searchInput);
+    if (!catchErrors(searchInput)) return;
 
     let pkmnId = searchInput.value - 1;
     currentPkmn = pkmnId;
     showPkmn(pkmnId);
-    searchInput.value = "";
+
+    showInput.classList.remove("show-input");
   }
 });
 
