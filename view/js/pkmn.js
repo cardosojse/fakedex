@@ -140,31 +140,29 @@ searchInput.addEventListener("keydown", (event) => {
   }
 });
 
-function oui() {
-  const { img, shiny, form } = pokemons[currentPkmn];
+// need to refactor
+function togglePkmnImg(event) {
+  const { img, shiny, altForm } = pokemons[currentPkmn];
+  const targetBtn = event.currentTarget;
 
-  if (notShiny) {
-    pkmnImg.src = shiny;
-    notShiny = false;
-
-    return;
+  if (targetBtn === shinyBtn) {
+    if (notShiny) {
+      pkmnImg.src = shiny;
+      notShiny = false;
+    } else {
+      pkmnImg.src = img;
+      notShiny = true;
+    }
+  } else if (targetBtn === altFormBtn) {
+    if (notShiny) {
+      pkmnImg.src = altForm;
+      notShiny = false;
+    } else {
+      pkmnImg.src = img;
+      notShiny = true;
+    }
   }
-
-  pkmnImg.src = img;
-  notShiny = true;
-
-  // if (!form) return;
-
-  // if (mainForm) {
-  //   pkmnImg.src = form;
-  //   mainForm = false;
-
-  //   return;
-  // }
-
-  // pkmnImg.src = img;
-  // mainForm = true;
 }
 
-shinyBtn.addEventListener("click", oui);
-altFormBtn.addEventListener("click", oui);
+shinyBtn.addEventListener("click", togglePkmnImg);
+altFormBtn.addEventListener("click", togglePkmnImg);
