@@ -23,7 +23,19 @@
     </header>
     <section class="card__section">
     </section>
-    <script src="/view/js/app.js"></script>
-    <script src="/view/js/pkmn.js"></script>
+    <script src="view/js/data.js"></script>
+    <script>
+        function showFakedex() {
+            const cardSection = document.querySelector(".card__section");
+
+            pokemons.map((pkmn) => {
+                cardSection.innerHTML += `
+                <div class="pkmn-card">
+                    <span class="pkmn-num">${pkmn.num}</span>
+                    <img src=${pkmn.img} alt="pokemon image" class="pkmn-card-img">
+                </div>`;
+            });
+        }
+    </script>
 </body>
 </html>
