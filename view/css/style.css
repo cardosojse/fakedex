@@ -50,7 +50,7 @@ a{
 .ph-arrow-circle-right{font-size: 24px;}
 
 .ph-sparkle,
-.ph-arrows-counter-clockwise{color: #eb7024; font-size: 20px;}
+.ph-arrows-counter-clockwise{color: #eb7024; font-size: 18px;}
 
 .input-container{
     transform: translateY(-150%);
@@ -267,10 +267,11 @@ a{
     border-radius: .25em;
     padding: .35em .5em;
     text-align: center;
+    box-shadow: -1px 1px #d1d5dc;
 }
 
 .btn:active{
-    box-shadow: inset -2px 1px 0 #F2EFE5;
+    box-shadow: inset -1px 1px 0 #d1d5dc;
 }
 
 .next-btn, .prev-btn{
