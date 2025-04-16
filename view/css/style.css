@@ -274,6 +274,8 @@ a{
     box-shadow: inset -1px 1px 0 #d1d5dc;
 }
 
+.btn-form {display: none;}
+
 .next-btn, .prev-btn{
     cursor: pointer;
     color: #030712;
