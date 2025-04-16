@@ -220,7 +220,7 @@ a{
     margin: 1em 0 0;
     padding: 1em;
     height: fit-content;
-    background: url('/images/LAYOUTPC2.png');
+    background: url('/images/assets/LAYOUTPC2.png');
     background-size: cover;
     border-radius: .5em;
 }
