@@ -19,7 +19,8 @@ const errorMsg = document.querySelector(".error-msg");
 const MIN_PKMN_ID = 1;
 const MAX_PKMN_ID = 123;
 let currentPkmn = 0;
-let notShiny = true;
+let isShiny = false;
+let isAltForm = false;
 
 function updateTypes(types) {
   pkmnType.innerHTML = types
@@ -74,6 +75,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function showPkmn(pkmn) {
   getPkmn(pokemons[pkmn]);
+
+  altFormBtn.style.display = pokemons[pkmn].altForm ? "block" : "none";
 }
 
 function catchErrors(input) {
@@ -96,7 +99,6 @@ function prevPkmn() {
     currentPkmn = pokemons.length - 1;
   }
   showPkmn(currentPkmn);
-  notShiny = true;
 }
 
 function nextPkmn() {
@@ -105,7 +107,22 @@ function nextPkmn() {
     currentPkmn = 0;
   }
   showPkmn(currentPkmn);
-  notShiny = true;
+}
+
+// need to refactor
+function togglePkmnImg(event) {
+  const { img, shiny, altForm } = pokemons[currentPkmn];
+  const targetBtn = event.currentTarget;
+
+  if (targetBtn === shinyBtn) {
+    isShiny = !isShiny;
+    isAltForm = false;
+  } else if (altForm && targetBtn === altFormBtn) {
+    isAltForm = !isAltForm;
+    isShiny = false;
+  }
+
+  pkmnImg.src = isShiny ? shiny : isAltForm ? altForm : img;
 }
 
 function removeError() {
@@ -114,9 +131,6 @@ function removeError() {
     errorMsg.textContent = "";
   }, 3000);
 }
-
-prevBtn.addEventListener("click", prevPkmn);
-nextBtn.addEventListener("click", nextPkmn);
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "ArrowLeft") {
@@ -140,29 +154,7 @@ searchInput.addEventListener("keydown", (event) => {
   }
 });
 
-// need to refactor
-function togglePkmnImg(event) {
-  const { img, shiny, altForm } = pokemons[currentPkmn];
-  const targetBtn = event.currentTarget;
-
-  if (targetBtn === shinyBtn) {
-    if (notShiny) {
-      pkmnImg.src = shiny;
-      notShiny = false;
-    } else {
-      pkmnImg.src = img;
-      notShiny = true;
-    }
-  } else if (targetBtn === altFormBtn) {
-    if (notShiny) {
-      pkmnImg.src = altForm;
-      notShiny = false;
-    } else {
-      pkmnImg.src = img;
-      notShiny = true;
-    }
-  }
-}
-
+prevBtn.addEventListener("click", prevPkmn);
+nextBtn.addEventListener("click", nextPkmn);
 shinyBtn.addEventListener("click", togglePkmnImg);
 altFormBtn.addEventListener("click", togglePkmnImg);
