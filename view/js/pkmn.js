@@ -150,7 +150,7 @@ searchInput.addEventListener("keydown", (event) => {
     currentPkmn = pkmnId;
     showPkmn(pkmnId);
 
-    searchBox.classList.remove("show-input");
+    searchBox.style.display = "none";
   }
 });
 
