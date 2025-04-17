@@ -32,20 +32,43 @@ function updateEvolutions(evolution) {
   pkmnEvo.innerHTML = evolution
     .map(
       (pkmnStage, idx) =>
-        ` <i class="ph ph-arrow-down arrow-${idx}"></i>
-        <div>
-          <div class="pkmn-evo--box">
-              <img src=${pkmnStage.img} alt="pkmn image" class="pkmn-evo--img">
+        `
+          <i class="ph ph-arrow-down arrow-${idx}"></i>
+          <div>
+            <div class="pkmn-evo--box">
+                <img src=${pkmnStage.img} alt="pkmn image" class="pkmn-evo--img">
+            </div>
+            <div class="pkmn-evo--id">
+                <div class="pkmn-evo--name">${pkmnStage.name}</div>
+                <div class="row">
+                    <span>No.</span>
+                    <p class="pkmn-evo--num">${pkmnStage.num}</p>
+                </div>
+            </div>
           </div>
-          <div class="pkmn-evo--id">
-              <div class="pkmn-evo--name">${pkmnStage.name}</div>
-              <div class="row">
-                  <span>No.</span>
-                  <p class="pkmn-evo--num">${pkmnStage.num}</p>
-              </div>
+        `
+    )
+    .join("");
+}
+
+function updateForms(form) {
+  pkmnEvo.innerHTML = form
+    .map(
+      (pkmnStage, idx) =>
+        `
+          <i class="ph ph-arrows-down-up arrow-${idx}"></i>
+          <div>
+            <div class="pkmn-evo--box">
+                <img src=${pkmnStage.img} alt="pkmn image" class="pkmn-evo--img">
+            </div>
+            <div class="pkmn-evo--id">
+                <div class="pkmn-evo--name">${pkmnStage.name}</div>
+                <div class="row">
+                    <p class="pkmn-evo--num">${pkmnStage.num}</p>
+                </div>
+            </div>
           </div>
-        </div>
-      `
+        `
     )
     .join("");
 }
@@ -63,7 +86,8 @@ function getPkmn(pkmn) {
   updateTypes(pkmn.pokemonTypes);
 
   if (pkmn.evolution && pkmn.evolution.length > 0) {
-    updateEvolutions(pkmn.evolution);
+    if (currentPkmn === 110 || currentPkmn === 111) updateForms(pkmn.evolution);
+    else updateEvolutions(pkmn.evolution);
   } else {
     evoSection.style.display = "none";
   }
@@ -109,20 +133,26 @@ function nextPkmn() {
   showPkmn(currentPkmn);
 }
 
-// need to refactor
 function togglePkmnImg(event) {
-  const { img, shiny, altForm } = pokemons[currentPkmn];
+  const { img, shiny, altForm, altFormShiny } = pokemons[currentPkmn];
   const targetBtn = event.currentTarget;
 
   if (targetBtn === shinyBtn) {
     isShiny = !isShiny;
-    isAltForm = false;
   } else if (altForm && targetBtn === altFormBtn) {
     isAltForm = !isAltForm;
     isShiny = false;
   }
 
-  pkmnImg.src = isShiny ? shiny : isAltForm ? altForm : img;
+  if (isAltForm && isShiny && altFormShiny) {
+    pkmnImg.src = altFormShiny;
+  } else if (isAltForm) {
+    pkmnImg.src = altForm;
+  } else if (isShiny) {
+    pkmnImg.src = shiny;
+  } else {
+    pkmnImg.src = img;
+  }
 }
 
 function removeError() {
@@ -150,7 +180,7 @@ searchInput.addEventListener("keydown", (event) => {
     currentPkmn = pkmnId;
     showPkmn(pkmnId);
 
-    searchBox.style.display = "none";
+    openInput();
   }
 });
 
