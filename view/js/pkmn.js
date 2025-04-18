@@ -125,7 +125,7 @@ function prevPkmn() {
   showPkmn(currentPkmn);
   
   isShiny = !isShiny;
-  isAltForm = !isAltForm!
+  isAltForm = !isAltForm;
 }
 
 function nextPkmn() {
@@ -136,7 +136,7 @@ function nextPkmn() {
   showPkmn(currentPkmn);
   
   isShiny = !isShiny;
-  isAltForm = !isAltForm!
+  isAltForm = !isAltForm;
 }
 
 function togglePkmnImg(event) {
