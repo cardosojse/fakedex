@@ -123,6 +123,8 @@ function prevPkmn() {
     currentPkmn = pokemons.length - 1;
   }
   showPkmn(currentPkmn);
+  
+  isShiny = isAltForm = false;
 }  
 
 function nextPkmn() {
@@ -131,6 +133,8 @@ function nextPkmn() {
     currentPkmn = 0;
   }
   showPkmn(currentPkmn);
+  
+  isShiny = isAltForm = false;
 }
 
 function togglePkmnImg(event) {
