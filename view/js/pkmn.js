@@ -87,7 +87,10 @@ function getPkmn(pkmn) {
 
   if (pkmn.evolution && pkmn.evolution.length > 0) {
     if (currentPkmn === 110 || currentPkmn === 111) updateForms(pkmn.evolution);
-    else updateEvolutions(pkmn.evolution);
+    else {
+      updateEvolutions(pkmn.evolution);
+      evoSection.style.display = "block";
+    }
   } else {
     evoSection.style.display = "none";
   }
@@ -99,6 +102,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function showPkmn(pkmn) {
   getPkmn(pokemons[pkmn]);
+  console.log(pokemons[pkmn]);
 
   altFormBtn.style.display = pokemons[pkmn].altForm ? "block" : "none";
 }
@@ -123,9 +127,9 @@ function prevPkmn() {
     currentPkmn = pokemons.length - 1;
   }
   showPkmn(currentPkmn);
-  
+
   isShiny = isAltForm = false;
-}  
+}
 
 function nextPkmn() {
   currentPkmn++;
@@ -133,7 +137,7 @@ function nextPkmn() {
     currentPkmn = 0;
   }
   showPkmn(currentPkmn);
-  
+
   isShiny = isAltForm = false;
 }
 
