@@ -73,6 +73,19 @@ function updateForms(form) {
     .join("");
 }
 
+function handleEvolution(evolution) {
+  const hasEvolution = evolution.length > 0;
+  evoSection.style.display = hasEvolution ? "block" : "none";
+
+  if (!hasEvolution) return;
+
+  if (currentPkmn === 110 || currentPkmn === 111) {
+    updateForms(evolution);
+  } else {
+    updateEvolutions(evolution);
+  }
+}
+
 function getPkmn(pkmn) {
   pkmnImg.src = pkmn.img;
   pkmnNum.textContent = pkmn.num;
@@ -84,16 +97,7 @@ function getPkmn(pkmn) {
   cardColor.style.backgroundColor = pkmn.cardColor;
 
   updateTypes(pkmn.pokemonTypes);
-
-  if (pkmn.evolution && pkmn.evolution.length > 0) {
-    if (currentPkmn === 110 || currentPkmn === 111) updateForms(pkmn.evolution);
-    else {
-      updateEvolutions(pkmn.evolution);
-      evoSection.style.display = "block";
-    }
-  } else {
-    evoSection.style.display = "none";
-  }
+  handleEvolution(pkmn.evolution);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -102,7 +106,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function showPkmn(pkmn) {
   getPkmn(pokemons[pkmn]);
-  console.log(pokemons[pkmn]);
 
   altFormBtn.style.display = pokemons[pkmn].altForm ? "block" : "none";
 }
