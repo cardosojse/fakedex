@@ -187,9 +187,8 @@ searchInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     if (!catchErrors(searchInput)) return;
 
-    let pkmnId = searchInput.value - 1;
-    currentPkmn = pkmnId;
-    showPkmn(pkmnId);
+    currentPkmn = searchInput.value - 1;
+    showPkmn(currentPkmn);
 
     openInput();
   }

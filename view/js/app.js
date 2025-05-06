@@ -3,13 +3,10 @@ const closeBtn = document.querySelector(".search-close");
 const searchBox = document.querySelector(".input-container");
 
 function openInput() {
-  if (searchBox.classList.contains("show-input")) {
-    searchInput.style.display = "none";
-    searchBox.classList.remove("show-input");
-  } else {
-    searchBox.classList.add("show-input");
-    searchInput.style.display = "inline-block";
-  }
+  searchBox.classList.toggle("show-input");
+  searchButton.style.display = searchBox.classList.contains("show-input")
+    ? "none"
+    : "block";
 }
 
 searchButton.addEventListener("click", () => {
