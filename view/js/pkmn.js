@@ -190,7 +190,7 @@ searchInput.addEventListener("keydown", (event) => {
     currentPkmn = searchInput.value - 1;
     showPkmn(currentPkmn);
 
-    openInput();
+    toggleInput();
   }
 });
 
