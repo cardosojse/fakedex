@@ -53,11 +53,7 @@ a{
 .ph-arrows-counter-clockwise{color: #eb7024; font-size: 18px;}
 
 .input-container{
-    transform: translateY(-150%);
-    position: absolute;
-    top: 0;
-    z-index: -10;
-    margin: 0 1em;
+    display: none;
 }
 
 .show-input{
@@ -67,6 +63,7 @@ a{
     z-index: 10;
     position: relative;
     margin: 0 1em;
+    display: block;
 }
 
 #search-input{

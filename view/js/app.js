@@ -4,9 +4,6 @@ const searchBox = document.querySelector(".input-container");
 
 function openInput() {
   searchBox.classList.toggle("show-input");
-  searchButton.style.display = searchBox.classList.contains("show-input")
-    ? "none"
-    : "block";
 }
 
 searchButton.addEventListener("click", () => {
