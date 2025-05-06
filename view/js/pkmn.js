@@ -17,7 +17,7 @@ const altFormBtn = document.querySelector(".btn-form");
 const errorMsg = document.querySelector(".error-msg");
 
 const MIN_PKMN_ID = 1;
-const MAX_PKMN_ID = 123;
+const MAX_PKMN_ID = 124;
 let currentPkmn = 0;
 let isShiny = false;
 let isAltForm = false;
