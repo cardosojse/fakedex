@@ -418,6 +418,292 @@ a{
     line-height: 1.6;
 }
 
+@media (max-width: 959px) {
+    body{
+        min-height: 100vh;
+        height: auto;
+        background:
+            radial-gradient(circle at 5% 8%, rgba(139, 183, 142, .22), transparent 19rem),
+            radial-gradient(circle at 95% 78%, rgba(235, 112, 36, .1), transparent 22rem),
+            var(--canvas);
+    }
+
+    header{
+        border-bottom: 1px solid rgba(203, 214, 204, .78);
+        background: rgba(255, 255, 255, .88);
+        backdrop-filter: blur(16px);
+    }
+
+    .nav-bar{
+        margin-bottom: 0;
+        padding: .85em 1em;
+        box-shadow: none;
+    }
+
+    .brand-mark{
+        width: 34px;
+        border-radius: 10px;
+    }
+
+    .brand-copy small{display: block; font-size: .63rem;}
+
+    .search-toggle{
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 5px 16px rgba(42, 56, 46, .07);
+    }
+
+    .input-container.show-input{
+        margin: .8em 1em 1.2em;
+    }
+
+    #search-input{
+        padding: 1em 3.25em 1em 1.1em;
+        border-color: var(--line);
+        border-radius: 13px;
+        background: #fff;
+        box-shadow: 0 10px 28px rgba(34, 50, 39, .09);
+    }
+
+    .detail-page main{
+        margin: .85em;
+        padding: .75em;
+        border: 1px solid rgba(210, 220, 211, .84);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, .92);
+        box-shadow: 0 18px 48px rgba(40, 57, 45, .1);
+    }
+
+    .id__section{
+        align-items: center;
+        margin: 0 0 .75em;
+        padding: .7em .45em;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: #f7f9f6;
+    }
+
+    .pkmn-name{
+        max-width: 190px;
+        overflow: hidden;
+        font-size: clamp(1.25rem, 6vw, 1.7rem);
+        letter-spacing: -.035em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .pkmn-id span,
+    .pkmn-num{font-size: .9rem;}
+
+    .next-btn, .prev-btn{
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        border-radius: 11px;
+        color: var(--muted);
+    }
+
+    .next-btn:active, .prev-btn:active{
+        background: #e9eee9;
+        box-shadow: none;
+    }
+
+    .pkmn__section{
+        position: relative;
+        display: grid;
+        place-items: center;
+        height: clamp(340px, 96vw, 470px);
+        overflow: hidden;
+        border-color: #e2e8e1;
+        border-radius: 20px;
+        background:
+            radial-gradient(circle at 50% 47%, #fff 0 19%, transparent 20%),
+            radial-gradient(circle at 50% 49%, rgba(157, 184, 158, .28), transparent 49%),
+            linear-gradient(145deg, #f8faf7, #edf2eb);
+    }
+
+    .pkmn__section::before{
+        content: "SPECIMEN";
+        position: absolute;
+        top: 1.25rem;
+        left: 1.3rem;
+        color: #a1aea4;
+        font-size: .62rem;
+        font-weight: 800;
+        letter-spacing: .18em;
+    }
+
+    .pkmn__section::after{
+        content: "";
+        position: absolute;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        width: 42px;
+        height: 6px;
+        border-radius: 999px;
+        background: var(--accent);
+        box-shadow: -52px 0 0 #cad5cb;
+    }
+
+    .pkmn-img{
+        position: relative;
+        z-index: 1;
+        width: min(88%, 390px);
+        max-height: 390px;
+        filter: drop-shadow(0 22px 18px rgba(28, 42, 32, .16));
+    }
+
+    .about__section,
+    .version__section,
+    .type__section{
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: #fff;
+    }
+
+    .about__section{
+        margin: .75em 0;
+        padding: 1.1em;
+        color: #546159;
+        font-size: .92rem;
+        line-height: 1.6;
+    }
+
+    .version__section{
+        display: flex;
+        width: 100%;
+        padding: .8em 1em;
+    }
+
+    .version__section p{
+        margin: 0 auto 0 0;
+        align-self: center;
+    }
+
+    .btn{
+        display: grid;
+        place-items: center;
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        border-radius: 11px;
+        background: #f7f9f6;
+    }
+
+    .btn-form{display: none;}
+
+    .info__section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        min-height: 190px;
+        margin: .75em 0;
+        padding: .65em;
+        border-radius: 18px;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.24);
+    }
+
+    .info__section .row{
+        justify-content: center;
+        min-height: 80px;
+        padding: .75em .5em;
+        border: 1px solid rgba(255,255,255,.22);
+    }
+
+    .info__section .row:nth-child(1){border-radius: 11px 0 0 0;}
+    .info__section .row:nth-child(2){border-radius: 0 11px 0 0;}
+    .info__section .row:nth-child(3){border-radius: 0 0 0 11px;}
+    .info__section .row:nth-child(4){border-radius: 0 0 11px 0;}
+
+    .info__section .row p{
+        margin-top: .3em;
+        text-align: center;
+    }
+
+    .type__section{padding: 1em;}
+
+    .pkmn-type{
+        width: min(42%, 126px);
+        max-width: 126px;
+    }
+
+    .evolution__section{
+        margin-top: .75em;
+        padding: 1.2em 1em 1.5em;
+        border: 1px solid rgba(215, 193, 145, .6);
+        border-radius: 18px;
+        background-color: #f8e8c7;
+        background-position: center;
+    }
+
+    .evolution__section > p{
+        font-size: 1.2rem;
+        font-weight: 750;
+    }
+
+    .pkmn-evo--container{gap: 1.2em;}
+
+    .pkmn-evo--box{
+        width: 150px;
+        height: 150px;
+        background: rgba(255,255,255,.42);
+    }
+
+    .catalog-main{
+        padding: 2.5em .85em 3em;
+        background: transparent;
+    }
+
+    .catalog-hero{padding: 0 .2em 2.3em;}
+
+    .catalog-hero h1{
+        font-size: clamp(2.7rem, 13vw, 4.2rem);
+        line-height: .94;
+    }
+
+    .catalog-hero p{font-size: .92rem;}
+
+    .card__section{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: .75em;
+        margin: 0;
+    }
+
+    .pkmn-card{
+        position: relative;
+        overflow: hidden;
+        border-color: rgba(211, 220, 212, .9);
+        border-radius: 16px;
+        background: rgba(255,255,255,.82);
+        box-shadow: 0 9px 24px rgba(40, 57, 45, .07);
+    }
+
+    .pkmn-card span{
+        position: absolute;
+        top: .7em;
+        left: .7em;
+        z-index: 1;
+        padding: .4em .6em;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255,255,255,.84);
+        backdrop-filter: blur(8px);
+        font-size: .68rem;
+        font-weight: 700;
+    }
+
+    .pkmn-card-img{
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: contain;
+        padding: .8em;
+    }
+}
+
 @media (min-width: 960px) {
     body{
         min-height: 100vh;
