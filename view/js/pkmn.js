@@ -17,10 +17,11 @@ const altFormBtn = document.querySelector(".btn-form");
 const errorMsg = document.querySelector(".error-msg");
 
 const MIN_PKMN_ID = 1;
-const MAX_PKMN_ID = 124;
+const MAX_PKMN_ID = pokemons.length;
 let currentPkmn = 0;
 let isShiny = false;
 let isAltForm = false;
+let errorTimeoutId;
 
 function updateTypes(types) {
   pkmnType.innerHTML = types
@@ -101,27 +102,69 @@ function getPkmn(pkmn) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  getPkmn(pokemons[currentPkmn]);
+  showPkmn(currentPkmn);
 });
 
-function showPkmn(pkmn) {
-  getPkmn(pokemons[pkmn]);
-
-  altFormBtn.style.display = pokemons[pkmn].altForm ? "block" : "none";
+function resetPkmnState() {
+  isShiny = false;
+  isAltForm = false;
 }
 
-function catchErrors(input) {
-  const value = Number(input.value);
+function showPkmn(pkmnIndex) {
+  resetPkmnState();
+  getPkmn(pokemons[pkmnIndex]);
 
-  if (isNaN(value) || value < MIN_PKMN_ID || value > MAX_PKMN_ID) {
-    input.classList.add("error-input");
-    errorMsg.textContent = `Please, type a number between ${MIN_PKMN_ID} and ${MAX_PKMN_ID}!`;
-    removeError();
+  altFormBtn.style.display = pokemons[pkmnIndex].altForm ? "block" : "none";
+}
 
-    return false;
+function findPkmnByName(name) {
+  const normalizedName = name.trim().toLowerCase();
+
+  return pokemons.findIndex(
+    (pkmn) => pkmn.name.toLowerCase() === normalizedName
+  );
+}
+
+function findPkmn(query) {
+  const normalizedQuery = query.trim();
+  const isNumber = /^\d+$/.test(normalizedQuery);
+
+  if (isNumber) {
+    const pkmnId = Number(normalizedQuery);
+
+    if (pkmnId >= MIN_PKMN_ID && pkmnId <= MAX_PKMN_ID) {
+      return pkmnId - 1;
+    }
+
+    return -1;
   }
 
-  return true;
+  return findPkmnByName(normalizedQuery);
+}
+
+function showSearchError() {
+  clearTimeout(errorTimeoutId);
+  searchInput.classList.add("error-input");
+  errorMsg.textContent = `Enter a number between ${MIN_PKMN_ID} and ${MAX_PKMN_ID} or a Pokemon name.`;
+
+  errorTimeoutId = setTimeout(() => {
+    searchInput.classList.remove("error-input");
+    errorMsg.textContent = "";
+  }, 3000);
+}
+
+function searchPkmn(query) {
+  const pkmnIndex = findPkmn(query);
+
+  if (pkmnIndex === -1) {
+    showSearchError();
+    return;
+  }
+
+  currentPkmn = pkmnIndex;
+  showPkmn(currentPkmn);
+  searchInput.value = "";
+  toggleInput();
 }
 
 function prevPkmn() {
@@ -130,8 +173,6 @@ function prevPkmn() {
     currentPkmn = pokemons.length - 1;
   }
   showPkmn(currentPkmn);
-
-  isShiny = isAltForm = false;
 }
 
 function nextPkmn() {
@@ -140,8 +181,6 @@ function nextPkmn() {
     currentPkmn = 0;
   }
   showPkmn(currentPkmn);
-
-  isShiny = isAltForm = false;
 }
 
 function togglePkmnImg(event) {
@@ -166,14 +205,9 @@ function togglePkmnImg(event) {
   }
 }
 
-function removeError() {
-  setTimeout(function () {
-    searchInput.classList.remove("error-input");
-    errorMsg.textContent = "";
-  }, 3000);
-}
-
 document.addEventListener("keydown", (event) => {
+  if (event.target === searchInput) return;
+
   if (event.key === "ArrowLeft") {
     prevPkmn();
   }
@@ -185,12 +219,7 @@ document.addEventListener("keydown", (event) => {
 
 searchInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
-    if (!catchErrors(searchInput)) return;
-
-    currentPkmn = searchInput.value - 1;
-    showPkmn(currentPkmn);
-
-    toggleInput();
+    searchPkmn(searchInput.value);
   }
 });
 
