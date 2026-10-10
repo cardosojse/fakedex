@@ -47,7 +47,6 @@ const pokemons = [
         img: "images/pkmn-img/003.png",
       },
     ],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
   {
@@ -77,7 +76,6 @@ const pokemons = [
         img: "images/pkmn-img/003.png",
       },
     ],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.dark],
   },
   {
@@ -107,7 +105,6 @@ const pokemons = [
         img: "images/pkmn-img/003.png",
       },
     ],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.dark],
   },
   {
@@ -137,7 +134,6 @@ const pokemons = [
         img: "images/pkmn-img/006.png",
       },
     ],
-    cardColor: "#ff9d55",
     pokemonTypes: [types.fire],
   },
   {
@@ -167,7 +163,6 @@ const pokemons = [
         img: "images/pkmn-img/006.png",
       },
     ],
-    cardColor: "#ff9d55",
     pokemonTypes: [types.fire],
   },
   {
@@ -197,7 +192,6 @@ const pokemons = [
         img: "images/pkmn-img/006.png",
       },
     ],
-    cardColor: "#ff9d55",
     pokemonTypes: [types.fire, types.steel],
   },
   {
@@ -227,7 +221,6 @@ const pokemons = [
         img: "images/pkmn-img/009.png",
       },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -257,7 +250,6 @@ const pokemons = [
         img: "images/pkmn-img/009.png",
       },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -287,7 +279,6 @@ const pokemons = [
         img: "images/pkmn-img/009.png",
       },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.ground],
   },
   {
@@ -312,7 +303,6 @@ const pokemons = [
         img: "images/pkmn-img/011.png",
       },
     ],
-    cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
   {
@@ -337,7 +327,6 @@ const pokemons = [
         img: "images/pkmn-img/011.png",
       },
     ],
-    cardColor: "#f4d23c",
     pokemonTypes: [types.electric],
   },
   {
@@ -367,7 +356,6 @@ const pokemons = [
         img: "images/pkmn-img/014.png",
       },
     ],
-    cardColor: "#8fa9de",
     pokemonTypes: [types.flying, types.normal],
   },
   {
@@ -397,7 +385,6 @@ const pokemons = [
         img: "images/pkmn-img/014.png",
       },
     ],
-    cardColor: "#8fa9de",
     pokemonTypes: [types.flying, types.fighting],
   },
   {
@@ -427,7 +414,6 @@ const pokemons = [
         img: "images/pkmn-img/014.png",
       },
     ],
-    cardColor: "#8fa9de",
     pokemonTypes: [types.flying, types.fighting],
   },
   {
@@ -452,7 +438,6 @@ const pokemons = [
         img: "images/pkmn-img/016.png",
       },
     ],
-    cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.dark],
   },
   {
@@ -477,7 +462,6 @@ const pokemons = [
         img: "images/pkmn-img/016.png",
       },
     ],
-    cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.dark],
   },
   {
@@ -507,7 +491,6 @@ const pokemons = [
         img: "images/pkmn-img/019.png",
       },
     ],
-    cardColor: "#f4d23c",
     pokemonTypes: [types.electric, types.normal],
   },
   {
@@ -538,7 +521,6 @@ const pokemons = [
         img: "images/pkmn-img/019.png",
       },
     ],
-    cardColor: "#f4d23c",
     pokemonTypes: [types.electric, types.normal],
   },
   {
@@ -568,7 +550,6 @@ const pokemons = [
         img: "images/pkmn-img/019.png",
       },
     ],
-    cardColor: "#f4d23c",
     pokemonTypes: [types.electric, types.fighting],
   },
   {
@@ -593,7 +574,6 @@ const pokemons = [
         img: "images/pkmn-img/021.png",
       },
     ],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
   {
@@ -618,7 +598,6 @@ const pokemons = [
         img: "images/pkmn-img/021.png",
       },
     ],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.flying],
   },
   {
@@ -648,7 +627,6 @@ const pokemons = [
         img: "images/pkmn-img/024.png",
       },
     ],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.poison],
   },
   {
@@ -678,7 +656,6 @@ const pokemons = [
         img: "images/pkmn-img/024.png",
       },
     ],
-    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.grass],
   },
   {
@@ -708,7 +685,6 @@ const pokemons = [
         img: "images/pkmn-img/024.png",
       },
     ],
-    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.grass],
   },
   {
@@ -729,7 +705,6 @@ const pokemons = [
         img: "images/pkmn-img/026.png",
       },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.flying],
   },
   {
@@ -750,7 +725,6 @@ const pokemons = [
         img: "images/pkmn-img/026.png",
       },
     ],
-    cardColor: "#5b5464",
     pokemonTypes: [types.dark, types.flying],
   },
   {
@@ -775,7 +749,6 @@ const pokemons = [
         img: "images/pkmn-img/028.png",
       },
     ],
-    cardColor: "#8fa9de",
     pokemonTypes: [types.flying],
   },
   {
@@ -800,7 +773,6 @@ const pokemons = [
         img: "images/pkmn-img/028.png",
       },
     ],
-    cardColor: "#8fa9de",
     pokemonTypes: [types.flying],
   },
   {
@@ -817,7 +789,6 @@ const pokemons = [
       { num: "029", name: "STARTICK", img: "images/pkmn-img/029.png" },
       { num: "030", name: "ARAMARON", img: "images/pkmn-img/030.png" },
     ],
-    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison],
   },
   {
@@ -834,7 +805,6 @@ const pokemons = [
       { num: "029", name: "STARTICK", img: "images/pkmn-img/029.png" },
       { num: "030", name: "ARAMARON", img: "images/pkmn-img/030.png" },
     ],
-    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.psychic],
   },
   {
@@ -848,7 +818,6 @@ const pokemons = [
     height: "1,5m",
     weight: "42,5kg",
     evolution: [],
-    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.fighting],
   },
   {
@@ -873,7 +842,6 @@ const pokemons = [
         img: "images/pkmn-img/033.png",
       },
     ],
-    cardColor: "#91c12d",
     pokemonTypes: [types.bug, types.normal],
   },
   {
@@ -898,7 +866,6 @@ const pokemons = [
         img: "images/pkmn-img/033.png",
       },
     ],
-    cardColor: "#91c12d",
     pokemonTypes: [types.bug, types.ground],
   },
   {
@@ -915,7 +882,6 @@ const pokemons = [
       { num: "034", name: "BUDSLY", img: "images/pkmn-img/034.png" },
       { num: "035", name: "TRULYWOODO", img: "images/pkmn-img/035.png" },
     ],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
   {
@@ -932,7 +898,6 @@ const pokemons = [
       { num: "034", name: "BUDSLY", img: "images/pkmn-img/034.png" },
       { num: "035", name: "TRULYWOODO", img: "images/pkmn-img/035.png" },
     ],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
   {
@@ -946,7 +911,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#ff9d55",
     pokemonTypes: [types.fire],
   },
   {
@@ -963,7 +927,6 @@ const pokemons = [
       { num: "037", name: "SIRENBY", img: "images/pkmn-img/037.png" },
       { num: "038", name: "SIRENIA", img: "images/pkmn-img/038.png" },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -980,7 +943,6 @@ const pokemons = [
       { num: "037", name: "SIRENBY", img: "images/pkmn-img/037.png" },
       { num: "038", name: "SIRENIA", img: "images/pkmn-img/038.png" },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.ice],
   },
   {
@@ -994,7 +956,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.dark],
   },
   {
@@ -1008,7 +969,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -1022,7 +982,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.fire],
   },
   {
@@ -1040,7 +999,6 @@ const pokemons = [
       { num: "043", name: "MANTINE", img: "images/pkmn-img/043.png" },
       { num: "044", name: "MANKYTE", img: "images/pkmn-img/044.png" },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -1058,7 +1016,6 @@ const pokemons = [
       { num: "043", name: "MANTINE", img: "images/pkmn-img/043.png" },
       { num: "044", name: "MANKYTE", img: "images/pkmn-img/044.png" },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.flying],
   },
   {
@@ -1076,7 +1033,6 @@ const pokemons = [
       { num: "043", name: "MANTINE", img: "images/pkmn-img/043.png" },
       { num: "044", name: "MANKYTE", img: "images/pkmn-img/044.png" },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.flying],
   },
   {
@@ -1093,7 +1049,6 @@ const pokemons = [
       { num: "045", name: "SHRIMBODY", img: "images/pkmn-img/045.png" },
       { num: "046", name: "SHRIMRYU", img: "images/pkmn-img/046.png" },
     ],
-    cardColor: "#d97845",
     pokemonTypes: [types.ground, types.water],
   },
   {
@@ -1110,7 +1065,6 @@ const pokemons = [
       { num: "045", name: "SHRIMBODY", img: "images/pkmn-img/045.png" },
       { num: "046", name: "SHRIMRYU", img: "images/pkmn-img/046.png" },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.dragon, types.water],
   },
   {
@@ -1128,7 +1082,6 @@ const pokemons = [
       { num: "048", name: "SEADRA", img: "images/pkmn-img/048.png" },
       { num: "049", name: "DRACEAN", img: "images/pkmn-img/049.png" },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.dragon, types.water],
   },
   {
@@ -1146,7 +1099,6 @@ const pokemons = [
       { num: "048", name: "SEADRA", img: "images/pkmn-img/048.png" },
       { num: "049", name: "DRACEAN", img: "images/pkmn-img/049.png" },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.dragon, types.poison],
   },
   {
@@ -1164,7 +1116,6 @@ const pokemons = [
       { num: "048", name: "SEADRA", img: "images/pkmn-img/048.png" },
       { num: "049", name: "DRACEAN", img: "images/pkmn-img/049.png" },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.dragon, types.poison],
   },
   {
@@ -1189,7 +1140,6 @@ const pokemons = [
         img: "images/pkmn-img/051.png",
       },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -1214,7 +1164,6 @@ const pokemons = [
         img: "images/pkmn-img/051.png",
       },
     ],
-    cardColor: "#5a8ea2",
     pokemonTypes: [types.steel, types.water],
   },
   {
@@ -1239,7 +1188,6 @@ const pokemons = [
         img: "images/pkmn-img/053.png",
       },
     ],
-    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.electric],
   },
   {
@@ -1264,7 +1212,6 @@ const pokemons = [
         img: "images/pkmn-img/053.png",
       },
     ],
-    cardColor: "#aa6bc8",
     pokemonTypes: [types.poison, types.electric],
   },
   {
@@ -1278,7 +1225,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.steel],
   },
   {
@@ -1292,7 +1238,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#ec8fe6",
     pokemonTypes: [types.fairy],
   },
   {
@@ -1317,7 +1262,6 @@ const pokemons = [
         img: "images/pkmn-img/056.png",
       },
     ],
-    cardColor: "#ec8fe6",
     pokemonTypes: [types.fairy, types.electric],
   },
   {
@@ -1342,7 +1286,6 @@ const pokemons = [
         img: "images/pkmn-img/057.png",
       },
     ],
-    cardColor: "#ec8fe6",
     pokemonTypes: [types.fairy, types.fire],
   },
   {
@@ -1356,7 +1299,6 @@ const pokemons = [
     height: "0,4m",
     weight: "6,5kg",
     evolution: [],
-    cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
   {
@@ -1381,7 +1323,6 @@ const pokemons = [
         img: "images/pkmn-img/059.png",
       },
     ],
-    cardColor: "#5a8ea2",
     pokemonTypes: [types.steel],
   },
   {
@@ -1406,7 +1347,6 @@ const pokemons = [
         img: "images/pkmn-img/060.png",
       },
     ],
-    cardColor: "#5269ad",
     pokemonTypes: [types.ghost],
   },
   {
@@ -1431,7 +1371,6 @@ const pokemons = [
         img: "images/pkmn-img/061.png",
       },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.dragon],
   },
   {
@@ -1456,7 +1395,6 @@ const pokemons = [
         img: "images/pkmn-img/062.png",
       },
     ],
-    cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
   {
@@ -1481,7 +1419,6 @@ const pokemons = [
         img: "images/pkmn-img/064.png",
       },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -1506,7 +1443,6 @@ const pokemons = [
         img: "images/pkmn-img/064.png",
       },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -1536,7 +1472,6 @@ const pokemons = [
         img: "images/pkmn-img/067.png",
       },
     ],
-    cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.fairy],
   },
   {
@@ -1566,7 +1501,6 @@ const pokemons = [
         img: "images/pkmn-img/067.png",
       },
     ],
-    cardColor: "#ce416b",
     pokemonTypes: [types.fighting, types.fairy],
   },
   {
@@ -1596,7 +1530,6 @@ const pokemons = [
         img: "images/pkmn-img/067.png",
       },
     ],
-    cardColor: "#ce416b",
     pokemonTypes: [types.fighting, types.fairy],
   },
   {
@@ -1626,7 +1559,6 @@ const pokemons = [
         img: "images/pkmn-img/070.png",
       },
     ],
-    cardColor: "#c5b78c",
     pokemonTypes: [types.rock],
   },
   {
@@ -1656,7 +1588,6 @@ const pokemons = [
         img: "images/pkmn-img/070.png",
       },
     ],
-    cardColor: "#c5b78c",
     pokemonTypes: [types.rock],
   },
   {
@@ -1686,7 +1617,6 @@ const pokemons = [
         img: "images/pkmn-img/070.png",
       },
     ],
-    cardColor: "#c5b78c",
     pokemonTypes: [types.rock, types.poison],
   },
   {
@@ -1711,7 +1641,6 @@ const pokemons = [
         img: "images/pkmn-img/072.png",
       },
     ],
-    cardColor: "#5269ad",
     pokemonTypes: [types.ghost, types.fire],
   },
   {
@@ -1736,7 +1665,6 @@ const pokemons = [
         img: "images/pkmn-img/072.png",
       },
     ],
-    cardColor: "#5269ad",
     pokemonTypes: [types.ghost, types.fire],
   },
   {
@@ -1766,7 +1694,6 @@ const pokemons = [
         img: "images/pkmn-img/075.png",
       },
     ],
-    cardColor: "#fa7179",
     pokemonTypes: [types.psychic],
   },
   {
@@ -1796,7 +1723,6 @@ const pokemons = [
         img: "images/pkmn-img/075.png",
       },
     ],
-    cardColor: "#fa7179",
     pokemonTypes: [types.psychic],
   },
   {
@@ -1826,7 +1752,6 @@ const pokemons = [
         img: "images/pkmn-img/075.png",
       },
     ],
-    cardColor: "#fa7179",
     pokemonTypes: [types.psychic, types.fighting],
   },
   {
@@ -1856,7 +1781,6 @@ const pokemons = [
         img: "images/pkmn-img/078.png",
       },
     ],
-    cardColor: "#91c12d",
     pokemonTypes: [types.bug],
   },
   {
@@ -1886,7 +1810,6 @@ const pokemons = [
         img: "images/pkmn-img/078.png",
       },
     ],
-    cardColor: "#91c12d",
     pokemonTypes: [types.bug],
   },
   {
@@ -1916,7 +1839,6 @@ const pokemons = [
         img: "images/pkmn-img/078.png",
       },
     ],
-    cardColor: "#91c12d",
     pokemonTypes: [types.bug, types.psychic],
   },
   {
@@ -1941,7 +1863,6 @@ const pokemons = [
         img: "images/pkmn-img/080.png",
       },
     ],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
   {
@@ -1966,7 +1887,6 @@ const pokemons = [
         img: "images/pkmn-img/080.png",
       },
     ],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.fairy],
   },
   {
@@ -1991,7 +1911,6 @@ const pokemons = [
         img: "images/pkmn-img/082.png",
       },
     ],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass],
   },
   {
@@ -2016,7 +1935,6 @@ const pokemons = [
         img: "images/pkmn-img/082.png",
       },
     ],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.psychic],
   },
   {
@@ -2030,7 +1948,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.ghost],
   },
   {
@@ -2044,7 +1961,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.ghost],
   },
   {
@@ -2058,7 +1974,6 @@ const pokemons = [
     height: "1,5m",
     weight: "56kg",
     evolution: [],
-    cardColor: "#91c12d",
     pokemonTypes: [types.bug, types.dragon],
   },
   {
@@ -2072,7 +1987,6 @@ const pokemons = [
     height: "1,75m",
     weight: "87,5kg",
     evolution: [],
-    cardColor: "#91c12d",
     pokemonTypes: [types.bug, types.dragon],
   },
   {
@@ -2097,7 +2011,6 @@ const pokemons = [
         img: "images/pkmn-img/088.png",
       },
     ],
-    cardColor: "#ce416b",
     pokemonTypes: [types.fighting],
   },
   {
@@ -2122,7 +2035,6 @@ const pokemons = [
         img: "images/pkmn-img/088.png",
       },
     ],
-    cardColor: "#ce416b",
     pokemonTypes: [types.fighting, types.ground],
   },
   {
@@ -2147,7 +2059,6 @@ const pokemons = [
         img: "images/pkmn-img/090.png",
       },
     ],
-    cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
   {
@@ -2172,7 +2083,6 @@ const pokemons = [
         img: "images/pkmn-img/090.png",
       },
     ],
-    cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.ground],
   },
   {
@@ -2197,7 +2107,6 @@ const pokemons = [
         img: "images/pkmn-img/092.png",
       },
     ],
-    cardColor: "#919aa2",
     pokemonTypes: [types.normal, types.ground],
   },
   {
@@ -2222,7 +2131,6 @@ const pokemons = [
         img: "images/pkmn-img/092.png",
       },
     ],
-    cardColor: "#ce416b",
     pokemonTypes: [types.fighting, types.ground],
   },
   {
@@ -2236,7 +2144,6 @@ const pokemons = [
     height: "0,5m",
     weight: "10,2kg",
     evolution: [],
-    cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
   {
@@ -2250,7 +2157,6 @@ const pokemons = [
     height: "1m",
     weight: "300kg",
     evolution: [],
-    cardColor: "#c5b78c",
     pokemonTypes: [types.rock],
   },
   {
@@ -2264,7 +2170,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#5269ad",
     pokemonTypes: [types.ghost, types.water],
   },
   {
@@ -2278,7 +2183,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#5269ad",
     pokemonTypes: [types.ghost, types.flying],
   },
   {
@@ -2292,7 +2196,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#5269ad",
     pokemonTypes: [types.ghost, types.dark],
   },
   {
@@ -2306,7 +2209,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#919aa2",
     pokemonTypes: [types.normal],
   },
   {
@@ -2324,7 +2226,6 @@ const pokemons = [
       { num: "100", name: "CHRISALYTAR", img: "images/pkmn-img/100.png" },
       { num: "101", name: "INDOMITAR", img: "images/pkmn-img/101.png" },
     ],
-    cardColor: "#5b5464",
     pokemonTypes: [types.dark, types.ground],
   },
   {
@@ -2342,7 +2243,6 @@ const pokemons = [
       { num: "100", name: "CHRISALYTAR", img: "images/pkmn-img/100.png" },
       { num: "101", name: "INDOMITAR", img: "images/pkmn-img/101.png" },
     ],
-    cardColor: "#5b5464",
     pokemonTypes: [types.dark, types.ground],
   },
   {
@@ -2360,7 +2260,6 @@ const pokemons = [
       { num: "100", name: "CHRISALYTAR", img: "images/pkmn-img/100.png" },
       { num: "101", name: "INDOMITAR", img: "images/pkmn-img/101.png" },
     ],
-    cardColor: "#5b5464",
     pokemonTypes: [types.dark, types.poison],
   },
   {
@@ -2378,7 +2277,6 @@ const pokemons = [
       { num: "103", name: "TEIRUDON", img: "images/pkmn-img/103.png" },
       { num: "104", name: "KALARUDON", img: "images/pkmn-img/104.png" },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.dragon],
   },
   {
@@ -2396,7 +2294,6 @@ const pokemons = [
       { num: "103", name: "TEIRUDON", img: "images/pkmn-img/103.png" },
       { num: "104", name: "KALARUDON", img: "images/pkmn-img/104.png" },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.dragon],
   },
   {
@@ -2414,7 +2311,6 @@ const pokemons = [
       { num: "103", name: "TEIRUDON", img: "images/pkmn-img/103.png" },
       { num: "104", name: "KALARUDON", img: "images/pkmn-img/104.png" },
     ],
-    cardColor: "#5090d6",
     pokemonTypes: [types.dragon],
   },
   {
@@ -2432,7 +2328,6 @@ const pokemons = [
       { num: "106", name: "POPSILLITE", img: "images/pkmn-img/106.png" },
       { num: "107", name: "POPSPLATE", img: "images/pkmn-img/107.png" },
     ],
-    cardColor: "#73cec0",
     pokemonTypes: [types.ice],
   },
   {
@@ -2450,7 +2345,6 @@ const pokemons = [
       { num: "106", name: "POPSILLITE", img: "images/pkmn-img/106.png" },
       { num: "107", name: "POPSPLATE", img: "images/pkmn-img/107.png" },
     ],
-    cardColor: "#73cec0",
     pokemonTypes: [types.ice],
   },
   {
@@ -2468,7 +2362,6 @@ const pokemons = [
       { num: "106", name: "POPSILLITE", img: "images/pkmn-img/106.png" },
       { num: "107", name: "POPSPLATE", img: "images/pkmn-img/107.png" },
     ],
-    cardColor: "#73cec0",
     pokemonTypes: [types.ice],
   },
   {
@@ -2485,7 +2378,6 @@ const pokemons = [
       { num: "108", name: "MUNCHLAX", img: "images/pkmn-img/108.png" },
       { num: "109", name: "SNORLAX", img: "images/pkmn-img/109.png" },
     ],
-    cardColor: "#73cec0",
     pokemonTypes: [types.ice],
   },
   {
@@ -2502,7 +2394,6 @@ const pokemons = [
       { num: "108", name: "MUNCHLAX", img: "images/pkmn-img/108.png" },
       { num: "109", name: "SNORLAX", img: "images/pkmn-img/109.png" },
     ],
-    cardColor: "#73cec0",
     pokemonTypes: [types.ice, types.ghost],
   },
   {
@@ -2517,7 +2408,6 @@ const pokemons = [
     height: "1,53",
     weight: "20,4kg",
     evolution: [],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.fighting],
   },
   {
@@ -2543,7 +2433,6 @@ const pokemons = [
         img: "images/pkmn-img/111_e.png",
       },
     ],
-    cardColor: "#5b5464",
     pokemonTypes: [types.dark],
   },
   {
@@ -2569,7 +2458,6 @@ const pokemons = [
         img: "images/pkmn-img/112_e.png",
       },
     ],
-    cardColor: "#fa7179",
     pokemonTypes: [types.psychic],
   },
   {
@@ -2583,7 +2471,6 @@ const pokemons = [
     height: "3m",
     weight: "200kg",
     evolution: [],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.water],
   },
   {
@@ -2597,7 +2484,6 @@ const pokemons = [
     height: "3,3m",
     weight: "275kg",
     evolution: [],
-    cardColor: "#ff9d55",
     pokemonTypes: [types.fire, types.ground],
   },
   {
@@ -2611,7 +2497,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#f4d23c",
     pokemonTypes: [types.electric],
   },
   {
@@ -2625,7 +2510,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#ff9d55",
     pokemonTypes: [types.fire],
   },
   {
@@ -2639,7 +2523,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water],
   },
   {
@@ -2653,7 +2536,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#5090d6",
     pokemonTypes: [types.water, types.psychic],
   },
   {
@@ -2667,7 +2549,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#63bc5a",
     pokemonTypes: [types.grass, types.psychic],
   },
   {
@@ -2681,7 +2562,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#d97845",
     pokemonTypes: [types.ground, types.psychic],
   },
   {
@@ -2695,7 +2575,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#ff9d55",
     pokemonTypes: [types.fire, types.psychic],
   },
   {
@@ -2709,7 +2588,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#5090d6",
     pokemonTypes: [types.dragon, types.fire],
   },
   {
@@ -2723,7 +2601,6 @@ const pokemons = [
     height: "Default",
     weight: "Default",
     evolution: [],
-    cardColor: "#8fa9de",
     pokemonTypes: [types.flying],
   },
   {
@@ -2737,7 +2614,6 @@ const pokemons = [
     height: "0,4m",
     weight: "0,1kg",
     evolution: [],
-    cardColor: "#ff9d55",
     pokemonTypes: [types.fire, types.fairy],
   },
 ];

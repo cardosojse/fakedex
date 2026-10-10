@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/view/css/style.css">
+    <link rel="stylesheet" href="view/css/style.css">
     <link rel="icon" href="images/favicon.png">
     <link
         rel="stylesheet"
@@ -17,12 +17,24 @@
     />
     <title>Fakedex</title>
 </head>
-<body onload="showFakedex()">
-    <header class="nav-bar">
-        <a href="index.html"><i class="ph ph-caret-left"></i></a>
+<body class="catalog-page" onload="showFakedex()">
+    <header>
+        <div class="nav-bar container">
+            <a href="index.html" class="back-link">
+                <i class="ph ph-caret-left"></i>
+                <span>Back to entry</span>
+            </a>
+            <span class="catalog-count">124 species</span>
+        </div>
     </header>
-    <section class="card__section">
-    </section>
+    <main class="catalog-main">
+        <section class="catalog-hero">
+            <span class="eyebrow">Regional archive</span>
+            <h1>Meet the Fakedex</h1>
+            <p>An illustrated field guide to every discovered species in the region.</p>
+        </section>
+        <section class="card__section" aria-label="Pokemon catalog"></section>
+    </main>
     <script src="view/js/data.js"></script>
     <script>
         function showFakedex() {

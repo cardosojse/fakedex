@@ -8,7 +8,6 @@ const pkmnWeight = document.querySelector(".pkmn-weight");
 const pkmnType = document.querySelector(".pkmn-type--container");
 const pkmnEvo = document.querySelector(".pkmn-evo--container");
 const evoSection = document.querySelector(".evolution__section");
-const cardColor = document.querySelector(".info__section");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const searchInput = document.querySelector("#search-input");
@@ -95,8 +94,6 @@ function getPkmn(pkmn) {
   pkmnAbility.textContent = pkmn.ability;
   pkmnHeight.textContent = pkmn.height;
   pkmnWeight.textContent = pkmn.weight;
-  cardColor.style.backgroundColor = pkmn.cardColor;
-
   updateTypes(pkmn.pokemonTypes);
   handleEvolution(pkmn.evolution);
 }
@@ -114,7 +111,7 @@ function showPkmn(pkmnIndex) {
   resetPkmnState();
   getPkmn(pokemons[pkmnIndex]);
 
-  altFormBtn.style.display = pokemons[pkmnIndex].altForm ? "block" : "none";
+  altFormBtn.style.display = pokemons[pkmnIndex].altForm ? "inline-grid" : "none";
 }
 
 function findPkmnByName(name) {

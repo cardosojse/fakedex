@@ -17,16 +17,23 @@
     />
     <title>Fakedex</title>
 </head>
-<body>
+<body class="detail-page">
     <header>
         <div class="nav-bar container">
             <ul class="nav__list">
                 <li class="nav__list-links">
-                    <a href="fakedex.html">Fakedex</a>
+                    <a href="fakedex.html" class="brand">
+                        <span class="brand-mark">FX</span>
+                        <span class="brand-copy">
+                            <strong>Fakedex</strong>
+                            <small>Field guide · 124 species</small>
+                        </span>
+                    </a>
                 </li>
                 <li  class="push--right">
-                    <button class="search-toggle">
+                    <button class="search-toggle" aria-label="Search Pokemon">
                         <i class="ph ph-magnifying-glass"></i>
+                        <span>Search</span>
                     </button>
                 </li>
             </ul>
@@ -38,7 +45,7 @@
                 placeholder="Enter a number or name..."
                 autocomplete="off"
             >
-            <button class="search-close">
+            <button class="search-close" aria-label="Close search">
                 <i class="ph ph-x"></i>
             </button>
             <span class="error-msg"></span>
@@ -46,9 +53,10 @@
     </header>
     <main>
         <section class="id__section">
-            <div class="prev-btn">
+            <button class="prev-btn" aria-label="Previous Pokemon">
                 <i class="ph ph-arrow-circle-left"></i>
-            </div>
+                <span>Previous</span>
+            </button>
             <div class="pkmn-id">
                 <div class="pkmn-name">DEFAULT</div>
                 <div class="row">
@@ -56,9 +64,10 @@
                     <p class="pkmn-num">001</p>
                 </div>
             </div>
-            <div class="next-btn">
+            <button class="next-btn" aria-label="Next Pokemon">
+                <span>Next</span>
                 <i class="ph ph-arrow-circle-right"></i>
-            </div>
+            </button>
         </section>
         <section class="pkmn__section">
             <img src="images/pkmn-img/039.png" alt="pkmn image" class="pkmn-img">
